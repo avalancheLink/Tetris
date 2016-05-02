@@ -1,7 +1,7 @@
 //lol2
 //  ViewController.swift
 //  Tetris
-//
+//1
 //  Created by student3 on 5/2/16.
 //  Copyright © 2016 JohnHerseyHighSchool. All rights reserved.
 //
@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+  var TylerHasNoFriends = String()
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
