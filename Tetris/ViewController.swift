@@ -1,7 +1,7 @@
 //lol2 braum is best
 //  ViewController.swift
 //  Tetris
-//1
+//
 //  Created by student3 on 5/2/16.
 //  Copyright © 2016 JohnHerseyHighSchool. All rights reserved.
 //
@@ -9,17 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-  var TylerHasNoFriends = String()
+  
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        var timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "countUp", userInfo: nil, repeats: true)
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func countUp()
+    {
+       
     }
-
 
 }
 
