@@ -19,7 +19,17 @@ class GameViewController: UIViewController {
     @IBOutlet weak var Label8: UILabel!
     @IBOutlet weak var Label9: UILabel!
     @IBOutlet weak var Label10: UILabel!
-
+    @IBOutlet weak var Label11: UILabel!
+    @IBOutlet weak var Label12: UILabel!
+    @IBOutlet weak var Label13: UILabel!
+    @IBOutlet weak var Label14: UILabel!
+    @IBOutlet weak var Label15: UILabel!
+    @IBOutlet weak var Label16: UILabel!
+    @IBOutlet weak var Label17: UILabel!
+    @IBOutlet weak var Label18: UILabel!
+    @IBOutlet weak var Label19: UILabel!
+    @IBOutlet weak var Label20: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

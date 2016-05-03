@@ -829,7 +829,17 @@
                     <connections>
                         <outlet property="Label1" destination="htu-C0-TJR" id="M6M-9G-fBH"/>
                         <outlet property="Label10" destination="2CD-Qr-igU" id="tWl-CC-nrr"/>
+                        <outlet property="Label11" destination="94h-4Q-0wm" id="aAc-dn-Jg9"/>
+                        <outlet property="Label12" destination="ZYV-i0-kH5" id="qZN-Z0-LtU"/>
+                        <outlet property="Label13" destination="rRC-Iy-YZ0" id="SY7-Ba-xty"/>
+                        <outlet property="Label14" destination="TYO-j4-zA2" id="qbt-0s-pOt"/>
+                        <outlet property="Label15" destination="gxF-T4-CkK" id="WFL-Yc-sCc"/>
+                        <outlet property="Label16" destination="Pwt-aF-dHz" id="nAF-tU-8hH"/>
+                        <outlet property="Label17" destination="nEG-BM-T43" id="Oxd-5q-0MH"/>
+                        <outlet property="Label18" destination="moE-q7-Dcj" id="bXq-of-R8E"/>
+                        <outlet property="Label19" destination="nBf-H6-3Dk" id="4Bt-UR-pcD"/>
                         <outlet property="Label2" destination="Yz3-fx-0hU" id="jzS-ap-dqj"/>
+                        <outlet property="Label20" destination="rdi-X9-qIY" id="ioH-bC-0Uh"/>
                         <outlet property="Label3" destination="ZOT-FN-uBz" id="kVa-ca-Mmc"/>
                         <outlet property="Label4" destination="KZC-Ep-OdS" id="M7f-BZ-ejq"/>
                         <outlet property="Label5" destination="sQb-co-0jG" id="c5t-pG-WbM"/>
