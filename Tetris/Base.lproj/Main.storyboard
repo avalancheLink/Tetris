@@ -31,10 +31,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--View Controller-->
+        <!--Game View Controller-->
         <scene sceneID="KWq-Bz-KfC">
             <objects>
-                <viewController id="jFm-dB-Lgc" sceneMemberID="viewController">
+                <viewController id="jFm-dB-Lgc" customClass="GameViewController" customModule="Tetris" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WQm-dU-T7F"/>
                         <viewControllerLayoutGuide type="bottom" id="rx5-LK-j4m"/>
@@ -826,6 +826,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="Label1" destination="htu-C0-TJR" id="M6M-9G-fBH"/>
+                        <outlet property="Label10" destination="2CD-Qr-igU" id="tWl-CC-nrr"/>
+                        <outlet property="Label2" destination="Yz3-fx-0hU" id="jzS-ap-dqj"/>
+                        <outlet property="Label3" destination="ZOT-FN-uBz" id="kVa-ca-Mmc"/>
+                        <outlet property="Label4" destination="KZC-Ep-OdS" id="M7f-BZ-ejq"/>
+                        <outlet property="Label5" destination="sQb-co-0jG" id="c5t-pG-WbM"/>
+                        <outlet property="Label6" destination="2PP-BL-MUv" id="Xm2-iB-I7b"/>
+                        <outlet property="Label7" destination="5d4-Wb-Xx0" id="nhb-yf-UXB"/>
+                        <outlet property="Label8" destination="4Mw-7a-eqR" id="G9k-qq-cWT"/>
+                        <outlet property="Label9" destination="G55-6F-Xfq" id="7M0-h0-mXG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P9b-bs-rwe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
