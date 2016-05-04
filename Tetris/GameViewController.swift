@@ -63,7 +63,18 @@ class GameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-    }
         
+        if Label12.backgroundColor != UIColor.whiteColor()
+        {
+    
+        }
+    }
+    func lose()
+    {
+        let alert2 = UIAlertController(title: "You Lose", message: "Press OK to continue", preferredStyle: UIAlertControllerStyle.ActionSheet)
+        let okAction4 = UIAlertAction(title: "OK", style: .Default, handler: nil)
+        alert2.addAction(okAction4)
+        presentViewController(alert2, animated: true, completion: nil)
+        
+    }
     }
