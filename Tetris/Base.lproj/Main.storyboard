@@ -1667,9 +1667,39 @@
                         <outlet property="Label59" destination="bh4-wo-xeB" id="ouu-Ds-931"/>
                         <outlet property="Label6" destination="2PP-BL-MUv" id="Xm2-iB-I7b"/>
                         <outlet property="Label60" destination="47Z-te-mlS" id="U7X-vY-V2H"/>
+                        <outlet property="Label61" destination="clR-dP-caR" id="TCT-vn-UQI"/>
+                        <outlet property="Label62" destination="pQx-PC-DPD" id="L33-En-hjD"/>
+                        <outlet property="Label63" destination="C7c-nk-xpB" id="1dJ-do-Tvz"/>
+                        <outlet property="Label64" destination="Iel-94-Gib" id="RWA-Fn-I0h"/>
+                        <outlet property="Label65" destination="n8s-sm-VXT" id="qLX-7h-nn9"/>
+                        <outlet property="Label66" destination="5QI-d6-69T" id="YP7-i2-vVI"/>
+                        <outlet property="Label67" destination="yHw-wB-h9K" id="dT6-Ye-KKP"/>
+                        <outlet property="Label68" destination="FeL-r9-JTg" id="QGj-fC-gfp"/>
+                        <outlet property="Label69" destination="Wtx-rw-CRj" id="p5C-8c-eUf"/>
                         <outlet property="Label7" destination="5d4-Wb-Xx0" id="nhb-yf-UXB"/>
+                        <outlet property="Label70" destination="w0f-af-JHe" id="LlH-ef-TVQ"/>
+                        <outlet property="Label71" destination="DJ2-Ox-iNI" id="Pkd-Nh-F9N"/>
+                        <outlet property="Label72" destination="jeK-dX-RQS" id="rmM-uP-VK6"/>
+                        <outlet property="Label73" destination="gtM-TD-4qM" id="cp9-K7-QEI"/>
+                        <outlet property="Label74" destination="c0Q-BS-LBm" id="MBG-fc-Syy"/>
+                        <outlet property="Label75" destination="4Yh-qZ-hrp" id="CPn-DK-cbN"/>
+                        <outlet property="Label76" destination="vsL-Wq-DCk" id="82o-se-AlY"/>
+                        <outlet property="Label77" destination="81r-YF-Mmw" id="Lim-am-CgV"/>
+                        <outlet property="Label78" destination="Fem-Gs-rXi" id="QWp-zC-hEN"/>
+                        <outlet property="Label79" destination="RmI-z0-l7q" id="zjJ-AC-qvD"/>
                         <outlet property="Label8" destination="4Mw-7a-eqR" id="G9k-qq-cWT"/>
+                        <outlet property="Label80" destination="MIU-Mf-b1b" id="KfA-Zy-xtq"/>
+                        <outlet property="Label81" destination="NjI-5B-LIU" id="okj-Qa-uEV"/>
+                        <outlet property="Label82" destination="0gU-JQ-6Zd" id="Xug-hY-nRe"/>
+                        <outlet property="Label83" destination="JsD-o1-OMj" id="cuZ-zd-kUZ"/>
+                        <outlet property="Label84" destination="krH-7S-wH3" id="GDn-7Z-AbN"/>
+                        <outlet property="Label85" destination="Gyg-45-xsK" id="N9L-6R-GaB"/>
+                        <outlet property="Label86" destination="1rk-FA-8Vc" id="HG8-bd-tOB"/>
+                        <outlet property="Label87" destination="hOH-IO-Ha3" id="7Yx-Ma-nEC"/>
+                        <outlet property="Label88" destination="3aY-YV-qp5" id="RcT-nU-pNn"/>
+                        <outlet property="Label89" destination="Xam-1K-Xpn" id="vh1-KZ-c6K"/>
                         <outlet property="Label9" destination="G55-6F-Xfq" id="7M0-h0-mXG"/>
+                        <outlet property="Label90" destination="ajs-ZE-u3s" id="8Vb-dd-n28"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P9b-bs-rwe" userLabel="First Responder" sceneMemberID="firstResponder"/>

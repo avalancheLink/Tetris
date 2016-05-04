@@ -69,7 +69,36 @@ class GameViewController: UIViewController {
     @IBOutlet weak var Label58: UILabel!
     @IBOutlet weak var Label59: UILabel!
     @IBOutlet weak var Label60: UILabel!
-    
+    @IBOutlet weak var Label61: UILabel!
+    @IBOutlet weak var Label62: UILabel!
+    @IBOutlet weak var Label63: UILabel!
+    @IBOutlet weak var Label64: UILabel!
+    @IBOutlet weak var Label65: UILabel!
+    @IBOutlet weak var Label66: UILabel!
+    @IBOutlet weak var Label67: UILabel!
+    @IBOutlet weak var Label68: UILabel!
+    @IBOutlet weak var Label69: UILabel!
+    @IBOutlet weak var Label70: UILabel!
+    @IBOutlet weak var Label71: UILabel!
+    @IBOutlet weak var Label72: UILabel!
+    @IBOutlet weak var Label73: UILabel!
+    @IBOutlet weak var Label74: UILabel!
+    @IBOutlet weak var Label75: UILabel!
+    @IBOutlet weak var Label76: UILabel!
+    @IBOutlet weak var Label77: UILabel!
+    @IBOutlet weak var Label78: UILabel!
+    @IBOutlet weak var Label79: UILabel!
+    @IBOutlet weak var Label80: UILabel!
+    @IBOutlet weak var Label81: UILabel!
+    @IBOutlet weak var Label82: UILabel!
+    @IBOutlet weak var Label83: UILabel!
+    @IBOutlet weak var Label84: UILabel!
+    @IBOutlet weak var Label85: UILabel!
+    @IBOutlet weak var Label86: UILabel!
+    @IBOutlet weak var Label87: UILabel!
+    @IBOutlet weak var Label88: UILabel!
+    @IBOutlet weak var Label89: UILabel!
+    @IBOutlet weak var Label90: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -79,6 +108,9 @@ class GameViewController: UIViewController {
     
         }
     }
+
+
+}
     func lose()
     {
         let alert2 = UIAlertController(title: "You Lose", message: "Press OK to continue", preferredStyle: UIAlertControllerStyle.ActionSheet)
