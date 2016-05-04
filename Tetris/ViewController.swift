@@ -1,4 +1,4 @@
-//
+//lol2 braum is best
 //  ViewController.swift
 //  Tetris
 //
@@ -11,7 +11,8 @@ import AVFoundation
 
 class ViewController: UIViewController {
   
-    
+    @IBAction func playButton(sender: AnyObject) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         

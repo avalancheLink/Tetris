@@ -21,6 +21,7 @@
                                 <rect key="frame" x="282" y="147" width="36" height="30"/>
                                 <state key="normal" title="PLAY"/>
                                 <connections>
+                                    <action selector="playButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A2A-BK-jIO"/>
                                     <segue destination="jFm-dB-Lgc" kind="presentation" id="vHY-8B-rAP"/>
                                 </connections>
                             </button>
@@ -1622,10 +1623,50 @@
                         <outlet property="Label19" destination="nBf-H6-3Dk" id="4Bt-UR-pcD"/>
                         <outlet property="Label2" destination="Yz3-fx-0hU" id="jzS-ap-dqj"/>
                         <outlet property="Label20" destination="rdi-X9-qIY" id="ioH-bC-0Uh"/>
+                        <outlet property="Label21" destination="cr8-OR-ntm" id="vfL-oE-nG8"/>
+                        <outlet property="Label22" destination="vfw-EN-3J6" id="izv-ii-s9h"/>
+                        <outlet property="Label23" destination="IPV-nQ-Ley" id="NuB-r1-zq9"/>
+                        <outlet property="Label24" destination="pwF-Vx-LCt" id="Iyr-p1-sbL"/>
+                        <outlet property="Label25" destination="AMw-hb-3XT" id="7vv-iX-xCY"/>
+                        <outlet property="Label26" destination="ZRt-BM-cbt" id="Ivy-F7-Wvm"/>
+                        <outlet property="Label27" destination="xEb-98-cI3" id="ZKs-rM-Qqu"/>
+                        <outlet property="Label28" destination="QIM-fU-4Wj" id="wel-GN-i1W"/>
+                        <outlet property="Label29" destination="aMY-7p-Pyr" id="6Bm-2A-suM"/>
                         <outlet property="Label3" destination="ZOT-FN-uBz" id="kVa-ca-Mmc"/>
+                        <outlet property="Label30" destination="TFR-wi-9CP" id="QS4-pS-86D"/>
+                        <outlet property="Label31" destination="ORo-JL-L3i" id="WYj-iD-3gH"/>
+                        <outlet property="Label32" destination="lTk-0g-wGU" id="Zau-sP-Opr"/>
+                        <outlet property="Label33" destination="m4M-Cy-zoF" id="IFq-Eq-eMo"/>
+                        <outlet property="Label34" destination="71h-CM-XIg" id="k7Y-j2-EId"/>
+                        <outlet property="Label35" destination="qZX-16-9tk" id="hys-dC-cTb"/>
+                        <outlet property="Label36" destination="Em5-6p-bqN" id="6Xo-2t-eai"/>
+                        <outlet property="Label37" destination="SI7-Gc-kKk" id="2rq-iW-BjF"/>
+                        <outlet property="Label38" destination="rfD-KL-G9o" id="Nwm-Gq-aaK"/>
+                        <outlet property="Label39" destination="tzt-G9-buT" id="drG-ac-EAz"/>
                         <outlet property="Label4" destination="KZC-Ep-OdS" id="M7f-BZ-ejq"/>
+                        <outlet property="Label40" destination="eOn-mF-r91" id="uRw-Ea-Eqg"/>
+                        <outlet property="Label41" destination="R0N-sS-U9W" id="X6D-A9-0oI"/>
+                        <outlet property="Label42" destination="mZf-Bk-cnQ" id="Zm7-EP-AB9"/>
+                        <outlet property="Label43" destination="2zF-wy-gOX" id="spS-Zf-ZZ1"/>
+                        <outlet property="Label44" destination="saI-UY-NCx" id="gI9-5b-zIh"/>
+                        <outlet property="Label45" destination="mJ9-mN-Oee" id="Ejj-0R-gV6"/>
+                        <outlet property="Label46" destination="h0y-xS-qYC" id="QlF-d7-SrQ"/>
+                        <outlet property="Label47" destination="vYH-a3-F9e" id="rhK-B1-R32"/>
+                        <outlet property="Label48" destination="0h8-Uf-znB" id="TzY-8d-Y5D"/>
+                        <outlet property="Label49" destination="onD-ss-8gC" id="0jn-r3-uNu"/>
                         <outlet property="Label5" destination="sQb-co-0jG" id="c5t-pG-WbM"/>
+                        <outlet property="Label50" destination="Zrs-VP-SzM" id="GnG-Ok-zLG"/>
+                        <outlet property="Label51" destination="GTX-a5-oYt" id="dY6-zx-iob"/>
+                        <outlet property="Label52" destination="Ztt-im-BsE" id="sGr-zW-orz"/>
+                        <outlet property="Label53" destination="l9u-bK-xhT" id="CsP-Gt-Jae"/>
+                        <outlet property="Label54" destination="3c2-zu-X7v" id="jvQ-fD-MPQ"/>
+                        <outlet property="Label55" destination="6ST-bM-8o1" id="CSJ-wH-ekA"/>
+                        <outlet property="Label56" destination="NY0-2P-CN2" id="FA3-Y9-wqM"/>
+                        <outlet property="Label57" destination="R4t-48-Dnf" id="dfd-0U-HRz"/>
+                        <outlet property="Label58" destination="OXt-tB-OmK" id="oyT-xv-noS"/>
+                        <outlet property="Label59" destination="bh4-wo-xeB" id="ouu-Ds-931"/>
                         <outlet property="Label6" destination="2PP-BL-MUv" id="Xm2-iB-I7b"/>
+                        <outlet property="Label60" destination="47Z-te-mlS" id="U7X-vY-V2H"/>
                         <outlet property="Label7" destination="5d4-Wb-Xx0" id="nhb-yf-UXB"/>
                         <outlet property="Label8" destination="4Mw-7a-eqR" id="G9k-qq-cWT"/>
                         <outlet property="Label9" destination="G55-6F-Xfq" id="7M0-h0-mXG"/>
