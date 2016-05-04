@@ -16,12 +16,12 @@ class ViewController: UIViewController {
         
         var timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "countUp", userInfo: nil, repeats: true)
         
-        
+        print(timer)
     }
 
     func countUp()
     {
-       
+        
     }
 
 }
