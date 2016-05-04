@@ -10,9 +10,15 @@ import UIKit
 import AVFoundation
 
 class ViewController: UIViewController {
+    
+    var backgroundMusicPlayer = AVAudioPlayer()
+    
+       }
   
     @IBAction func playButton(sender: AnyObject) {
+        
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -20,10 +26,11 @@ class ViewController: UIViewController {
         
     }
 
+
     func countUp()
     {
        
     }
 
-}
+
 
