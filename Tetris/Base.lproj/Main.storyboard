@@ -21,15 +21,13 @@
                                 <rect key="frame" x="282" y="147" width="36" height="30"/>
                                 <state key="normal" title="PLAY"/>
                                 <connections>
+                                    <action selector="playButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A2A-BK-jIO"/>
                                     <segue destination="jFm-dB-Lgc" kind="presentation" id="vHY-8B-rAP"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <connections>
-                        <outlet property="playButton" destination="GAQ-gW-3Xe" id="Tef-J7-kpN"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

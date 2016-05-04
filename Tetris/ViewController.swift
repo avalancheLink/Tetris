@@ -10,8 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
   
-    @IBOutlet weak var playButton: UIButton!
-    
+    @IBAction func playButton(sender: AnyObject) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
