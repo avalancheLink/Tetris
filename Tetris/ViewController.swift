@@ -10,21 +10,34 @@ import UIKit
 import AVFoundation
 
 class ViewController: UIViewController {
+    
+    
   
     @IBAction func playButton(sender: AnyObject) {
+        ButtonAudioPlayer.play()
     }
+    
+    var ButtonAudioPlayer = AVAudioPlayer()
+    var ButtonAudioURL = NSURL(fileURLWithPath: "wav")
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         
         var timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "countUp", userInfo: nil, repeats: true)
         
         print(timer)
-    }
+    
+
 
     func countUp()
     {
         
     }
 
-}
 
+
+}
+}

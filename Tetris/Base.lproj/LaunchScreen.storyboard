@@ -21,24 +21,37 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Back" translatesAutoresizingMaskIntoConstraints="NO" id="Vbc-SA-Uul">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TETRIS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RRb-tg-3cQ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="TETRIS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RRb-tg-3cQ">
                                 <rect key="frame" x="312" y="59" width="145" height="64"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="44"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="By: Patrick Dempsey, Tyler Lapinski, Patrick Asztabski, Kevin Callahan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XIn-YQ-47Q">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="By: Patrick Dempsey, Tyler Lapinski, Patrick Asztabski, Kevin Callahan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XIn-YQ-47Q">
                                 <rect key="frame" x="108" y="963" width="532" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="^patrick #2^" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBG-Zw-CVy">
+                                <rect key="frame" x="404" y="992" width="93" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="RRb-tg-3cQ" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="39" id="05U-p3-fGm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XIn-YQ-47Q" secondAttribute="trailing" constant="108" id="6l9-IG-UhB"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Vbc-SA-Uul" secondAttribute="bottom" id="8ef-N6-GpP"/>
+                            <constraint firstItem="XIn-YQ-47Q" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="88" id="BKL-0B-n6h"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RRb-tg-3cQ" secondAttribute="trailing" constant="291" id="EUK-z3-m8n"/>
                             <constraint firstItem="Vbc-SA-Uul" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="Kxj-xz-Yh5"/>
+                            <constraint firstItem="tBG-Zw-CVy" firstAttribute="top" secondItem="XIn-YQ-47Q" secondAttribute="bottom" constant="8" id="Op7-Oz-pVo"/>
                             <constraint firstItem="Vbc-SA-Uul" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="PCk-Cb-6Ou"/>
+                            <constraint firstItem="RRb-tg-3cQ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="292" id="esm-qw-D3L"/>
+                            <constraint firstItem="XIn-YQ-47Q" firstAttribute="top" secondItem="RRb-tg-3cQ" secondAttribute="bottom" constant="840" id="rP2-rd-hoQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Vbc-SA-Uul" secondAttribute="trailing" constant="-20" id="wcq-qT-GcU"/>
                         </constraints>
                     </view>

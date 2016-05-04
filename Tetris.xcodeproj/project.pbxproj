@@ -14,6 +14,7 @@
 		D791ECD11CD7E06E00C9F4A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D791ECCF1CD7E06E00C9F4A3 /* LaunchScreen.storyboard */; };
 		D791ECDC1CD7E06E00C9F4A3 /* TetrisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D791ECDB1CD7E06E00C9F4A3 /* TetrisTests.swift */; };
 		D791ECE71CD7E06E00C9F4A3 /* TetrisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D791ECE61CD7E06E00C9F4A3 /* TetrisUITests.swift */; };
+		D7A5F84B1CDA866800687F39 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7A5F84A1CDA866800687F39 /* AVFoundation.framework */; };
 		D7CD72DC1CD9333E003A2BB2 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CD72DB1CD9333E003A2BB2 /* GameViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		D791ECE21CD7E06E00C9F4A3 /* TetrisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TetrisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D791ECE61CD7E06E00C9F4A3 /* TetrisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TetrisUITests.swift; sourceTree = "<group>"; };
 		D791ECE81CD7E06E00C9F4A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7A5F84A1CDA866800687F39 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D7CD72DB1CD9333E003A2BB2 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7A5F84B1CDA866800687F39 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +82,7 @@
 		D791ECBA1CD7E06E00C9F4A3 = {
 			isa = PBXGroup;
 			children = (
+				D7A5F84A1CDA866800687F39 /* AVFoundation.framework */,
 				D791ECC51CD7E06E00C9F4A3 /* Tetris */,
 				D791ECDA1CD7E06E00C9F4A3 /* TetrisTests */,
 				D791ECE51CD7E06E00C9F4A3 /* TetrisUITests */,
