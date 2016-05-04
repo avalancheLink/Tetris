@@ -69,6 +69,76 @@ class GameViewController: UIViewController {
     @IBOutlet weak var Label58: UILabel!
     @IBOutlet weak var Label59: UILabel!
     @IBOutlet weak var Label60: UILabel!
+    @IBOutlet weak var Label61: UILabel!
+    @IBOutlet weak var Label62: UILabel!
+    @IBOutlet weak var Label63: UILabel!
+    @IBOutlet weak var Label64: UILabel!
+    @IBOutlet weak var Label65: UILabel!
+    @IBOutlet weak var Label66: UILabel!
+    @IBOutlet weak var Label67: UILabel!
+    @IBOutlet weak var Label68: UILabel!
+    @IBOutlet weak var Label69: UILabel!
+    @IBOutlet weak var Label70: UILabel!
+    @IBOutlet weak var Label71: UILabel!
+    @IBOutlet weak var Label72: UILabel!
+    @IBOutlet weak var Label73: UILabel!
+    @IBOutlet weak var Label74: UILabel!
+    @IBOutlet weak var Label75: UILabel!
+    @IBOutlet weak var Label76: UILabel!
+    @IBOutlet weak var Label77: UILabel!
+    @IBOutlet weak var Label78: UILabel!
+    @IBOutlet weak var Label79: UILabel!
+    @IBOutlet weak var Label80: UILabel!
+    @IBOutlet weak var Label81: UILabel!
+    @IBOutlet weak var Label82: UILabel!
+    @IBOutlet weak var Label83: UILabel!
+    @IBOutlet weak var Label84: UILabel!
+    @IBOutlet weak var Label85: UILabel!
+    @IBOutlet weak var Label86: UILabel!
+    @IBOutlet weak var Label87: UILabel!
+    @IBOutlet weak var Label88: UILabel!
+    @IBOutlet weak var Label89: UILabel!
+    @IBOutlet weak var Label90: UILabel!
+    @IBOutlet weak var Label91: UILabel!
+    @IBOutlet weak var Label92: UILabel!
+    @IBOutlet weak var Label93: UILabel!
+    @IBOutlet weak var Label94: UILabel!
+    @IBOutlet weak var Label95: UILabel!
+    @IBOutlet weak var Label96: UILabel!
+    @IBOutlet weak var Label97: UILabel!
+    @IBOutlet weak var Label98: UILabel!
+    @IBOutlet weak var Label99: UILabel!
+    @IBOutlet weak var Label100: UILabel!
+    @IBOutlet weak var Label101: UILabel!
+    @IBOutlet weak var Label102: UILabel!
+    @IBOutlet weak var Label103: UILabel!
+    @IBOutlet weak var Label104: UILabel!
+    @IBOutlet weak var Label105: UILabel!
+    @IBOutlet weak var Label106: UILabel!
+    @IBOutlet weak var Label107: UILabel!
+    @IBOutlet weak var Label108: UILabel!
+    @IBOutlet weak var Label109: UILabel!
+    @IBOutlet weak var Label110: UILabel!
+    @IBOutlet weak var Label111: UILabel!
+    @IBOutlet weak var Label112: UILabel!
+    @IBOutlet weak var Label113: UILabel!
+    @IBOutlet weak var Label114: UILabel!
+    @IBOutlet weak var Label115: UILabel!
+    @IBOutlet weak var Label116: UILabel!
+    @IBOutlet weak var Label117: UILabel!
+    @IBOutlet weak var Label118: UILabel!
+    @IBOutlet weak var Label119: UILabel!
+    @IBOutlet weak var Label120: UILabel!
+    @IBOutlet weak var Label121: UILabel!
+    @IBOutlet weak var Label122: UILabel!
+    @IBOutlet weak var Label123: UILabel!
+    @IBOutlet weak var Label124: UILabel!
+    @IBOutlet weak var Label125: UILabel!
+    @IBOutlet weak var Label126: UILabel!
+    @IBOutlet weak var Label127: UILabel!
+    @IBOutlet weak var Label128: UILabel!
+    @IBOutlet weak var Label129: UILabel!
+    @IBOutlet weak var Label130: UILabel!
     
     
     override func viewDidLoad() {
@@ -79,6 +149,7 @@ class GameViewController: UIViewController {
     
         }
     }
+
     func lose()
     {
         let alert2 = UIAlertController(title: "You Lose", message: "Press OK to continue", preferredStyle: UIAlertControllerStyle.ActionSheet)
