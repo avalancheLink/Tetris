@@ -21,6 +21,7 @@
                                 <rect key="frame" x="282" y="147" width="36" height="30"/>
                                 <state key="normal" title="PLAY"/>
                                 <connections>
+                                    <action selector="playButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A2A-BK-jIO"/>
                                     <segue destination="jFm-dB-Lgc" kind="presentation" id="vHY-8B-rAP"/>
                                 </connections>
                             </button>
@@ -1655,7 +1656,17 @@
                         <outlet property="Label49" destination="onD-ss-8gC" id="0jn-r3-uNu"/>
                         <outlet property="Label5" destination="sQb-co-0jG" id="c5t-pG-WbM"/>
                         <outlet property="Label50" destination="Zrs-VP-SzM" id="GnG-Ok-zLG"/>
+                        <outlet property="Label51" destination="GTX-a5-oYt" id="dY6-zx-iob"/>
+                        <outlet property="Label52" destination="Ztt-im-BsE" id="sGr-zW-orz"/>
+                        <outlet property="Label53" destination="l9u-bK-xhT" id="CsP-Gt-Jae"/>
+                        <outlet property="Label54" destination="3c2-zu-X7v" id="jvQ-fD-MPQ"/>
+                        <outlet property="Label55" destination="6ST-bM-8o1" id="CSJ-wH-ekA"/>
+                        <outlet property="Label56" destination="NY0-2P-CN2" id="FA3-Y9-wqM"/>
+                        <outlet property="Label57" destination="R4t-48-Dnf" id="dfd-0U-HRz"/>
+                        <outlet property="Label58" destination="OXt-tB-OmK" id="oyT-xv-noS"/>
+                        <outlet property="Label59" destination="bh4-wo-xeB" id="ouu-Ds-931"/>
                         <outlet property="Label6" destination="2PP-BL-MUv" id="Xm2-iB-I7b"/>
+                        <outlet property="Label60" destination="47Z-te-mlS" id="U7X-vY-V2H"/>
                         <outlet property="Label7" destination="5d4-Wb-Xx0" id="nhb-yf-UXB"/>
                         <outlet property="Label8" destination="4Mw-7a-eqR" id="G9k-qq-cWT"/>
                         <outlet property="Label9" destination="G55-6F-Xfq" id="7M0-h0-mXG"/>
