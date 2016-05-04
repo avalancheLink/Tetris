@@ -149,6 +149,7 @@ class GameViewController: UIViewController {
             lose()
         }
     }
+
     
     func lose()
     {
