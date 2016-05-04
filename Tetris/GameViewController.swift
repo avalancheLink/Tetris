@@ -59,6 +59,16 @@ class GameViewController: UIViewController {
     @IBOutlet weak var Label48: UILabel!
     @IBOutlet weak var Label49: UILabel!
     @IBOutlet weak var Label50: UILabel!
+    @IBOutlet weak var Label51: UILabel!
+    @IBOutlet weak var Label52: UILabel!
+    @IBOutlet weak var Label53: UILabel!
+    @IBOutlet weak var Label54: UILabel!
+    @IBOutlet weak var Label55: UILabel!
+    @IBOutlet weak var Label56: UILabel!
+    @IBOutlet weak var Label57: UILabel!
+    @IBOutlet weak var Label58: UILabel!
+    @IBOutlet weak var Label59: UILabel!
+    @IBOutlet weak var Label60: UILabel!
     
     
     override func viewDidLoad() {
