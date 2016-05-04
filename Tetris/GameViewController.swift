@@ -110,7 +110,7 @@ class GameViewController: UIViewController {
     }
 
 
-}
+
     func lose()
     {
         let alert2 = UIAlertController(title: "You Lose", message: "Press OK to continue", preferredStyle: UIAlertControllerStyle.ActionSheet)
