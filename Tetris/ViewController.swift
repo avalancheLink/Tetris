@@ -20,7 +20,6 @@ class ViewController: UIViewController {
     var ButtonAudioPlayer = AVAudioPlayer()
     var ButtonAudioURL = NSURL(fileURLWithPath: "wav")
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
