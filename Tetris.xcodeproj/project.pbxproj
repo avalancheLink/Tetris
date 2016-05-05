@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D77E623C1CDBD4BC0013AEE4 /* Tetris.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D77E623B1CDBD4BC0013AEE4 /* Tetris.mp3 */; };
 		D791ECC71CD7E06E00C9F4A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D791ECC61CD7E06E00C9F4A3 /* AppDelegate.swift */; };
 		D791ECC91CD7E06E00C9F4A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D791ECC81CD7E06E00C9F4A3 /* ViewController.swift */; };
 		D791ECCC1CD7E06E00C9F4A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D791ECCA1CD7E06E00C9F4A3 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D77E623B1CDBD4BC0013AEE4 /* Tetris.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Tetris.mp3; path = ../../../Downloads/Tetris.mp3; sourceTree = "<group>"; };
 		D791ECC31CD7E06E00C9F4A3 /* Tetris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tetris.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D791ECC61CD7E06E00C9F4A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D791ECC81CD7E06E00C9F4A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +81,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D77E623A1CDBD4350013AEE4 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				D77E623B1CDBD4BC0013AEE4 /* Tetris.mp3 */,
+			);
+			name = Music;
+			path = TetrisTests;
+			sourceTree = SOURCE_ROOT;
+		};
 		D791ECBA1CD7E06E00C9F4A3 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +121,7 @@
 				D791ECCD1CD7E06E00C9F4A3 /* Assets.xcassets */,
 				D791ECCF1CD7E06E00C9F4A3 /* LaunchScreen.storyboard */,
 				D791ECD21CD7E06E00C9F4A3 /* Info.plist */,
+				D77E623A1CDBD4350013AEE4 /* Music */,
 			);
 			path = Tetris;
 			sourceTree = "<group>";
@@ -246,6 +258,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D77E623C1CDBD4BC0013AEE4 /* Tetris.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

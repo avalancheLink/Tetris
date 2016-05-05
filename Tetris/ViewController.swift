@@ -10,15 +10,15 @@ import UIKit
 import AVFoundation
 
 class ViewController: UIViewController {
+    var playBackgroundMusic = AVAudioPlayer()
     
     
   
     @IBAction func playButton(sender: AnyObject) {
-        ButtonAudioPlayer.play()
+        
     }
     
-    var ButtonAudioPlayer = AVAudioPlayer()
-    var ButtonAudioURL = NSURL(fileURLWithPath: "wav")
+    
 
     
     override func viewDidLoad() {
@@ -26,16 +26,33 @@ class ViewController: UIViewController {
         
         
         
-        var timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "countUp", userInfo: nil, repeats: true)
         
-        print(timer)
+        
+        
     
 
 
     func countUp()
     {
-        
+       
     }
+        
+        func playBackgroundMusic(filename: String) {
+            let url = NSBundle.mainBundle().URLForResource(filename, withExtension: nil)
+            guard let newURL = url else {
+                print("Could not find file: \(filename)")
+                return
+            }
+            do {
+                
+            } catch let error as NSError {
+                print(error.description)
+            }
+        }
+        
+        playBackgroundMusic("Tetris.mp3")
+        
+        
 
 
 
