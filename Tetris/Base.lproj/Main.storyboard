@@ -3,8 +3,49 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="TQF-gv-rr1">
+            <objects>
+                <viewController id="sOe-dd-k5j" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1BB-f5-ZvF"/>
+                        <viewControllerLayoutGuide type="bottom" id="vPf-8h-Ycy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fWd-B9-zwt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LMn-nJ-7Q5">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="About the radical Devs" id="5s3-wQ-P9V">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" systemItem="trash" id="wJf-dN-SJM"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text=" We are Team Take-Out " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Cvr-Fr-S12">
+                                <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" spellCheckingType="yes"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Cvr-Fr-S12" firstAttribute="leading" secondItem="fWd-B9-zwt" secondAttribute="leadingMargin" constant="-20" id="NsQ-zf-Aps"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Cvr-Fr-S12" secondAttribute="trailing" constant="-20" id="OzV-b5-beK"/>
+                            <constraint firstItem="vPf-8h-Ycy" firstAttribute="top" secondItem="Cvr-Fr-S12" secondAttribute="bottom" id="Vqu-h7-vy7"/>
+                            <constraint firstItem="Cvr-Fr-S12" firstAttribute="top" secondItem="LMn-nJ-7Q5" secondAttribute="bottom" id="wk0-Kr-xDY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fW5-24-sRr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="324" y="-320"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -17,19 +58,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Back" translatesAutoresizingMaskIntoConstraints="NO" id="poU-8f-IUc">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Back" translatesAutoresizingMaskIntoConstraints="NO" id="poU-8f-IUc">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Wp-ip-0kz">
-                                <rect key="frame" x="20" y="77" width="143" height="81"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAQ-gW-3Xe">
-                                <rect key="frame" x="20" y="166" width="170" height="106"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <rect key="frame" x="29" y="66" width="170" height="106"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="PLAY">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -38,13 +72,77 @@
                                     <segue destination="jFm-dB-Lgc" kind="presentation" id="vHY-8B-rAP"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYM-1M-8Tt">
+                                <rect key="frame" x="466" y="113" width="110" height="30"/>
+                                <state key="normal" title="About The Devs"/>
+                                <connections>
+                                    <segue destination="sOe-dd-k5j" kind="presentation" id="vXm-ds-R5y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Wp-ip-0kz">
+                                <rect key="frame" x="43" y="186" width="143" height="81"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Rules">
+                                    <color key="titleColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="hEm-je-XEC" kind="presentation" id="QDn-IW-VeM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="poU-8f-IUc" secondAttribute="bottom" id="FaE-gi-nj7"/>
+                            <constraint firstItem="poU-8f-IUc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="YDa-mj-phY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="poU-8f-IUc" secondAttribute="trailing" constant="-20" id="Zhc-a4-UNn"/>
+                            <constraint firstItem="poU-8f-IUc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="fnd-0x-C04"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="305" y="349"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6uJ-fQ-3wH">
+            <objects>
+                <viewController id="hEm-je-XEC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AF9-xi-h4m"/>
+                        <viewControllerLayoutGuide type="bottom" id="edN-Hw-4iK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wfA-Ly-qcY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="84D-y9-a1J">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="RULES YOU CAN USE" id="nwh-hh-4Om">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="6Xe-9D-Wfw"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TI6-38-ACk">
+                                <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">The objective of the game is to manipulate The  shapes, by moving each one sideways (useing the Right and left arows) and rotating it by 90 degrees , with the aim of creating a horizontal line of ten units without gaps. When such a line is created, it disappears, and any block above the deleted line will fall scoring you points. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TI6-38-ACk" firstAttribute="leading" secondItem="wfA-Ly-qcY" secondAttribute="leadingMargin" constant="-20" id="Fkd-5W-XbD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TI6-38-ACk" secondAttribute="trailing" constant="-20" id="Hz5-GS-jHm"/>
+                            <constraint firstItem="edN-Hw-4iK" firstAttribute="top" secondItem="TI6-38-ACk" secondAttribute="bottom" id="kjs-2M-9jv"/>
+                            <constraint firstItem="TI6-38-ACk" firstAttribute="top" secondItem="84D-y9-a1J" secondAttribute="bottom" id="qyo-1u-xBp"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kes-ay-4eJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="167" y="1070"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="KWq-Bz-KfC">
