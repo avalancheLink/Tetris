@@ -154,13 +154,13 @@ class GameViewController: UIViewController {
     func lose()
     {
         let alert2 = UIAlertController(title: "You Lose", message: "Press OK to continue", preferredStyle: UIAlertControllerStyle.Alert)
-        let okAction4 = UIAlertAction(title: "OK", style: .Default, handler: nil)
+        let okAction4 = UIAlertAction(title: "OK", style: .Default, handler: clearBlocks)
         alert2.addAction(okAction4)
         presentViewController(alert2, animated: true, completion: nil)
         
     }
-    func clearBlocks()
+    func clearBlocks(action: UIAlertAction)
     {
-        
+        //labelArray.label.backgroundColor = UIColor.whiteColor()
     }
     }
