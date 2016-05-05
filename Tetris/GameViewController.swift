@@ -140,7 +140,7 @@ class GameViewController: UIViewController {
     @IBOutlet weak var Label129: UILabel!
     @IBOutlet weak var Label130: UILabel!
     
-    
+    var labelArray : [UILabel]!
     override func viewDidLoad() {
         super.viewDidLoad()
         
