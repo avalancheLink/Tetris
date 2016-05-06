@@ -49,7 +49,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fW5-24-sRr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="322" y="-567"/>
+            <point key="canvasLocation" x="334" y="-721"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -90,8 +90,8 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="playButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A2A-BK-jIO"/>
-                                    <segue destination="jFm-dB-Lgc" kind="presentation" id="vHY-8B-rAP"/>
+                                    <action selector="whenTappedGoToTetrisGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ejr-My-6iM"/>
+                                    <segue destination="jFm-dB-Lgc" kind="presentation" id="EoB-jx-bDw"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1867,7 +1867,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P9b-bs-rwe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1022" y="349"/>
+            <point key="canvasLocation" x="1357" y="313"/>
         </scene>
     </scenes>
     <resources>
