@@ -121,12 +121,12 @@
 				D791ECC61CD7E06E00C9F4A3 /* AppDelegate.swift */,
 				D791ECC81CD7E06E00C9F4A3 /* ViewController.swift */,
 				D7CD72DB1CD9333E003A2BB2 /* GameViewController.swift */,
+				D70A30301CDD23F900FC8DF7 /* DevsViewController.swift */,
+				D70A30321CDD241E00FC8DF7 /* RulesViewController.swift */,
 				D791ECCA1CD7E06E00C9F4A3 /* Main.storyboard */,
 				D791ECCD1CD7E06E00C9F4A3 /* Assets.xcassets */,
 				D791ECCF1CD7E06E00C9F4A3 /* LaunchScreen.storyboard */,
 				D791ECD21CD7E06E00C9F4A3 /* Info.plist */,
-				D70A30301CDD23F900FC8DF7 /* DevsViewController.swift */,
-				D70A30321CDD241E00FC8DF7 /* RulesViewController.swift */,
 				D77E623A1CDBD4350013AEE4 /* Music */,
 			);
 			path = Tetris;

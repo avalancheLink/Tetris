@@ -1,4 +1,4 @@
-//lol2 BlitzCrank Is Better!
+//
 //  ViewController.swift
 //  Tetris
 //
@@ -10,23 +10,12 @@ import UIKit
 import AVFoundation
 
 class ViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-    func countUp()
-    {
-       
-    }
         
         
         
-        
-        
-        
-        
-        
-
-
-
 }
 }
