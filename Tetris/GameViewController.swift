@@ -143,16 +143,19 @@ class GameViewController: UIViewController {
     var labelArray : [UILabel]!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         labelArray = [Label1,Label2,Label3,Label4,Label5,Label6,Label7,Label8,Label9,Label10,Label11,Label12,Label13,Label14,Label15,Label16,Label17,Label18,Label19,Label20,Label21,Label22,Label23,Label24,Label25,Label26,Label27,Label28,Label29,Label30,Label31,Label32,Label33,Label34,Label35,Label36,Label37,Label38,Label39,Label40,Label41,Label42,Label43,Label44,Label45,Label46,Label47,Label48,Label49,Label50,Label51,Label52,Label53,Label54,Label55,Label56,Label57,Label58,Label59,Label60,Label61,Label62,Label63,Label64,Label65,Label66,Label67,Label68,Label69,Label70,Label71,Label72,Label73,Label74,Label75,Label76,Label78,Label79,Label80,Label81,Label82,Label83,Label84,Label85,Label86,Label87,Label88,Label89,Label90,Label91,Label92,Label93,Label94,Label95,Label96,Label97,Label98,Label99,Label100,Label101,Label102,Label103,Label104,Label105,Label106,Label107,Label108,Label109,Label110,Label111,Label112,Label113,Label114,Label115,Label116,Label117,Label118,Label119,Label120,Label121,Label122,Label123,Label124,Label126,Label127,Label128,Label129,Label130]
       
         
-        if Label12.backgroundColor != UIColor.whiteColor()
+        
+    }
+    func ifLose()
+    {
+        if Label121 .backgroundColor != UIColor.whiteColor()
         {
-            lose()
+        lose()
         }
     }
-
-    
     func lose()
     {
         let alert1 = UIAlertController(title: "You Lose", message: "Press OK to continue", preferredStyle: UIAlertControllerStyle.Alert)
@@ -164,6 +167,9 @@ class GameViewController: UIViewController {
     }
     func clearBlocks(action: UIAlertAction)
     {
-        //labelArray.label.backgroundColor = UIColor.whiteColor()
+        for Label in labelArray
+        {
+            Label.backgroundColor = UIColor.whiteColor()
+        }
     }
     }
