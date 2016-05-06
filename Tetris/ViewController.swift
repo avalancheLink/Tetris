@@ -11,6 +11,8 @@ import AVFoundation
 
 class ViewController: UIViewController {
     
+    @IBAction func whenTappedGoToTetrisGame(sender: UIButton) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
