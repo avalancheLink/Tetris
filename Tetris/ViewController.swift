@@ -1,4 +1,4 @@
-//lol2 braum is best
+//lol2 BlitzCrank Is Better!
 //  ViewController.swift
 //  Tetris
 //
@@ -10,21 +10,21 @@ import UIKit
 import AVFoundation
 
 class ViewController: UIViewController {
-    
-    
-  
-    @IBAction func playButton(sender: AnyObject) {
-        ButtonAudioPlayer.play()
-    }
-    
-    var ButtonAudioPlayer = AVAudioPlayer()
-    var ButtonAudioURL = NSURL(fileURLWithPath: "wav")
-
     override func viewDidLoad() {
         super.viewDidLoad()
+
+    func countUp()
+    {
+       
+    }
         
         
-      
+        
+        
+        
+        
+        
+        
 
 
 
