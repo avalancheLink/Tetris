@@ -8,7 +8,7 @@
 
 import UIKit
 import AVFoundation
-
+var lol = String
 class ViewController: UIViewController {
     
     override func viewDidLoad() {
