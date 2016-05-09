@@ -9,18 +9,7 @@
 import UIKit
 
 class GameViewController: UIViewController {
-    
-    func randomStringWithLength (len : Int) -> NSString {
-        let letters : NSString = "1234567"
-        let randomString : NSMutableString = NSMutableString(capacity: len)
-        for (var i=0; i < len; i++){
-            let length = UInt32 (letters.length)
-            let rand = arc4random_uniform(length)
-            randomString.appendFormat("%C", letters.characterAtIndex(Int(rand)))
-        }
-        return randomString
-    }
-    
+    var randomBlockGen : NSMutableString = ""
     
     @IBOutlet weak var Label1: UILabel!
     @IBOutlet weak var Label2: UILabel!
@@ -159,28 +148,43 @@ class GameViewController: UIViewController {
         
         labelArray = [Label1,Label2,Label3,Label4,Label5,Label6,Label7,Label8,Label9,Label10,Label11,Label12,Label13,Label14,Label15,Label16,Label17,Label18,Label19,Label20,Label21,Label22,Label23,Label24,Label25,Label26,Label27,Label28,Label29,Label30,Label31,Label32,Label33,Label34,Label35,Label36,Label37,Label38,Label39,Label40,Label41,Label42,Label43,Label44,Label45,Label46,Label47,Label48,Label49,Label50,Label51,Label52,Label53,Label54,Label55,Label56,Label57,Label58,Label59,Label60,Label61,Label62,Label63,Label64,Label65,Label66,Label67,Label68,Label69,Label70,Label71,Label72,Label73,Label74,Label75,Label76,Label78,Label79,Label80,Label81,Label82,Label83,Label84,Label85,Label86,Label87,Label88,Label89,Label90,Label91,Label92,Label93,Label94,Label95,Label96,Label97,Label98,Label99,Label100,Label101,Label102,Label103,Label104,Label105,Label106,Label107,Label108,Label109,Label110,Label111,Label112,Label113,Label114,Label115,Label116,Label117,Label118,Label119,Label120,Label121,Label122,Label123,Label124,Label126,Label127,Label128,Label129,Label130]
       
-        
-        if randomStringWithLength(1) == 1  {
-            Label30.backgroundColor = UIColor.blueColor()
-        } else if randomStringWithLength(1) == 2   {
-            Label30.text = "hi"
-        } else  if randomStringWithLength(1) == 3{
-            Label30.backgroundColor = UIColor.blackColor()
-        } else  if randomStringWithLength(1) == 4{
-            Label30.backgroundColor = UIColor.purpleColor()
-        } else  if randomStringWithLength(1) == 5{
+        randomStringWithLength(1)
+    
+
+        if randomBlockGen == "1" {
+            Label30.backgroundColor = UIColor.cyanColor()
+        } else if randomBlockGen == "2" {
             Label30.backgroundColor = UIColor.yellowColor()
-        } else  if randomStringWithLength(1) == 6{
-            Label30.backgroundColor = UIColor.greenColor()
-        } else  if randomStringWithLength(1) == 7{
+        } else if randomBlockGen == "3" {
+            Label30.backgroundColor = UIColor.blueColor()
+        } else if randomBlockGen == "4" {
             Label30.backgroundColor = UIColor.redColor()
+        } else if randomBlockGen == "5" {
+            Label30.backgroundColor = UIColor.greenColor()
+        } else if randomBlockGen == "6" {
+            Label30.backgroundColor = UIColor.purpleColor()
+        } else if randomBlockGen == "7" {
+            Label30.backgroundColor = UIColor.brownColor()
         }
 
-
-
-
+        //print(randomBlockGen)
         
     }
+    
+    func randomStringWithLength (len : Int) -> NSString {
+        let letters : NSString = "1234567"
+        let randomString : NSMutableString = NSMutableString(capacity: len)
+        for (var i=0; i < len; i++){
+            let length = UInt32 (letters.length)
+            let rand = arc4random_uniform(length)
+            randomString.appendFormat("%C", letters.characterAtIndex(Int(rand)))
+            print(randomString)
+            randomBlockGen = randomString
+        }
+        return randomString
+    }
+    
+    
     func lose()
     {
         let alert1 = UIAlertController(title: "You Lose", message: "Press OK to continue", preferredStyle: UIAlertControllerStyle.Alert)

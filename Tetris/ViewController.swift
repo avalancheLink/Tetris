@@ -11,15 +11,11 @@ import AVFoundation
 
 class ViewController: UIViewController {
     
-    
-  
-    @IBAction func playButton(sender: AnyObject) {
-        //ButtonAudioPlayer.play()
+    @IBAction func whenTappedGoToTetrisGame(sender: UIButton) {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
         
         
         
