@@ -151,9 +151,45 @@ class GameViewController: UIViewController {
     }
     func ifLose()
     {
-        if Label121 .backgroundColor != UIColor.whiteColor()
+        if Label121.backgroundColor != UIColor.whiteColor()
         {
         lose()
+        }
+        if Label122.backgroundColor != UIColor.whiteColor()
+        {
+            lose()
+        }
+        if Label123.backgroundColor != UIColor.whiteColor()
+        {
+            lose()
+        }
+        if Label124.backgroundColor != UIColor.whiteColor()
+        {
+            lose()
+        }
+        if Label125.backgroundColor != UIColor.whiteColor()
+        {
+            lose()
+        }
+        if Label126.backgroundColor != UIColor.whiteColor()
+        {
+            lose()
+        }
+        if Label127.backgroundColor != UIColor.whiteColor()
+        {
+            lose()
+        }
+        if Label128.backgroundColor != UIColor.whiteColor()
+        {
+            lose()
+        }
+        if Label129.backgroundColor != UIColor.whiteColor()
+        {
+            lose()
+        }
+        if Label130.backgroundColor != UIColor.whiteColor()
+        {
+            lose()
         }
     }
     func lose()
