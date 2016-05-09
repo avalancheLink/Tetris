@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     
   
     @IBAction func playButton(sender: AnyObject) {
-        ButtonAudioPlayer.play()
+        //ButtonAudioPlayer.play()
     }
     
     var ButtonAudioPlayer = AVAudioPlayer()
