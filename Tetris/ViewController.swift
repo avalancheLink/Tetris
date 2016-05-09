@@ -1,4 +1,4 @@
-//lol2 braum is best
+//
 //  ViewController.swift
 //  Tetris
 //
@@ -16,12 +16,10 @@ class ViewController: UIViewController {
     @IBAction func playButton(sender: AnyObject) {
         //ButtonAudioPlayer.play()
     }
-    
-    var ButtonAudioPlayer = AVAudioPlayer()
-    var ButtonAudioURL = NSURL(fileURLWithPath: "wav")
-
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        
         
         
         
