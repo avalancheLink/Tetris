@@ -184,6 +184,13 @@ class GameViewController: UIViewController {
     return randomString
     }
     
+    func ifLose()
+    {
+        if Label121.backgroundColor != UIColor.whiteColor()
+        {
+            lose()
+        }
+    }
     
     func lose()
     {
