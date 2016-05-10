@@ -152,19 +152,40 @@ class GameViewController: UIViewController {
     
 
         if randomBlockGen == "1" {
-            Label30.backgroundColor = UIColor.cyanColor()
+            Label125.backgroundColor = UIColor.cyanColor()
+            Label126.backgroundColor = UIColor.cyanColor()
+            Label115.backgroundColor = UIColor.cyanColor()
+            Label116.backgroundColor = UIColor.cyanColor()
         } else if randomBlockGen == "2" {
-            Label30.backgroundColor = UIColor.yellowColor()
+            Label125.backgroundColor = UIColor.yellowColor()
+            Label115.backgroundColor = UIColor.yellowColor()
+            Label105.backgroundColor = UIColor.yellowColor()
+            Label95.backgroundColor = UIColor.yellowColor()
         } else if randomBlockGen == "3" {
-            Label30.backgroundColor = UIColor.blueColor()
+            Label125.backgroundColor = UIColor.blueColor()
+             Label126.backgroundColor = UIColor.blueColor()
+             Label115.backgroundColor = UIColor.blueColor()
+             Label114.backgroundColor = UIColor.blueColor()
         } else if randomBlockGen == "4" {
-            Label30.backgroundColor = UIColor.redColor()
+            Label125.backgroundColor = UIColor.redColor()
+            Label126.backgroundColor = UIColor.redColor()
+            Label116.backgroundColor = UIColor.redColor()
+            Label117.backgroundColor = UIColor.redColor()
         } else if randomBlockGen == "5" {
-            Label30.backgroundColor = UIColor.greenColor()
+            Label124.backgroundColor = UIColor.greenColor()
+            Label125.backgroundColor = UIColor.greenColor()
+            Label126.backgroundColor = UIColor.greenColor()
+            Label115.backgroundColor = UIColor.greenColor()
         } else if randomBlockGen == "6" {
-            Label30.backgroundColor = UIColor.purpleColor()
+            Label124.backgroundColor = UIColor.purpleColor()
+            Label125.backgroundColor = UIColor.purpleColor()
+            Label126.backgroundColor = UIColor.purpleColor()
+            Label116.backgroundColor = UIColor.purpleColor()
         } else if randomBlockGen == "7" {
-            Label30.backgroundColor = UIColor.brownColor()
+            Label124.backgroundColor = UIColor.brownColor()
+            Label125.backgroundColor = UIColor.brownColor()
+            Label126.backgroundColor = UIColor.brownColor()
+            Label114.backgroundColor = UIColor.brownColor()
         }
 
         //print(randomBlockGen)
@@ -180,6 +201,8 @@ class GameViewController: UIViewController {
             randomString.appendFormat("%C", letters.characterAtIndex(Int(rand)))
             print(randomString)
             randomBlockGen = randomString
+        }
+    return randomString
     }
     
     func lose()
@@ -197,5 +220,5 @@ class GameViewController: UIViewController {
         {
             Label.backgroundColor = UIColor.whiteColor()
         }
-        }
+    }
 }
