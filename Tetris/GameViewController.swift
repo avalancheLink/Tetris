@@ -180,13 +180,8 @@ class GameViewController: UIViewController {
             randomString.appendFormat("%C", letters.characterAtIndex(Int(rand)))
             print(randomString)
             randomBlockGen = randomString
-    func ifLose()
-    {
-        if Label121.backgroundColor != UIColor.whiteColor()
-        {
-        lose()
         }
-        return randomString
+    return randomString
     }
     
     
@@ -206,4 +201,4 @@ class GameViewController: UIViewController {
             Label.backgroundColor = UIColor.whiteColor()
         }
     }
-    }
+}
