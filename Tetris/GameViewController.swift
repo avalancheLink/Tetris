@@ -154,10 +154,10 @@ class GameViewController: UIViewController {
     
 
         if randomBlockGen == "1" {
-            labelArray[125].backgroundColor = UIColor.cyanColor() //125
-            labelArray[126].backgroundColor  = UIColor.cyanColor() //126
+            labelArray[124].backgroundColor = UIColor.cyanColor() //124
+            labelArray[125].backgroundColor  = UIColor.cyanColor() //125
+            labelArray[114].backgroundColor  = UIColor.cyanColor() //114
             labelArray[115].backgroundColor  = UIColor.cyanColor() //115
-            labelArray[116].backgroundColor  = UIColor.cyanColor() //116
         } else if randomBlockGen == "2" {
             labelArray[125].backgroundColor  = UIColor.yellowColor() //125
             labelArray[115].backgroundColor  = UIColor.yellowColor() //115
