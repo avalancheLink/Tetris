@@ -206,7 +206,46 @@ class GameViewController: UIViewController {
     return randomString
     }
     /*
- 
+    if label.121.background != UIColor.whiteColor()
+     {
+     lose
+     }
+     if label.122.background != UIColor.whiteColor()
+     {
+     lose
+     }
+     if label.123.background != UIColor.whiteColor()
+     {
+     lose
+     }
+     if label.124.background != UIColor.whiteColor()
+     {
+     lose
+     }
+     if label.125.background != UIColor.whiteColor()
+     {
+     lose
+     }
+     if label.126.background != UIColor.whiteColor()
+     {
+     lose
+     }
+     if label.127.background != UIColor.whiteColor()
+     {
+     lose
+     }
+     if label.128.background != UIColor.whiteColor()
+     {
+     lose
+     }
+     if label.129.background != UIColor.whiteColor()
+     {
+     lose
+     }
+     if label.130.background != UIColor.whiteColor()
+     {
+     lose
+     }
     */
     func lose()
     {
