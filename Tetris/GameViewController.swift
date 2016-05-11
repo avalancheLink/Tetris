@@ -148,46 +148,46 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        labelArray = [Label1,Label2,Label3,Label4,Label5,Label6,Label7,Label8,Label9,Label10,Label11,Label12,Label13,Label14,Label15,Label16,Label17,Label18,Label19,Label20,Label21,Label22,Label23,Label24,Label25,Label26,Label27,Label28,Label29,Label30,Label31,Label32,Label33,Label34,Label35,Label36,Label37,Label38,Label39,Label40,Label41,Label42,Label43,Label44,Label45,Label46,Label47,Label48,Label49,Label50,Label51,Label52,Label53,Label54,Label55,Label56,Label57,Label58,Label59,Label60,Label61,Label62,Label63,Label64,Label65,Label66,Label67,Label68,Label69,Label70,Label71,Label72,Label73,Label74,Label75,Label76,Label78,Label79,Label80,Label81,Label82,Label83,Label84,Label85,Label86,Label87,Label88,Label89,Label90,Label91,Label92,Label93,Label94,Label95,Label96,Label97,Label98,Label99,Label100,Label101,Label102,Label103,Label104,Label105,Label106,Label107,Label108,Label109,Label110,Label111,Label112,Label113,Label114,Label115,Label116,Label117,Label118,Label119,Label120,Label121,Label122,Label123,Label124,Label126,Label127,Label128,Label129,Label130]
+        labelArray = [lol,Label1,Label2,Label3,Label4,Label5,Label6,Label7,Label8,Label9,Label10,Label11,Label12,Label13,Label14,Label15,Label16,Label17,Label18,Label19,Label20,Label21,Label22,Label23,Label24,Label25,Label26,Label27,Label28,Label29,Label30,Label31,Label32,Label33,Label34,Label35,Label36,Label37,Label38,Label39,Label40,Label41,Label42,Label43,Label44,Label45,Label46,Label47,Label48,Label49,Label50,Label51,Label52,Label53,Label54,Label55,Label56,Label57,Label58,Label59,Label60,Label61,Label62,Label63,Label64,Label65,Label66,Label67,Label68,Label69,Label70,Label71,Label72,Label73,Label74,Label75,Label76,Label78,Label79,Label80,Label81,Label82,Label83,Label84,Label85,Label86,Label87,Label88,Label89,Label90,Label91,Label92,Label93,Label94,Label95,Label96,Label97,Label98,Label99,Label100,Label101,Label102,Label103,Label104,Label105,Label106,Label107,Label108,Label109,Label110,Label111,Label112,Label113,Label114,Label115,Label116,Label117,Label118,Label119,Label120,Label121,Label122,Label123,Label124,Label125,Label126,Label127,Label128,Label129,Label130]
       
         randomStringWithLength(1)
     
 
         if randomBlockGen == "1" {
-            Label125.backgroundColor = UIColor.cyanColor()
-            Label126.backgroundColor = UIColor.cyanColor()
-            Label115.backgroundColor = UIColor.cyanColor()
-            Label116.backgroundColor = UIColor.cyanColor()
+            labelArray[125].backgroundColor = UIColor.cyanColor() //125
+            labelArray[126].backgroundColor  = UIColor.cyanColor() //126
+            labelArray[115].backgroundColor  = UIColor.cyanColor() //115
+            labelArray[116].backgroundColor  = UIColor.cyanColor() //116
         } else if randomBlockGen == "2" {
-            Label125.backgroundColor = UIColor.yellowColor()
-            Label115.backgroundColor = UIColor.yellowColor()
-            Label105.backgroundColor = UIColor.yellowColor()
-            Label95.backgroundColor = UIColor.yellowColor()
+            labelArray[125].backgroundColor  = UIColor.yellowColor() //125
+            labelArray[115].backgroundColor  = UIColor.yellowColor() //115
+            labelArray[105].backgroundColor  = UIColor.yellowColor() //105
+            labelArray[95].backgroundColor  = UIColor.yellowColor() //95
         } else if randomBlockGen == "3" {
-            Label125.backgroundColor = UIColor.blueColor()
-             Label126.backgroundColor = UIColor.blueColor()
-             Label115.backgroundColor = UIColor.blueColor()
-             Label114.backgroundColor = UIColor.blueColor()
+            labelArray[125].backgroundColor  = UIColor.blueColor() //125
+            labelArray[126].backgroundColor  = UIColor.blueColor() //126
+            labelArray[115].backgroundColor  = UIColor.blueColor() //115
+            labelArray[114].backgroundColor  = UIColor.blueColor() //114
         } else if randomBlockGen == "4" {
-            Label125.backgroundColor = UIColor.redColor()
-            Label126.backgroundColor = UIColor.redColor()
-            Label116.backgroundColor = UIColor.redColor()
-            Label117.backgroundColor = UIColor.redColor()
+            labelArray[125].backgroundColor  = UIColor.redColor() //125
+            labelArray[126].backgroundColor  = UIColor.redColor() //126
+            labelArray[116].backgroundColor  = UIColor.redColor() //116
+            labelArray[117].backgroundColor  = UIColor.redColor() //117
         } else if randomBlockGen == "5" {
-            Label124.backgroundColor = UIColor.greenColor()
-            Label125.backgroundColor = UIColor.greenColor()
-            Label126.backgroundColor = UIColor.greenColor()
-            Label115.backgroundColor = UIColor.greenColor()
+            labelArray[124].backgroundColor  = UIColor.greenColor() //124
+            labelArray[125].backgroundColor  = UIColor.greenColor() //125
+            labelArray[126].backgroundColor  = UIColor.greenColor() //126
+            labelArray[115].backgroundColor  = UIColor.greenColor() //115
         } else if randomBlockGen == "6" {
-            Label124.backgroundColor = UIColor.purpleColor()
-            Label125.backgroundColor = UIColor.purpleColor()
-            Label126.backgroundColor = UIColor.purpleColor()
-            Label116.backgroundColor = UIColor.purpleColor()
+            labelArray[124].backgroundColor  = UIColor.purpleColor() //124
+            labelArray[125].backgroundColor  = UIColor.purpleColor() //125
+            labelArray[126].backgroundColor  = UIColor.purpleColor() //126
+            labelArray[116].backgroundColor  = UIColor.purpleColor() //116
         } else if randomBlockGen == "7" {
-            Label124.backgroundColor = UIColor.brownColor()
-            Label125.backgroundColor = UIColor.brownColor()
-            Label126.backgroundColor = UIColor.brownColor()
-            Label114.backgroundColor = UIColor.brownColor()
+            labelArray[124].backgroundColor  = UIColor.brownColor() //124
+            labelArray[125].backgroundColor  = UIColor.brownColor() //125
+            labelArray[126].backgroundColor  = UIColor.brownColor() //126
+            labelArray[114].backgroundColor  = UIColor.brownColor() //114
         }
 
         //print(randomBlockGen)
