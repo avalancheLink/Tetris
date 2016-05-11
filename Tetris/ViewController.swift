@@ -30,10 +30,6 @@ class ViewController: UIViewController {
     func tick()
     {
         
-        
-      
-
-
 
     }
 }

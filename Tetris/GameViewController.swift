@@ -204,7 +204,9 @@ class GameViewController: UIViewController {
         }
     return randomString
     }
-    
+    /*
+ 
+    */
     func lose()
     {
         let alert1 = UIAlertController(title: "You Lose", message: "Press OK to continue", preferredStyle: UIAlertControllerStyle.Alert)
