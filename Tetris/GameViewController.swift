@@ -143,7 +143,7 @@ class GameViewController: UIViewController {
     @IBOutlet weak var Label128: UILabel!
     @IBOutlet weak var Label129: UILabel!
     @IBOutlet weak var Label130: UILabel!
-    
+    var NSTimer2 = NSTimer()
     var labelArray : [UILabel]!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -193,7 +193,16 @@ class GameViewController: UIViewController {
         //print(randomBlockGen)
         
     }
-    
+    func timer()
+    {
+        var NSTimer2 = NSTimer()
+        NSTimer(timeInterval: 1, target: self, selector: Selector("tick"), userInfo: nil, repeats: true)
+    }
+    func tick()
+    {
+        
+        
+    }
     func randomStringWithLength (len : Int) -> NSString {
         let letters : NSString = "1234567"
         let randomString : NSMutableString = NSMutableString(capacity: len)
@@ -243,7 +252,7 @@ class GameViewController: UIViewController {
      lose
      }
      if label.130.background != UIColor.whiteColor()
-     {
+     
      lose
      }
     */
