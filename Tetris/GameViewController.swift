@@ -192,7 +192,7 @@ class GameViewController: UIViewController {
 
         //print(randomBlockGen)
         
-    }
+    } //end of view did load
     func timer()
     {
         var NSTimer2 = NSTimer()
