@@ -230,8 +230,10 @@ class GameViewController: UIViewController {
             block4 = 114
             color = UIColor.brownColor()
         }
-        timer()
-    }
+
+        //print(randomBlockGen)
+        
+    } //end of view did load
     func timer()
     {
         NStimer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("tick"), userInfo: nil, repeats: true)
