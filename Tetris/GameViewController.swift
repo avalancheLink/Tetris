@@ -143,7 +143,7 @@ class GameViewController: UIViewController {
     @IBOutlet weak var Label128: UILabel!
     @IBOutlet weak var Label129: UILabel!
     @IBOutlet weak var Label130: UILabel!
-    var NSTimer2 = NSTimer()
+    var NStimer = NSTimer()
     var labelArray : [UILabel]!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -189,11 +189,11 @@ class GameViewController: UIViewController {
             labelArray[126].backgroundColor  = UIColor.brownColor() //126
             labelArray[114].backgroundColor  = UIColor.brownColor() //114
         }
+        timer()
     }
     func timer()
     {
-        var NSTimer2 = NSTimer()
-        NSTimer(timeInterval: 1, target: self, selector: Selector("tick"), userInfo: nil, repeats: true)
+        NStimer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("tick"), userInfo: nil, repeats: true)
     }
     func tick()
     {
