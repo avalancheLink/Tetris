@@ -11,7 +11,7 @@ import UIKit
 class GameViewController: UIViewController {
     var randomBlockGen : NSMutableString = ""
     
-    @IBOutlet weak var lol: UILabel!
+    @IBOutlet weak var lol: UILabel! //rando
     
     @IBOutlet weak var Label1: UILabel!
     @IBOutlet weak var Label2: UILabel!
