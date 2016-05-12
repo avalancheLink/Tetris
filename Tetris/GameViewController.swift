@@ -254,7 +254,7 @@ class GameViewController: UIViewController {
      if label.130.background != UIColor.whiteColor()
      
      lose
-     }
+     
     */
     func lose()
     {
