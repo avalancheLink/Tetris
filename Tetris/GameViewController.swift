@@ -224,6 +224,15 @@ class GameViewController: UIViewController {
             labelArray[125].backgroundColor  = UIColor.brownColor() //125
             labelArray[126].backgroundColor  = UIColor.brownColor() //126
             labelArray[114].backgroundColor  = UIColor.brownColor() //114
+            block1 = 124
+            block2 = 125
+            block3 = 126
+            block4 = 114
+            color = UIColor.brownColor()
+        }
+
+        //print(randomBlockGen)
+        
             }
         timer()
     } //end of view did load
