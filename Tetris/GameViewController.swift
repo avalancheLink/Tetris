@@ -189,9 +189,6 @@ class GameViewController: UIViewController {
             labelArray[126].backgroundColor  = UIColor.brownColor() //126
             labelArray[114].backgroundColor  = UIColor.brownColor() //114
         }
-
-        //print(randomBlockGen)
-        
     }
     
     func randomStringWithLength (len : Int) -> NSString {
@@ -219,7 +216,7 @@ class GameViewController: UIViewController {
     {
         for Label in labelArray
         {
-            Label.backgroundColor = UIColor.whiteColor()
+            Label.backgroundColor = UIColor.blackColor()
         }
     }
 }
