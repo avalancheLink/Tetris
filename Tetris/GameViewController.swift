@@ -143,7 +143,7 @@ class GameViewController: UIViewController {
     @IBOutlet weak var Label128: UILabel!
     @IBOutlet weak var Label129: UILabel!
     @IBOutlet weak var Label130: UILabel!
-    
+    var NSTimer2 = NSTimer()
     var labelArray : [UILabel]!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -190,7 +190,16 @@ class GameViewController: UIViewController {
             labelArray[114].backgroundColor  = UIColor.brownColor() //114
         }
     }
-    
+    func timer()
+    {
+        var NSTimer2 = NSTimer()
+        NSTimer(timeInterval: 1, target: self, selector: Selector("tick"), userInfo: nil, repeats: true)
+    }
+    func tick()
+    {
+        
+        
+    }
     func randomStringWithLength (len : Int) -> NSString {
         let letters : NSString = "1234567"
         let randomString : NSMutableString = NSMutableString(capacity: len)
@@ -202,7 +211,48 @@ class GameViewController: UIViewController {
         }
     return randomString
     }
-    
+    /*
+    if label.121.background != UIColor.whiteColor()
+     {
+     lose
+     }
+     if label.122.background != UIColor.whiteColor()
+     {
+     lose
+     }
+     if label.123.background != UIColor.whiteColor()
+     {
+     lose
+     }
+     if label.124.background != UIColor.whiteColor()
+     {
+     lose
+     }
+     if label.125.background != UIColor.whiteColor()
+     {
+     lose
+     }
+     if label.126.background != UIColor.whiteColor()
+     {
+     lose
+     }
+     if label.127.background != UIColor.whiteColor()
+     {
+     lose
+     }
+     if label.128.background != UIColor.whiteColor()
+     {
+     lose
+     }
+     if label.129.background != UIColor.whiteColor()
+     {
+     lose
+     }
+     if label.130.background != UIColor.whiteColor()
+     
+     lose
+     
+    */
     func lose()
     {
         let alert1 = UIAlertController(title: "You Lose", message: "Press OK to continue", preferredStyle: UIAlertControllerStyle.Alert)
