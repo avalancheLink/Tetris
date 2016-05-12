@@ -188,10 +188,8 @@ class GameViewController: UIViewController {
             labelArray[125].backgroundColor  = UIColor.brownColor() //125
             labelArray[126].backgroundColor  = UIColor.brownColor() //126
             labelArray[114].backgroundColor  = UIColor.brownColor() //114
-        }
-
-        //print(randomBlockGen)
-        
+            }
+        timer()
     } //end of view did load
     func timer()
     {
@@ -253,7 +251,7 @@ class GameViewController: UIViewController {
      if label.130.background != UIColor.whiteColor()
      
      lose
-     
+     }
     */
     func lose()
     {
