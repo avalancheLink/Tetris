@@ -338,9 +338,7 @@ class GameViewController: UIViewController {
             Label.backgroundColor = UIColor.blackColor()
         }
     }
-    /* IBAction
-    {
-    
+    @IBAction func startGame(sender: UIButton) {
+        
     }
- */
 }
