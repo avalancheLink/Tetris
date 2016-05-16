@@ -151,6 +151,11 @@ class GameViewController: UIViewController {
     @IBOutlet weak var Label130: UILabel!
     var NStimer = NSTimer()
     var labelArray : [UILabel]!
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -330,5 +335,7 @@ class GameViewController: UIViewController {
         {
             Label.backgroundColor = UIColor.blackColor()
         }
+    }
+    @IBAction func startGame(sender: UIButton) {
     }
 }
