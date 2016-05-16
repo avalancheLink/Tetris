@@ -152,6 +152,11 @@ class GameViewController: UIViewController {
     @IBOutlet weak var Label130: UILabel!
     var NStimer = NSTimer()
     var labelArray : [UILabel]!
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
