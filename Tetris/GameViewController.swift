@@ -164,7 +164,7 @@ class GameViewController: UIViewController {
       
         randomStringWithLength(1)
     
-q
+
         
     } //end of view did load
     func timer()
