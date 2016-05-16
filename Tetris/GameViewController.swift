@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class GameViewController: UIViewController {
     var randomBlockGen : NSMutableString = ""
     
@@ -230,11 +231,10 @@ class GameViewController: UIViewController {
             block4 = 114
             color = UIColor.brownColor()
         }
-timer()
+        timer()
         //print(randomBlockGen)
         
-            }
-        timer()
+        
     } //end of view did load
     func timer()
     {
@@ -333,4 +333,9 @@ timer()
             Label.backgroundColor = UIColor.blackColor()
         }
     }
+    /* IBAction
+    {
+    
+    }
+ */
 }
