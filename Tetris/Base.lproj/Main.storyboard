@@ -158,7 +158,6 @@
         <!--Game View Controller-->
         <scene sceneID="KWq-Bz-KfC">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="P9b-bs-rwe" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="jFm-dB-Lgc" customClass="GameViewController" customModule="Tetris" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WQm-dU-T7F"/>
@@ -2192,6 +2191,7 @@
                         <outlet property="lol" destination="UVt-o8-pSR" id="Xt6-hr-Y3B"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P9b-bs-rwe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1239" y="277"/>
         </scene>
