@@ -235,7 +235,7 @@ class GameViewController: UIViewController {
             block4 = 114
             color = UIColor.brownColor()
         }
-
+timer()
         //print(randomBlockGen)
         
     } //end of view did load
