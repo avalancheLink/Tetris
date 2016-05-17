@@ -205,7 +205,6 @@ class GameViewController: UIViewController {
             randomString.appendFormat("%C", letters.characterAtIndex(Int(rand)))
             randomBlockGen = randomString
         }
-        var poop = String()
     return randomString
     }
     /*
@@ -350,29 +349,7 @@ class GameViewController: UIViewController {
 
     @IBAction func goLeftWhenTapped(sender: UIButton) {
         
-        if gameRunning == true {
-            if block1 % 10 != 1 {
-                if block2 % 10 != 1 {
-                    if block3 % 10 != 1 {
-                        if block4 % 10 != 1 {
-        labelArray[block1].backgroundColor = UIColor.blackColor()
-        labelArray[block2].backgroundColor = UIColor.blackColor()
-        labelArray[block3].backgroundColor = UIColor.blackColor()
-        labelArray[block4].backgroundColor = UIColor.blackColor()
-        block1 = block1-1
-        block2 = block2-1
-        block3 = block3-1
-        block4 = block4-1
-        labelArray[block1].backgroundColor = color
-        labelArray[block2].backgroundColor = color
-        labelArray[block3].backgroundColor = color
-        labelArray[block4].backgroundColor = color
-                    }
-                }
-            }
-        }
     }
-}
     
     @IBAction func goRightWhenTapped(sender: UIButton) {
         if gameRunning == true {
@@ -397,7 +374,10 @@ class GameViewController: UIViewController {
             }
         }
     }
-}
+    
+ 
+
+    
     
 }
 
