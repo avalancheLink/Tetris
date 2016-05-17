@@ -188,12 +188,16 @@ class GameViewController: UIViewController {
         labelArray[block4].backgroundColor = color
         if block1 < 10 {
             NStimer.invalidate()
+            spawnAnotherBlock()
         } else if block2 < 10 {
             NStimer.invalidate()
+            spawnAnotherBlock()
         } else if block3 < 10 {
             NStimer.invalidate()
+            spawnAnotherBlock()
         } else if block4 < 10 {
             NStimer.invalidate()
+            spawnAnotherBlock()
         }
     }
     func randomStringWithLength (len : Int) -> NSString {
@@ -265,6 +269,82 @@ class GameViewController: UIViewController {
             Label.backgroundColor = UIColor.blackColor()
         }
     }
+    
+    func spawnAnotherBlock() {
+        randomStringWithLength(1)
+        if randomBlockGen == "1" {
+            labelArray[124].backgroundColor = UIColor.cyanColor() //124
+            labelArray[125].backgroundColor  = UIColor.cyanColor() //125
+            labelArray[114].backgroundColor  = UIColor.cyanColor() //114
+            labelArray[115].backgroundColor  = UIColor.cyanColor() //115
+            block1 = 124
+            block2 = 125
+            block3 = 114
+            block4 = 115
+            color = UIColor.cyanColor()
+        } else if randomBlockGen == "2" {
+            labelArray[125].backgroundColor  = UIColor.yellowColor() //125
+            labelArray[115].backgroundColor  = UIColor.yellowColor() //115
+            labelArray[105].backgroundColor  = UIColor.yellowColor() //105
+            labelArray[95].backgroundColor  = UIColor.yellowColor() //95
+            block1 = 125
+            block2 = 115
+            block3 = 105
+            block4 = 95
+            color = UIColor.yellowColor()
+        } else if randomBlockGen == "3" {
+            labelArray[125].backgroundColor  = UIColor.blueColor() //125
+            labelArray[126].backgroundColor  = UIColor.blueColor() //126
+            labelArray[115].backgroundColor  = UIColor.blueColor() //115
+            labelArray[114].backgroundColor  = UIColor.blueColor() //114
+            block1 = 125
+            block2 = 126
+            block3 = 115
+            block4 = 114
+            color = UIColor.blueColor()
+        } else if randomBlockGen == "4" {
+            labelArray[124].backgroundColor  = UIColor.redColor() //124
+            labelArray[125].backgroundColor  = UIColor.redColor() //125
+            labelArray[115].backgroundColor  = UIColor.redColor() //115
+            labelArray[116].backgroundColor  = UIColor.redColor() //116
+            block1 = 124
+            block2 = 125
+            block3 = 115
+            block4 = 116
+            color = UIColor.redColor()
+        } else if randomBlockGen == "5" {
+            labelArray[124].backgroundColor  = UIColor.greenColor() //124
+            labelArray[125].backgroundColor  = UIColor.greenColor() //125
+            labelArray[126].backgroundColor  = UIColor.greenColor() //126
+            labelArray[115].backgroundColor  = UIColor.greenColor() //115
+            block1 = 124
+            block2 = 125
+            block3 = 126
+            block4 = 115
+            color = UIColor.greenColor()
+        } else if randomBlockGen == "6" {
+            labelArray[124].backgroundColor  = UIColor.purpleColor() //124
+            labelArray[125].backgroundColor  = UIColor.purpleColor() //125
+            labelArray[126].backgroundColor  = UIColor.purpleColor() //126
+            labelArray[116].backgroundColor  = UIColor.purpleColor() //116
+            block1 = 124
+            block2 = 125
+            block3 = 126
+            block4 = 116
+            color = UIColor.purpleColor()
+        } else if randomBlockGen == "7" {
+            labelArray[124].backgroundColor  = UIColor.brownColor() //124
+            labelArray[125].backgroundColor  = UIColor.brownColor() //125
+            labelArray[126].backgroundColor  = UIColor.brownColor() //126
+            labelArray[114].backgroundColor  = UIColor.brownColor() //114
+            block1 = 124
+            block2 = 125
+            block3 = 126
+            block4 = 114
+            color = UIColor.brownColor()
+        }
+    }
+    
     @IBAction func startGame(sender: UIButton) {
         randomStringWithLength(1)
         if gameRunning == false {
@@ -374,10 +454,5 @@ class GameViewController: UIViewController {
             }
         }
     }
-    
- 
-
-    
-    
 }
-
+}
