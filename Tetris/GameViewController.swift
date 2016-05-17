@@ -208,43 +208,47 @@ class GameViewController: UIViewController {
     return randomString
     }
     /*
-    if label.121.background != UIColor.whiteColor()
+     if label1.background != UIColor.whiteColor() && label2.background != UIColor.whiteColor() && label3.background != UIColor.whiteColor() && label4.background != UIColor.whiteColor() && label5.background != UIColor.whiteColor() && label6.background != UIColor.whiteColor() && label7.background != UIColor.whiteColor() && label8.background != UIColor.whiteColor() && label9.background != UIColor.whiteColor() && label10.background != UIColor.whiteColor()
+     
+     
+     
+    if label121.background != UIColor.whiteColor()
      {
      lose
      }
-     if label.122.background != UIColor.whiteColor()
+     if label122.background != UIColor.whiteColor()
      {
      lose
      }
-     if label.123.background != UIColor.whiteColor()
+     if label123.background != UIColor.whiteColor()
      {
      lose
      }
-     if label.124.background != UIColor.whiteColor()
+     if label124.background != UIColor.whiteColor()
      {
      lose
      }
-     if label.125.background != UIColor.whiteColor()
+     if label125.background != UIColor.whiteColor()
      {
      lose
      }
-     if label.126.background != UIColor.whiteColor()
+     if label126.background != UIColor.whiteColor()
      {
      lose
      }
-     if label.127.background != UIColor.whiteColor()
+     if label127.background != UIColor.whiteColor()
      {
      lose
      }
-     if label.128.background != UIColor.whiteColor()
+     if label128.background != UIColor.whiteColor()
      {
      lose
      }
-     if label.129.background != UIColor.whiteColor()
+     if label129.background != UIColor.whiteColor()
      {
      lose
      }
-     if label.130.background != UIColor.whiteColor()
+     if label130.background != UIColor.whiteColor()
      
      lose
      }
