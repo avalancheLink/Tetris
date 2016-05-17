@@ -360,7 +360,7 @@ class GameViewController: UIViewController {
     @IBAction func goLeftWhenTapped(sender: UIButton) {
         
     }
-}
+    
     @IBAction func goRightWhenTapped(sender: UIButton) {
         if gameRunning == true {
             if block1 % 10 != 0 {
@@ -384,9 +384,6 @@ class GameViewController: UIViewController {
             }
         }
     }
-    
- 
+}
 
-    
-    
 }
