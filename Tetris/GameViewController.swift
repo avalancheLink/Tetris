@@ -347,7 +347,7 @@ class GameViewController: UIViewController {
         }
     
     }
-}
+
     @IBAction func goLeftWhenTapped(sender: UIButton) {
         
         if gameRunning == true {
@@ -400,3 +400,4 @@ class GameViewController: UIViewController {
 }
     
 }
+
