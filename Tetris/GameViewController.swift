@@ -16,6 +16,7 @@ class GameViewController: UIViewController {
     var block2 = 0
     var block3 = 0
     var block4 = 0
+    var gameRunning = false
     var color = UIColor.blackColor()
     
     @IBOutlet weak var lol: UILabel!
@@ -164,7 +165,7 @@ class GameViewController: UIViewController {
       
         randomStringWithLength(1)
     
-q
+
         
     } //end of view did load
     func timer()
@@ -265,6 +266,7 @@ q
         }
     }
     @IBAction func startGame(sender: UIButton) {
+        if gameRunning == false {
         if randomBlockGen == "1" {
             labelArray[124].backgroundColor = UIColor.cyanColor() //124
             labelArray[125].backgroundColor  = UIColor.cyanColor() //125
@@ -336,6 +338,10 @@ q
             block4 = 114
             color = UIColor.brownColor()
         }
+    
         timer()
+            gameRunning = true
+            
     }
+}
 }
