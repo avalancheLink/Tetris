@@ -338,4 +338,12 @@ class GameViewController: UIViewController {
         }
         timer()
     }
+    
+    @IBAction func goRightWhenTapped(sender: UIButton) {
+    }
+    
+    
+    @IBAction func goLeftWhenTapped(sender: UIButton) {
+    }
+    
 }
