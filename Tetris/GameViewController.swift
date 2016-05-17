@@ -205,7 +205,6 @@ class GameViewController: UIViewController {
             randomString.appendFormat("%C", letters.characterAtIndex(Int(rand)))
             randomBlockGen = randomString
         }
-        var poop = String()
     return randomString
     }
     /*
@@ -345,15 +344,15 @@ class GameViewController: UIViewController {
             gameRunning = true
             
         }
-    
+        
     }
+    
     @IBAction func goRightWhenTapped(sender: UIButton) {
     }
+    
+    @IBAction func goLeftWhenTapped(sender: UIButton) {
 }
-    
-    @IBAction func goRightWhenTapped(sender: UIButton) {
-    }
-            
+
     
     
 }
