@@ -345,6 +345,7 @@ class GameViewController: UIViewController {
             
         }
     
+    }
     @IBAction func goRightWhenTapped(sender: UIButton) {
     }
     
@@ -354,4 +355,4 @@ class GameViewController: UIViewController {
             
     
     
-}}
+}
