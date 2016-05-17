@@ -1612,10 +1612,16 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7MJ-xL-8mh">
                                 <rect key="frame" x="0.0" y="874" width="200" height="150"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="goLeftWhenTapped:" destination="jFm-dB-Lgc" eventType="touchUpInside" id="m8v-OK-7Jj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfz-n3-Cgd">
                                 <rect key="frame" x="568" y="874" width="200" height="150"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="goRightWhenTapped:" destination="jFm-dB-Lgc" eventType="touchUpInside" id="oZW-Ka-NIW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
