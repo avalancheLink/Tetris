@@ -212,43 +212,50 @@ class GameViewController: UIViewController {
     return randomString
     }
     /*
-    if label.121.background != UIColor.whiteColor()
+     if label1.background != UIColor.whiteColor() && label2.background != UIColor.whiteColor() && label3.background != UIColor.whiteColor() && label4.background != UIColor.whiteColor() && label5.background != UIColor.whiteColor() && label6.background != UIColor.whiteColor() && label7.background != UIColor.whiteColor() && label8.background != UIColor.whiteColor() && label9.background != UIColor.whiteColor() && label10.background != UIColor.whiteColor()
+     {
+        
+     }
+     
+     
+     
+    if label121.background != UIColor.whiteColor()
      {
      lose
      }
-     if label.122.background != UIColor.whiteColor()
+     if label122.background != UIColor.whiteColor()
      {
      lose
      }
-     if label.123.background != UIColor.whiteColor()
+     if label123.background != UIColor.whiteColor()
      {
      lose
      }
-     if label.124.background != UIColor.whiteColor()
+     if label124.background != UIColor.whiteColor()
      {
      lose
      }
-     if label.125.background != UIColor.whiteColor()
+     if label125.background != UIColor.whiteColor()
      {
      lose
      }
-     if label.126.background != UIColor.whiteColor()
+     if label126.background != UIColor.whiteColor()
      {
      lose
      }
-     if label.127.background != UIColor.whiteColor()
+     if label127.background != UIColor.whiteColor()
      {
      lose
      }
-     if label.128.background != UIColor.whiteColor()
+     if label128.background != UIColor.whiteColor()
      {
      lose
      }
-     if label.129.background != UIColor.whiteColor()
+     if label129.background != UIColor.whiteColor()
      {
      lose
      }
-     if label.130.background != UIColor.whiteColor()
+     if label130.background != UIColor.whiteColor()
      
      lose
      }
@@ -428,9 +435,29 @@ class GameViewController: UIViewController {
     }
 
     @IBAction func goLeftWhenTapped(sender: UIButton) {
-        
+        if gameRunning == true {
+            if block1 % 10 != 0 {
+                if block2 % 10 != 0 {
+                    if block3 % 10 != 0 {
+                        if block4 % 10 != 0 {
+                            labelArray[block1].backgroundColor = UIColor.blackColor()
+                            labelArray[block2].backgroundColor = UIColor.blackColor()
+                            labelArray[block3].backgroundColor = UIColor.blackColor()
+                            labelArray[block4].backgroundColor = UIColor.blackColor()
+                            block1 = block1-1
+                            block2 = block2-1
+                            block3 = block3-1
+                            block4 = block4-1
+                            labelArray[block1].backgroundColor = color
+                            labelArray[block2].backgroundColor = color
+                            labelArray[block3].backgroundColor = color
+                            labelArray[block4].backgroundColor = color
+                        }
+                    }
+                }
+            }
+        }
     }
-    
     @IBAction func goRightWhenTapped(sender: UIButton) {
         if gameRunning == true {
             if block1 % 10 != 0 {
