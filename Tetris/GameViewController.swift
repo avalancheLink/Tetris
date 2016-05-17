@@ -344,11 +344,20 @@ class GameViewController: UIViewController {
             
     }
     
-    @IBAction func goRightWhenTapped(sender: UIButton) {
-    }
     
     
+    
+    
+}
     @IBAction func goLeftWhenTapped(sender: UIButton) {
     }
     
+    
+    @IBAction func goRightWhenTapped(sender: UIButton) {
+    }
+    @IBAction func onTapRotateRight(sender: UIButton) {
+    }
+
+    @IBAction func onTapRotateLeft(sender: UIButton) {
+    }
 }
