@@ -371,8 +371,7 @@ class GameViewController: UIViewController {
         }
     }
     
-    @IBAction func goLeftWhenTapped(sender: UIButton) {
-}
+ 
 
     
     
