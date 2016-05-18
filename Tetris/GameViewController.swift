@@ -470,4 +470,4 @@ class GameViewController: UIViewController {
 
     @IBAction func onTapRotateLeft(sender: UIButton) {
     }
-}
+}}
