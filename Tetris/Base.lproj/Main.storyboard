@@ -1611,16 +1611,35 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7MJ-xL-8mh">
                                 <rect key="frame" x="0.0" y="874" width="200" height="150"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="left"/>
                                 <connections>
                                     <action selector="goLeftWhenTapped:" destination="jFm-dB-Lgc" eventType="touchUpInside" id="m8v-OK-7Jj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfz-n3-Cgd">
                                 <rect key="frame" x="568" y="874" width="200" height="150"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Right"/>
                                 <connections>
                                     <action selector="goRightWhenTapped:" destination="jFm-dB-Lgc" eventType="touchUpInside" id="oZW-Ka-NIW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ti6-Wg-sgX">
+                                <rect key="frame" x="0.0" y="726" width="200" height="140"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Rotate left"/>
+                                <connections>
+                                    <action selector="onTapRotateLeft:" destination="jFm-dB-Lgc" eventType="touchUpInside" id="3cH-g5-r8f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sND-cs-QV0">
+                                <rect key="frame" x="568" y="727" width="200" height="139"/>
+                                <state key="normal" title="rotate right"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djg-Of-LaL">
+                                <rect key="frame" x="568" y="727" width="200" height="139"/>
+                                <state key="normal" title="rotate right"/>
+                                <connections>
+                                    <action selector="onTapRotateRight:" destination="jFm-dB-Lgc" eventType="touchUpInside" id="Oc6-lW-kbB"/>
                                 </connections>
                             </button>
                         </subviews>
