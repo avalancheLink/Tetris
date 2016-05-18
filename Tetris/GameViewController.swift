@@ -186,16 +186,16 @@ class GameViewController: UIViewController {
         labelArray[block2].backgroundColor = color
         labelArray[block3].backgroundColor = color
         labelArray[block4].backgroundColor = color
-        if block1 < 10 {
+        if block1 <= 10 {
             NStimer.invalidate()
             spawnAnotherBlock()
-        } else if block2 < 10 {
+        } else if block2 <= 10 {
             NStimer.invalidate()
             spawnAnotherBlock()
-        } else if block3 < 10 {
+        } else if block3 <= 10 {
             NStimer.invalidate()
             spawnAnotherBlock()
-        } else if block4 < 10 {
+        } else if block4 <= 10 {
             NStimer.invalidate()
             spawnAnotherBlock()
         }
@@ -490,8 +490,10 @@ class GameViewController: UIViewController {
 
     }
     @IBAction func onTapRotateRight(sender: UIButton) {
+        
     }
 
     @IBAction func onTapRotateLeft(sender: UIButton) {
+        
     }
 }
