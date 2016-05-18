@@ -353,7 +353,42 @@ class GameViewController: UIViewController {
     /*
      if label1.background != UIColor.whiteColor() && label2.background != UIColor.whiteColor() && label3.background != UIColor.whiteColor() && label4.background != UIColor.whiteColor() && label5.background != UIColor.whiteColor() && label6.background != UIColor.whiteColor() && label7.background != UIColor.whiteColor() && label8.background != UIColor.whiteColor() && label9.background != UIColor.whiteColor() && label10.background != UIColor.whiteColor()
      {
-        
+        label1.background = UIColor.whiteColor()
+        label2.background = UIColor.whiteColor()
+        label3.background = UIColor.whiteColor()
+        label4.background = UIColor.whiteColor()
+        label5.background = UIColor.whiteColor()
+        label6.background = UIColor.whiteColor()
+        label7.background = UIColor.whiteColor()
+        label8.background = UIColor.whiteColor()
+        label9.background = UIColor.whiteColor()
+        label10.background = UIColor.whiteColor()
+     }
+     else label11.background != UIColor.whiteColor() && label12.background != UIColor.whiteColor() && label13.background != UIColor.whiteColor() && label14.background != UIColor.whiteColor() && label15.background != UIColor.whiteColor() && label16.background != UIColor.whiteColor() && label17.background != UIColor.whiteColor() && label18.background != UIColor.whiteColor() && label19.background != UIColor.whiteColor() && label20.background != UIColor.whiteColor()
+     {
+     label11.background = UIColor.whiteColor()
+     label12.background = UIColor.whiteColor()
+     label13.background = UIColor.whiteColor()
+     label14.background = UIColor.whiteColor()
+     label15.background = UIColor.whiteColor()
+     label16.background = UIColor.whiteColor()
+     label17.background = UIColor.whiteColor()
+     label18.background = UIColor.whiteColor()
+     label19.background = UIColor.whiteColor()
+     label20.background = UIColor.whiteColor()
+     }
+     else label21.background != UIColor.whiteColor() && label22.background != UIColor.whiteColor() && label23.background != UIColor.whiteColor() && label24.background != UIColor.whiteColor() && label25.background != UIColor.whiteColor() && label26.background != UIColor.whiteColor() && label27.background != UIColor.whiteColor() && label28.background != UIColor.whiteColor() && label29.background != UIColor.whiteColor() && label30.background != UIColor.whiteColor()
+     {
+     label11.background = UIColor.whiteColor()
+     label12.background = UIColor.whiteColor()
+     label13.background = UIColor.whiteColor()
+     label14.background = UIColor.whiteColor()
+     label15.background = UIColor.whiteColor()
+     label16.background = UIColor.whiteColor()
+     label17.background = UIColor.whiteColor()
+     label18.background = UIColor.whiteColor()
+     label19.background = UIColor.whiteColor()
+     label20.background = UIColor.whiteColor()
      }
      
      
@@ -362,40 +397,39 @@ class GameViewController: UIViewController {
      {
      lose
      }
-     if label122.background != UIColor.whiteColor()
+     else label122.background != UIColor.whiteColor()
      {
      lose
      }
-     if label123.background != UIColor.whiteColor()
+     else label123.background != UIColor.whiteColor()
      {
      lose
      }
-     if label124.background != UIColor.whiteColor()
+     else label124.background != UIColor.whiteColor()
      {
      lose
      }
-     if label125.background != UIColor.whiteColor()
+     else label125.background != UIColor.whiteColor()
      {
      lose
      }
-     if label126.background != UIColor.whiteColor()
+     else label126.background != UIColor.whiteColor()
      {
      lose
      }
-     if label127.background != UIColor.whiteColor()
+     else label127.background != UIColor.whiteColor()
      {
      lose
      }
-     if label128.background != UIColor.whiteColor()
+     else label128.background != UIColor.whiteColor()
      {
      lose
      }
-     if label129.background != UIColor.whiteColor()
+     else label129.background != UIColor.whiteColor()
      {
      lose
      }
-     if label130.background != UIColor.whiteColor()
-     
+     else label130.background != UIColor.whiteColor()
      lose
      }
     */
