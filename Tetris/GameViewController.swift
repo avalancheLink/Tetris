@@ -350,6 +350,7 @@ class GameViewController: UIViewController {
             block4 = 114
             color = UIColor.brownColor()
         }
+        timer()
     }
     
     @IBAction func startGame(sender: UIButton) {
@@ -436,10 +437,10 @@ class GameViewController: UIViewController {
 
     @IBAction func goLeftWhenTapped(sender: UIButton) {
         if gameRunning == true {
-            if block1 % 10 != 0 {
-                if block2 % 10 != 0 {
-                    if block3 % 10 != 0 {
-                        if block4 % 10 != 0 {
+            if block1 % 10 != 1 {
+                if block2 % 10 != 1 {
+                    if block3 % 10 != 1 {
+                        if block4 % 10 != 1 {
                             labelArray[block1].backgroundColor = UIColor.blackColor()
                             labelArray[block2].backgroundColor = UIColor.blackColor()
                             labelArray[block3].backgroundColor = UIColor.blackColor()
