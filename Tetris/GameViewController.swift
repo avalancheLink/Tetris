@@ -486,6 +486,7 @@ class GameViewController: UIViewController {
                 }
             }
         }
+
     }
 }
     @IBAction func onTapRotateRight(sender: UIButton) {
