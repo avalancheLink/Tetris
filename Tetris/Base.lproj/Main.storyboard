@@ -1644,7 +1644,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="body_arc" translatesAutoresizingMaskIntoConstraints="NO" id="JYc-9u-nXM">
-                                <rect key="frame" x="264" y="519" width="240" height="144"/>
+                                <rect key="frame" x="270" y="565" width="240" height="144"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
