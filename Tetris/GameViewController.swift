@@ -461,16 +461,16 @@ class GameViewController: UIViewController {
      }
      else label81.background != UIColor.blackColor() && label82.background != UIColor.blackColor() && label83.background != UIColor.blackColor() && label84.background != UIColor.blackColor() && label85.background != UIColor.blackColor() && label86.background != UIColor.blackColor() && label87.background != UIColor.blackColor() && label88.background != UIColor.blackColor() && label89.background != UIColor.blackColor() && label90.background != UIColor.blackColor()
      {
-        label1.background = UIColor.whiteColor(
-        label2.background = UIColor.whiteColor()
-        label3.background = UIColor.whiteColor()
-        label4.background = UIColor.whiteColor()
-        label5.background = UIColor.whiteColor()
-        label6.background = UIColor.whiteColor()
-        label7.background = UIColor.whiteColor()
-        label8.background = UIColor.whiteColor()
-        label9.background = UIColor.whiteColor()
-        label10.background = UIColor.whiteColor()
+     label81.background = UIColor.blackColor()
+     label82.background = UIColor.blackColor()
+     label83.background = UIColor.blackColor()
+     label84.background = UIColor.blackColor()
+     label85.background = UIColor.blackColor()
+     label86.background = UIColor.blackColor()
+     label87.background = UIColor.blackColor()
+     label88.background = UIColor.blackColor()
+     label89.background = UIColor.blackColor()
+     label90.background = UIColor.blackColor()
      }
      else label91.background != UIColor.blackColor() && label92.background != UIColor.blackColor() && label93.background != UIColor.blackColor() && label94.background != UIColor.blackColor() && label95.background != UIColor.blackColor() && label96.background != UIColor.blackColor() && label97.background != UIColor.blackColor() && label98.background != UIColor.blackColor() && label99.background != UIColor.blackColor() && label100.background != UIColor.blackColor()
      {
