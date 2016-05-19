@@ -487,16 +487,29 @@ class GameViewController: UIViewController {
      }
      else label101.background != UIColor.blackColor() && label102.background != UIColor.blackColor() && label103.background != UIColor.blackColor() && label104.background != UIColor.blackColor() && label105.background != UIColor.blackColor() && label106.background != UIColor.blackColor() && label107.background != UIColor.blackColor() && label108.background != UIColor.blackColor() && label109.background != UIColor.blackColor() && label110.background != UIColor.blackColor()
      {
-     label91.background = UIColor.blackColor()
-     label92.background = UIColor.blackColor()
-     label93.background = UIColor.blackColor()
-     label94.background = UIColor.blackColor()
-     label95.background = UIColor.blackColor()
-     label96.background = UIColor.blackColor()
-     label97.background = UIColor.blackColor()
-     label98.background = UIColor.blackColor()
-     label99.background = UIColor.blackColor()
-     label100.background = UIColor.blackColor()
+     label101.background = UIColor.blackColor()
+     label102.background = UIColor.blackColor()
+     label103.background = UIColor.blackColor()
+     label104.background = UIColor.blackColor()
+     label105.background = UIColor.blackColor()
+     label106.background = UIColor.blackColor()
+     label107.background = UIColor.blackColor()
+     label108.background = UIColor.blackColor()
+     label109.background = UIColor.blackColor()
+     label110.background = UIColor.blackColor()
+     }
+     else label111.background != UIColor.blackColor() && label112.background != UIColor.blackColor() && label113.background != UIColor.blackColor() && label114.background != UIColor.blackColor() && label115.background != UIColor.blackColor() && label116.background != UIColor.blackColor() && label117.background != UIColor.blackColor() && label118.background != UIColor.blackColor() && label119.background != UIColor.blackColor() && label120.background != UIColor.blackColor()
+     {
+     label111.background = UIColor.blackColor()
+     label112.background = UIColor.blackColor()
+     label113.background = UIColor.blackColor()
+     label114.background = UIColor.blackColor()
+     label115.background = UIColor.blackColor()
+     label116.background = UIColor.blackColor()
+     label117.background = UIColor.blackColor()
+     label118.background = UIColor.blackColor()
+     label119.background = UIColor.blackColor()
+     label120.background = UIColor.blackColor()
      }
      
      
