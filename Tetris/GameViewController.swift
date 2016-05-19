@@ -18,6 +18,7 @@ class GameViewController: UIViewController {
     var block4 = 0
     var gameRunning = false
     
+    var lel = true
     var filled1 = false
     var filled2 = false
     var filled3 = false
@@ -158,8 +159,8 @@ class GameViewController: UIViewController {
     
     var color = UIColor.blackColor()
     
-    @IBOutlet weak var lol: UILabel!
     
+    @IBOutlet weak var lol: UILabel!
     @IBOutlet weak var Label1: UILabel!
     @IBOutlet weak var Label2: UILabel!
     @IBOutlet weak var Label3: UILabel!
@@ -292,7 +293,7 @@ class GameViewController: UIViewController {
     @IBOutlet weak var Label130: UILabel!
     var NStimer = NSTimer()
     var labelArray : [UILabel]!
-    
+    var filledArray : [Bool]!
     
     
     
@@ -301,6 +302,8 @@ class GameViewController: UIViewController {
         super.viewDidLoad()
         
         labelArray = [lol,Label1,Label2,Label3,Label4,Label5,Label6,Label7,Label8,Label9,Label10,Label11,Label12,Label13,Label14,Label15,Label16,Label17,Label18,Label19,Label20,Label21,Label22,Label23,Label24,Label25,Label26,Label27,Label28,Label29,Label30,Label31,Label32,Label33,Label34,Label35,Label36,Label37,Label38,Label39,Label40,Label41,Label42,Label43,Label44,Label45,Label46,Label47,Label48,Label49,Label50,Label51,Label52,Label53,Label54,Label55,Label56,Label57,Label58,Label59,Label60,Label61,Label62,Label63,Label64,Label65,Label66,Label67,Label68,Label69,Label70,Label71,Label72,Label73,Label74,Label75,Label76,Label77,Label78,Label79,Label80,Label81,Label82,Label83,Label84,Label85,Label86,Label87,Label88,Label89,Label90,Label91,Label92,Label93,Label94,Label95,Label96,Label97,Label98,Label99,Label100,Label101,Label102,Label103,Label104,Label105,Label106,Label107,Label108,Label109,Label110,Label111,Label112,Label113,Label114,Label115,Label116,Label117,Label118,Label119,Label120,Label121,Label122,Label123,Label124,Label125,Label126,Label127,Label128,Label129,Label130]
+        filledArray = [lel,filled1,filled2,filled3,filled4,filled5,filled6,filled7,filled8,filled9,filled10,filled11,filled12,filled13,filled14,filled15,filled16,filled17,filled18,filled19,filled20,filled21,filled23,filled24,filled25,filled26,filled27,filled28,filled29,filled30,filled31,filled32,filled33,filled34,filled35,filled36,filled37,filled38,filled39,filled40,filled41,filled42,filled43,filled44,filled45,filled46,filled47,filled48,filled49,filled50,filled51,filled52,filled53,filled54,filled55,filled56,filled57,filled58,filled59,filled60,filled61,filled62,filled63,filled64,filled65,filled66,filled67,filled68,filled69,filled70,filled71,filled72,filled73,filled74,filled75,filled76,filled77,filled78,filled79,filled80,filled81,filled82,filled83,filled84,filled85,filled86,filled87,filled88,filled89,filled90,filled91,filled92,filled93,filled94,filled95,filled96,filled96,filled97,filled98,filled99,filled100,filled101,filled102,filled103,filled104,filled105,filled106,filled107,filled108,filled109,filled110,filled111,filled112,filled113,filled114,filled115,filled116,filled117,filled118,filled119,filled120,filled121,filled122,filled123,filled124,filled125,filled126,filled127,filled128,filled129,filled130,]
+        
       
         //randomStringWithLength(1)
     
@@ -309,22 +312,10 @@ class GameViewController: UIViewController {
     } //end of view did load
     func timer()
     {
-        NStimer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("tick"), userInfo: nil, repeats: true)
+        NStimer = NSTimer.scheduledTimerWithTimeInterval(0.75, target: self, selector: Selector("tick"), userInfo: nil, repeats: true)
     }
     func tick()
     {
-        labelArray[block1].backgroundColor = UIColor.blackColor()
-        labelArray[block2].backgroundColor = UIColor.blackColor()
-        labelArray[block3].backgroundColor = UIColor.blackColor()
-        labelArray[block4].backgroundColor = UIColor.blackColor()
-        block1 = block1 - 10
-        block2 = block2 - 10
-        block3 = block3 - 10
-        block4 = block4 - 10
-        labelArray[block1].backgroundColor = color
-        labelArray[block2].backgroundColor = color
-        labelArray[block3].backgroundColor = color
-        labelArray[block4].backgroundColor = color
         if block1 <= 10 {
             NStimer.invalidate()
             spawnAnotherBlock()
@@ -338,6 +329,19 @@ class GameViewController: UIViewController {
             NStimer.invalidate()
             spawnAnotherBlock()
         }
+        labelArray[block1].backgroundColor = UIColor.blackColor()
+        labelArray[block2].backgroundColor = UIColor.blackColor()
+        labelArray[block3].backgroundColor = UIColor.blackColor()
+        labelArray[block4].backgroundColor = UIColor.blackColor()
+        block1 = block1 - 10
+        block2 = block2 - 10
+        block3 = block3 - 10
+        block4 = block4 - 10
+        labelArray[block1].backgroundColor = color
+        labelArray[block2].backgroundColor = color
+        labelArray[block3].backgroundColor = color
+        labelArray[block4].backgroundColor = color
+        
     }
     func randomStringWithLength (len : Int) -> NSString {
         let letters : NSString = "1234567"
@@ -351,7 +355,111 @@ class GameViewController: UIViewController {
     return randomString
     }
     /*
-     if label1.background != UIColor.whiteColor() && label2.background != UIColor.whiteColor() && label3.background != UIColor.whiteColor() && label4.background != UIColor.whiteColor() && label5.background != UIColor.whiteColor() && label6.background != UIColor.whiteColor() && label7.background != UIColor.whiteColor() && label8.background != UIColor.whiteColor() && label9.background != UIColor.whiteColor() && label10.background != UIColor.whiteColor()
+     if label1.background != UIColor.blackColor() && label2.background != UIColor.blackColor() && label3.background != UIColor.blackColor() && label4.background != UIColor.blackColor() && label5.background != UIColor.blackColor() && label6.background != UIColor.blackColor() && label7.background != UIColor.blackColor() && label8.background != UIColor.blackColor() && label9.background != UIColor.blackColor() && label10.background != UIColor.blackColor()
+     {
+        label1.background = UIColor.blackColor()
+        label2.background = UIColor.blackColor()
+        label3.background = UIColor.blackColor()
+        label4.background = UIColor.blackColor()
+        label5.background = UIColor.blackColor()
+        label6.background = UIColor.blackColor()
+        label7.background = UIColor.blackColor()
+        label8.background = UIColor.blackColor()
+        label9.background = UIColor.blackColor()
+        label10.background = UIColor.blackColor()
+     }
+     else label11.background != UIColor.blackColor() && label12.background != UIColor.blackColor() && label13.background != UIColor.blackColor() && label14.background != UIColor.blackColor() && label15.background != UIColor.blackColor() && label16.background != UIColor.blackColor() && label17.background != UIColor.blackColor() && label18.background != UIColor.blackColor() && label19.background != UIColor.blackColor() && label20.background != UIColor.blackColor()
+     {
+     label11.background = UIColor.blackColor()
+     label12.background = UIColor.blackColor()
+     label13.background = UIColor.blackColor()
+     label14.background = UIColor.blackColor()
+     label15.background = UIColor.blackColor()
+     label16.background = UIColor.blackColor()
+     label17.background = UIColor.blackColor()
+     label18.background = UIColor.blackColor()
+     label19.background = UIColor.blackColor()
+     label20.background = UIColor.blackColor()
+     }
+     else label21.background != UIColor.blackColor() && label22.background != UIColor.blackColor() && label23.background != UIColor.blackColor() && label24.background != UIColor.blackColor() && label25.background != UIColor.blackColor() && label26.background != UIColor.blackColor() && label27.background != UIColor.blackColor() && label28.background != UIColor.blackColor() && label29.background != UIColor.blackColor() && label30.background != UIColor.blackColor()
+     {
+     label21.background = UIColor.blackColor()
+     label22.background = UIColor.blackColor()
+     label23.background = UIColor.blackColor()
+     label24.background = UIColor.blackColor()
+     label25.background = UIColor.blackColor()
+     label26.background = UIColor.blackColor()
+     label27.background = UIColor.blackColor()
+     label28.background = UIColor.blackColor()
+     label29.background = UIColor.blackColor()
+     label30.background = UIColor.blackColor()
+     }
+     else label31.background != UIColor.blackColor() && label32.background != UIColor.blackColor() && label33.background != UIColor.blackColor() && label34.background != UIColor.blackColor() && label35.background != UIColor.blackColor() && label36.background != UIColor.blackColor() && label37.background != UIColor.blackColor() && label38.background != UIColor.blackColor() && label39.background != UIColor.blackColor() && label40.background != UIColor.blackColor()
+     {
+     label31.background = UIColor.blackColor()
+     label32.background = UIColor.blackColor()
+     label33.background = UIColor.blackColor()
+     label34.background = UIColor.blackColor()
+     label35.background = UIColor.blackColor()
+     label36.background = UIColor.blackColor()
+     label37.background = UIColor.blackColor()
+     label38.background = UIColor.blackColor()
+     label39.background = UIColor.blackColor()
+     label40.background = UIColor.blackColor()
+     }
+     else label41.background != UIColor.blackColor() && label42.background != UIColor.blackColor() && label43.background != UIColor.blackColor() && label44.background != UIColor.blackColor() && label45.background != UIColor.blackColor() && label46.background != UIColor.blackColor() && label47.background != UIColor.blackColor() && label48.background != UIColor.blackColor() && label49.background != UIColor.blackColor() && label50.background != UIColor.blackColor()
+     {
+     label41.background = UIColor.blackColor()
+     label42.background = UIColor.blackColor()
+     label43.background = UIColor.blackColor()
+     label44.background = UIColor.blackColor()
+     label45.background = UIColor.blackColor()
+     label46.background = UIColor.blackColor()
+     label47.background = UIColor.blackColor()
+     label48.background = UIColor.blackColor()
+     label49.background = UIColor.blackColor()
+     label50.background = UIColor.blackColor()
+     }
+     else label51.background != UIColor.blackColor() && label52.background != UIColor.blackColor() && label53.background != UIColor.blackColor() && label54.background != UIColor.blackColor() && label55.background != UIColor.blackColor() && label56.background != UIColor.blackColor() && label57.background != UIColor.blackColor() && label58.background != UIColor.blackColor() && label59.background != UIColor.blackColor() && label60.background != UIColor.blackColor()
+     {
+     label51.background = UIColor.blackColor()
+     label52.background = UIColor.blackColor()
+     label53.background = UIColor.blackColor()
+     label54.background = UIColor.blackColor()
+     label55.background = UIColor.blackColor()
+     label56.background = UIColor.blackColor()
+     label57.background = UIColor.blackColor()
+     label58.background = UIColor.blackColor()
+     label59.background = UIColor.blackColor()
+     label60.background = UIColor.blackColor()
+     }
+     else label61.background != UIColor.blackColor() && label62.background != UIColor.blackColor() && label63.background != UIColor.blackColor() && label64.background != UIColor.blackColor() && label65.background != UIColor.blackColor() && label66.background != UIColor.blackColor() && label67.background != UIColor.blackColor() && label68.background != UIColor.blackColor() && label69.background != UIColor.blackColor() && label70.background != UIColor.blackColor()
+     {
+     label61.background = UIColor.blackColor()
+     label62.background = UIColor.blackColor()
+     label63.background = UIColor.blackColor()
+     label64.background = UIColor.blackColor()
+     label65.background = UIColor.blackColor()
+     label66.background = UIColor.blackColor()
+     label67.background = UIColor.blackColor()
+     label68.background = UIColor.blackColor()
+     label69.background = UIColor.blackColor()
+     label70.background = UIColor.blackColor()
+     }
+     else label71.background != UIColor.blackColor() && label72.background != UIColor.blackColor() && label73.background != UIColor.blackColor() && label74.background != UIColor.blackColor() && label75.background != UIColor.blackColor() && label76.background != UIColor.blackColor() && label77.background != UIColor.blackColor() && label78.background != UIColor.blackColor() && label79.background != UIColor.blackColor() && label80.background != UIColor.blackColor()
+     {
+     label71.background = UIColor.blackColor()
+     label72.background = UIColor.blackColor()
+     label73.background = UIColor.blackColor()
+     label74.background = UIColor.blackColor()
+     label75.background = UIColor.blackColor()
+     label76.background = UIColor.blackColor()
+     label77.background = UIColor.blackColor()
+     label78.background = UIColor.blackColor()
+     label79.background = UIColor.blackColor()
+     label80.background = UIColor.blackColor()
+     }
+     else label81.background != UIColor.blackColor() && label82.background != UIColor.blackColor() && label83.background != UIColor.blackColor() && label84.background != UIColor.blackColor() && label85.background != UIColor.blackColor() && label86.background != UIColor.blackColor() && label87.background != UIColor.blackColor() && label88.background != UIColor.blackColor() && label89.background != UIColor.blackColor() && label90.background != UIColor.blackColor()
      {
         label1.background = UIColor.whiteColor(
         label2.background = UIColor.whiteColor()
@@ -364,72 +472,75 @@ class GameViewController: UIViewController {
         label9.background = UIColor.whiteColor()
         label10.background = UIColor.whiteColor()
      }
-     else label11.background != UIColor.whiteColor() && label12.background != UIColor.whiteColor() && label13.background != UIColor.whiteColor() && label14.background != UIColor.whiteColor() && label15.background != UIColor.whiteColor() && label16.background != UIColor.whiteColor() && label17.background != UIColor.whiteColor() && label18.background != UIColor.whiteColor() && label19.background != UIColor.whiteColor() && label20.background != UIColor.whiteColor()
+     else label91.background != UIColor.blackColor() && label92.background != UIColor.blackColor() && label93.background != UIColor.blackColor() && label94.background != UIColor.blackColor() && label95.background != UIColor.blackColor() && label96.background != UIColor.blackColor() && label97.background != UIColor.blackColor() && label98.background != UIColor.blackColor() && label99.background != UIColor.blackColor() && label100.background != UIColor.blackColor()
      {
-     label11.background = UIColor.whiteColor()
-     label12.background = UIColor.whiteColor()
-     label13.background = UIColor.whiteColor()
-     label14.background = UIColor.whiteColor()
-     label15.background = UIColor.whiteColor()
-     label16.background = UIColor.whiteColor()
-     label17.background = UIColor.whiteColor()
-     label18.background = UIColor.whiteColor()
-     label19.background = UIColor.whiteColor()
-     label20.background = UIColor.whiteColor()
+     label91.background = UIColor.blackColor()
+     label92.background = UIColor.blackColor()
+     label93.background = UIColor.blackColor()
+     label94.background = UIColor.blackColor()
+     label95.background = UIColor.blackColor()
+     label96.background = UIColor.blackColor()
+     label97.background = UIColor.blackColor()
+     label98.background = UIColor.blackColor()
+     label99.background = UIColor.blackColor()
+     label100.background = UIColor.blackColor()
      }
-     else label21.background != UIColor.whiteColor() && label22.background != UIColor.whiteColor() && label23.background != UIColor.whiteColor() && label24.background != UIColor.whiteColor() && label25.background != UIColor.whiteColor() && label26.background != UIColor.whiteColor() && label27.background != UIColor.whiteColor() && label28.background != UIColor.whiteColor() && label29.background != UIColor.whiteColor() && label30.background != UIColor.whiteColor()
+     else label101.background != UIColor.blackColor() && label102.background != UIColor.blackColor() && label103.background != UIColor.blackColor() && label104.background != UIColor.blackColor() && label105.background != UIColor.blackColor() && label106.background != UIColor.blackColor() && label107.background != UIColor.blackColor() && label108.background != UIColor.blackColor() && label109.background != UIColor.blackColor() && label110.background != UIColor.blackColor()
      {
-     label11.background = UIColor.whiteColor()
-     label12.background = UIColor.whiteColor()
-     label13.background = UIColor.whiteColor()
-     label14.background = UIColor.whiteColor()
-     label15.background = UIColor.whiteColor()
-     label16.background = UIColor.whiteColor()
-     label17.background = UIColor.whiteColor()
-     label18.background = UIColor.whiteColor()
-     label19.background = UIColor.whiteColor()
-     label20.background = UIColor.whiteColor()
+     label91.background = UIColor.blackColor()
+     label92.background = UIColor.blackColor()
+     label93.background = UIColor.blackColor()
+     label94.background = UIColor.blackColor()
+     label95.background = UIColor.blackColor()
+     label96.background = UIColor.blackColor()
+     label97.background = UIColor.blackColor()
+     label98.background = UIColor.blackColor()
+     label99.background = UIColor.blackColor()
+     label100.background = UIColor.blackColor()
      }
      
      
      
-    if label121.background != UIColor.whiteColor()
+     
+     
+     
+    if label121.background != UIColor.blackColor()
      {
      lose
      }
-     else label122.background != UIColor.whiteColor()
+     else label122.background != UIColor.blackColor()
      {
      lose
      }
-     else label123.background != UIColor.whiteColor()
+     else label123.background != UIColor.blackColor()
      {
      lose
      }
-     else label124.background != UIColor.whiteColor()
+     else label124.background != UIColor.blackColor()
      {
      lose
      }
-     else label125.background != UIColor.whiteColor()
+     else label125.background != UIColor.blackColor()
      {
      lose
      }
-     else label126.background != UIColor.whiteColor()
+     else label126.background != UIColor.blackColor()
      {
      lose
      }
-     else label127.background != UIColor.whiteColor()
+     else label127.background != UIColor.blackColor()
      {
      lose
      }
-     else label128.background != UIColor.whiteColor()
+     else label128.background != UIColor.blackColor()
      {
      lose
      }
-     else label129.background != UIColor.whiteColor()
+     else label129.background != UIColor.blackColor()
      {
      lose
      }
-     else label130.background != UIColor.whiteColor()
+     else label130.background != UIColor.blackColor()
      lose
      }
     */
