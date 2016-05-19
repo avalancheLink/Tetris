@@ -18,6 +18,7 @@ class GameViewController: UIViewController {
     var block4 = 0
     var gameRunning = false
     
+    var lel = true
     var filled1 = false
     var filled2 = false
     var filled3 = false
@@ -158,8 +159,8 @@ class GameViewController: UIViewController {
     
     var color = UIColor.blackColor()
     
-    @IBOutlet weak var lol: UILabel!
     
+    @IBOutlet weak var lol: UILabel!
     @IBOutlet weak var Label1: UILabel!
     @IBOutlet weak var Label2: UILabel!
     @IBOutlet weak var Label3: UILabel!
@@ -292,7 +293,7 @@ class GameViewController: UIViewController {
     @IBOutlet weak var Label130: UILabel!
     var NStimer = NSTimer()
     var labelArray : [UILabel]!
-    
+    var filledArray : [Bool]!
     
     
     
@@ -309,22 +310,10 @@ class GameViewController: UIViewController {
     } //end of view did load
     func timer()
     {
-        NStimer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("tick"), userInfo: nil, repeats: true)
+        NStimer = NSTimer.scheduledTimerWithTimeInterval(0.75, target: self, selector: Selector("tick"), userInfo: nil, repeats: true)
     }
     func tick()
     {
-        labelArray[block1].backgroundColor = UIColor.blackColor()
-        labelArray[block2].backgroundColor = UIColor.blackColor()
-        labelArray[block3].backgroundColor = UIColor.blackColor()
-        labelArray[block4].backgroundColor = UIColor.blackColor()
-        block1 = block1 - 10
-        block2 = block2 - 10
-        block3 = block3 - 10
-        block4 = block4 - 10
-        labelArray[block1].backgroundColor = color
-        labelArray[block2].backgroundColor = color
-        labelArray[block3].backgroundColor = color
-        labelArray[block4].backgroundColor = color
         if block1 <= 10 {
             NStimer.invalidate()
             spawnAnotherBlock()
@@ -338,6 +327,19 @@ class GameViewController: UIViewController {
             NStimer.invalidate()
             spawnAnotherBlock()
         }
+        labelArray[block1].backgroundColor = UIColor.blackColor()
+        labelArray[block2].backgroundColor = UIColor.blackColor()
+        labelArray[block3].backgroundColor = UIColor.blackColor()
+        labelArray[block4].backgroundColor = UIColor.blackColor()
+        block1 = block1 - 10
+        block2 = block2 - 10
+        block3 = block3 - 10
+        block4 = block4 - 10
+        labelArray[block1].backgroundColor = color
+        labelArray[block2].backgroundColor = color
+        labelArray[block3].backgroundColor = color
+        labelArray[block4].backgroundColor = color
+        
     }
     func randomStringWithLength (len : Int) -> NSString {
         let letters : NSString = "1234567"
