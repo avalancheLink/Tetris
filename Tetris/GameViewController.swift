@@ -353,7 +353,7 @@ class GameViewController: UIViewController {
     /*
      if label1.background != UIColor.whiteColor() && label2.background != UIColor.whiteColor() && label3.background != UIColor.whiteColor() && label4.background != UIColor.whiteColor() && label5.background != UIColor.whiteColor() && label6.background != UIColor.whiteColor() && label7.background != UIColor.whiteColor() && label8.background != UIColor.whiteColor() && label9.background != UIColor.whiteColor() && label10.background != UIColor.whiteColor()
      {
-        label1.background = UIColor.whiteColor()
+        label1.background = UIColor.whiteColor(
         label2.background = UIColor.whiteColor()
         label3.background = UIColor.whiteColor()
         label4.background = UIColor.whiteColor()
