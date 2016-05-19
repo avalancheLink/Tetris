@@ -17,6 +17,145 @@ class GameViewController: UIViewController {
     var block3 = 0
     var block4 = 0
     var gameRunning = false
+    
+    var filled1 = false
+    var filled2 = false
+    var filled3 = false
+    var filled4 = false
+    var filled5 = false
+    var filled6 = false
+    var filled7 = false
+    var filled8 = false
+    var filled9 = false
+    var filled10 = false
+    var filled11 = false
+    var filled12 = false
+    var filled13 = false
+    var filled14 = false
+    var filled15 = false
+    var filled16 = false
+    var filled17 = false
+    var filled18 = false
+    var filled19 = false
+    var filled20 = false
+    var filled21 = false
+    var filled22 = false
+    var filled23 = false
+    var filled24 = false
+    var filled25 = false
+    var filled26 = false
+    var filled27 = false
+    var filled28 = false
+    var filled29 = false
+    var filled30 = false
+    var filled31 = false
+    var filled32 = false
+    var filled33 = false
+    var filled34 = false
+    var filled35 = false
+    var filled36 = false
+    var filled37 = false
+    var filled38 = false
+    var filled39 = false
+    var filled40 = false
+    var filled41 = false
+    var filled42 = false
+    var filled43 = false
+    var filled44 = false
+    var filled45 = false
+    var filled46 = false
+    var filled47 = false
+    var filled48 = false
+    var filled49 = false
+    var filled50 = false
+    var filled51 = false
+    var filled52 = false
+    var filled53 = false
+    var filled54 = false
+    var filled55 = false
+    var filled56 = false
+    var filled57 = false
+    var filled58 = false
+    var filled59 = false
+    var filled60 = false
+    var filled61 = false
+    var filled62 = false
+    var filled63 = false
+    var filled64 = false
+    var filled65 = false
+    var filled66 = false
+    var filled67 = false
+    var filled68 = false
+    var filled69 = false
+    var filled70 = false
+    var filled71 = false
+    var filled72 = false
+    var filled73 = false
+    var filled74 = false
+    var filled75 = false
+    var filled76 = false
+    var filled77 = false
+    var filled78 = false
+    var filled79 = false
+    var filled80 = false
+    var filled81 = false
+    var filled82 = false
+    var filled83 = false
+    var filled84 = false
+    var filled85 = false
+    var filled86 = false
+    var filled87 = false
+    var filled88 = false
+    var filled89 = false
+    var filled90 = false
+    var filled91 = false
+    var filled92 = false
+    var filled93 = false
+    var filled94 = false
+    var filled95 = false
+    var filled96 = false
+    var filled97 = false
+    var filled98 = false
+    var filled99 = false
+    var filled100 = false
+    var filled101 = false
+    var filled102 = false
+    var filled103 = false
+    var filled104 = false
+    var filled105 = false
+    var filled106 = false
+    var filled107 = false
+    var filled108 = false
+    var filled109 = false
+    var filled110 = false
+    var filled111 = false
+    var filled112 = false
+    var filled113 = false
+    var filled114 = false
+    var filled115 = false
+    var filled116 = false
+    var filled117 = false
+    var filled118 = false
+    var filled119 = false
+    var filled120 = false
+    var filled121 = false
+    var filled122 = false
+    var filled123 = false
+    var filled124 = false
+    var filled125 = false
+    var filled126 = false
+    var filled127 = false
+    var filled128 = false
+    var filled129 = false
+    var filled130 = false
+    
+    
+    
+
+
+
+    
+    
     var color = UIColor.blackColor()
     
     @IBOutlet weak var lol: UILabel!
@@ -161,7 +300,7 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        labelArray = [lol,Label1,Label2,Label3,Label4,Label5,Label6,Label7,Label8,Label9,Label10,Label11,Label12,Label13,Label14,Label15,Label16,Label17,Label18,Label19,Label20,Label21,Label22,Label23,Label24,Label25,Label26,Label27,Label28,Label29,Label30,Label31,Label32,Label33,Label34,Label35,Label36,Label37,Label38,Label39,Label40,Label41,Label42,Label43,Label44,Label45,Label46,Label47,Label48,Label49,Label50,Label51,Label52,Label53,Label54,Label55,Label56,Label57,Label58,Label59,Label60,Label61,Label62,Label63,Label64,Label65,Label66,Label67,Label68,Label69,Label70,Label71,Label72,Label73,Label74,Label75,Label76,Label77,Label78,Label79,Label80,Label81,Label82,Label83,Label84,Label85,Label86,Label87,Label88,Label89,Label90,Label91,Label92,Label93,Label94,Label95,Label96,Label97,Label98,Label99,Label100,Label101,Label102,Label103,Label104,Label105,Label106,Label107,Label108,Label109,Label110,Label111,Label112,Label113,Label114,Label115,Label116,Label117,Label118,Label119,Label120,Label121,Label122,Label123,Label124,Label125,Label126,Label127,Label128,Label129,Label130]
+        labelArray = [Label1,Label2,Label3,Label4,Label5,Label6,Label7,Label8,Label9,Label10,Label11,Label12,Label13,Label14,Label15,Label16,Label17,Label18,Label19,Label20,Label21,Label22,Label23,Label24,Label25,Label26,Label27,Label28,Label29,Label30,Label31,Label32,Label33,Label34,Label35,Label36,Label37,Label38,Label39,Label40,Label41,Label42,Label43,Label44,Label45,Label46,Label47,Label48,Label49,Label50,Label51,Label52,Label53,Label54,Label55,Label56,Label57,Label58,Label59,Label60,Label61,Label62,Label63,Label64,Label65,Label66,Label67,Label68,Label69,Label70,Label71,Label72,Label73,Label74,Label75,Label76,Label77,Label78,Label79,Label80,Label81,Label82,Label83,Label84,Label85,Label86,Label87,Label88,Label89,Label90,Label91,Label92,Label93,Label94,Label95,Label96,Label97,Label98,Label99,Label100,Label101,Label102,Label103,Label104,Label105,Label106,Label107,Label108,Label109,Label110,Label111,Label112,Label113,Label114,Label115,Label116,Label117,Label118,Label119,Label120,Label121,Label122,Label123,Label124,Label125,Label126,Label127,Label128,Label129,Label130]
       
         //randomStringWithLength(1)
     
@@ -611,25 +750,25 @@ class GameViewController: UIViewController {
                 if block2 % 10 != 0 {
                     if block3 % 10 != 0 {
                         if block4 % 10 != 0 {
-                            labelArray[block1].backgroundColor = UIColor.blackColor()
-                            labelArray[block2].backgroundColor = UIColor.blackColor()
-                            labelArray[block3].backgroundColor = UIColor.blackColor()
-                            labelArray[block4].backgroundColor = UIColor.blackColor()
-                            block1 = block1+1
-                            block2 = block2+1
-                            block3 = block3+1
-                            block4 = block4+1
-                            labelArray[block1].backgroundColor = color
-                            labelArray[block2].backgroundColor = color
-                            labelArray[block3].backgroundColor = color
-                            labelArray[block4].backgroundColor = color
-                        }
+                labelArray[block1].backgroundColor = UIColor.blackColor()
+                labelArray[block2].backgroundColor = UIColor.blackColor()
+                labelArray[block3].backgroundColor = UIColor.blackColor()
+                labelArray[block4].backgroundColor = UIColor.blackColor()
+                block1 = block1+1
+                block2 = block2+1
+                block3 = block3+1
+                block4 = block4+1
+                labelArray[block1].backgroundColor = color
+                labelArray[block2].backgroundColor = color
+                labelArray[block3].backgroundColor = color
+                labelArray[block4].backgroundColor = color
                     }
                 }
             }
         }
 
     }
+}
     @IBAction func onTapRotateRight(sender: UIButton) {
         
     }
