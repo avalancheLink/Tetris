@@ -17,6 +17,145 @@ class GameViewController: UIViewController {
     var block3 = 0
     var block4 = 0
     var gameRunning = false
+    
+    var filled1 = false
+    var filled2 = false
+    var filled3 = false
+    var filled4 = false
+    var filled5 = false
+    var filled6 = false
+    var filled7 = false
+    var filled8 = false
+    var filled9 = false
+    var filled10 = false
+    var filled11 = false
+    var filled12 = false
+    var filled13 = false
+    var filled14 = false
+    var filled15 = false
+    var filled16 = false
+    var filled17 = false
+    var filled18 = false
+    var filled19 = false
+    var filled20 = false
+    var filled21 = false
+    var filled22 = false
+    var filled23 = false
+    var filled24 = false
+    var filled25 = false
+    var filled26 = false
+    var filled27 = false
+    var filled28 = false
+    var filled29 = false
+    var filled30 = false
+    var filled31 = false
+    var filled32 = false
+    var filled33 = false
+    var filled34 = false
+    var filled35 = false
+    var filled36 = false
+    var filled37 = false
+    var filled38 = false
+    var filled39 = false
+    var filled40 = false
+    var filled41 = false
+    var filled42 = false
+    var filled43 = false
+    var filled44 = false
+    var filled45 = false
+    var filled46 = false
+    var filled47 = false
+    var filled48 = false
+    var filled49 = false
+    var filled50 = false
+    var filled51 = false
+    var filled52 = false
+    var filled53 = false
+    var filled54 = false
+    var filled55 = false
+    var filled56 = false
+    var filled57 = false
+    var filled58 = false
+    var filled59 = false
+    var filled60 = false
+    var filled61 = false
+    var filled62 = false
+    var filled63 = false
+    var filled64 = false
+    var filled65 = false
+    var filled66 = false
+    var filled67 = false
+    var filled68 = false
+    var filled69 = false
+    var filled70 = false
+    var filled71 = false
+    var filled72 = false
+    var filled73 = false
+    var filled74 = false
+    var filled75 = false
+    var filled76 = false
+    var filled77 = false
+    var filled78 = false
+    var filled79 = false
+    var filled80 = false
+    var filled81 = false
+    var filled82 = false
+    var filled83 = false
+    var filled84 = false
+    var filled85 = false
+    var filled86 = false
+    var filled87 = false
+    var filled88 = false
+    var filled89 = false
+    var filled90 = false
+    var filled91 = false
+    var filled92 = false
+    var filled93 = false
+    var filled94 = false
+    var filled95 = false
+    var filled96 = false
+    var filled97 = false
+    var filled98 = false
+    var filled99 = false
+    var filled100 = false
+    var filled101 = false
+    var filled102 = false
+    var filled103 = false
+    var filled104 = false
+    var filled105 = false
+    var filled106 = false
+    var filled107 = false
+    var filled108 = false
+    var filled109 = false
+    var filled110 = false
+    var filled111 = false
+    var filled112 = false
+    var filled113 = false
+    var filled114 = false
+    var filled115 = false
+    var filled116 = false
+    var filled117 = false
+    var filled118 = false
+    var filled119 = false
+    var filled120 = false
+    var filled121 = false
+    var filled122 = false
+    var filled123 = false
+    var filled124 = false
+    var filled125 = false
+    var filled126 = false
+    var filled127 = false
+    var filled128 = false
+    var filled129 = false
+    var filled130 = false
+    
+    
+    
+
+
+
+    
+    
     var color = UIColor.blackColor()
     
     @IBOutlet weak var lol: UILabel!
@@ -214,7 +353,42 @@ class GameViewController: UIViewController {
     /*
      if label1.background != UIColor.whiteColor() && label2.background != UIColor.whiteColor() && label3.background != UIColor.whiteColor() && label4.background != UIColor.whiteColor() && label5.background != UIColor.whiteColor() && label6.background != UIColor.whiteColor() && label7.background != UIColor.whiteColor() && label8.background != UIColor.whiteColor() && label9.background != UIColor.whiteColor() && label10.background != UIColor.whiteColor()
      {
-        
+        label1.background = UIColor.whiteColor()
+        label2.background = UIColor.whiteColor()
+        label3.background = UIColor.whiteColor()
+        label4.background = UIColor.whiteColor()
+        label5.background = UIColor.whiteColor()
+        label6.background = UIColor.whiteColor()
+        label7.background = UIColor.whiteColor()
+        label8.background = UIColor.whiteColor()
+        label9.background = UIColor.whiteColor()
+        label10.background = UIColor.whiteColor()
+     }
+     else label11.background != UIColor.whiteColor() && label12.background != UIColor.whiteColor() && label13.background != UIColor.whiteColor() && label14.background != UIColor.whiteColor() && label15.background != UIColor.whiteColor() && label16.background != UIColor.whiteColor() && label17.background != UIColor.whiteColor() && label18.background != UIColor.whiteColor() && label19.background != UIColor.whiteColor() && label20.background != UIColor.whiteColor()
+     {
+     label11.background = UIColor.whiteColor()
+     label12.background = UIColor.whiteColor()
+     label13.background = UIColor.whiteColor()
+     label14.background = UIColor.whiteColor()
+     label15.background = UIColor.whiteColor()
+     label16.background = UIColor.whiteColor()
+     label17.background = UIColor.whiteColor()
+     label18.background = UIColor.whiteColor()
+     label19.background = UIColor.whiteColor()
+     label20.background = UIColor.whiteColor()
+     }
+     else label21.background != UIColor.whiteColor() && label22.background != UIColor.whiteColor() && label23.background != UIColor.whiteColor() && label24.background != UIColor.whiteColor() && label25.background != UIColor.whiteColor() && label26.background != UIColor.whiteColor() && label27.background != UIColor.whiteColor() && label28.background != UIColor.whiteColor() && label29.background != UIColor.whiteColor() && label30.background != UIColor.whiteColor()
+     {
+     label11.background = UIColor.whiteColor()
+     label12.background = UIColor.whiteColor()
+     label13.background = UIColor.whiteColor()
+     label14.background = UIColor.whiteColor()
+     label15.background = UIColor.whiteColor()
+     label16.background = UIColor.whiteColor()
+     label17.background = UIColor.whiteColor()
+     label18.background = UIColor.whiteColor()
+     label19.background = UIColor.whiteColor()
+     label20.background = UIColor.whiteColor()
      }
      
      
@@ -223,40 +397,39 @@ class GameViewController: UIViewController {
      {
      lose
      }
-     if label122.background != UIColor.whiteColor()
+     else label122.background != UIColor.whiteColor()
      {
      lose
      }
-     if label123.background != UIColor.whiteColor()
+     else label123.background != UIColor.whiteColor()
      {
      lose
      }
-     if label124.background != UIColor.whiteColor()
+     else label124.background != UIColor.whiteColor()
      {
      lose
      }
-     if label125.background != UIColor.whiteColor()
+     else label125.background != UIColor.whiteColor()
      {
      lose
      }
-     if label126.background != UIColor.whiteColor()
+     else label126.background != UIColor.whiteColor()
      {
      lose
      }
-     if label127.background != UIColor.whiteColor()
+     else label127.background != UIColor.whiteColor()
      {
      lose
      }
-     if label128.background != UIColor.whiteColor()
+     else label128.background != UIColor.whiteColor()
      {
      lose
      }
-     if label129.background != UIColor.whiteColor()
+     else label129.background != UIColor.whiteColor()
      {
      lose
      }
-     if label130.background != UIColor.whiteColor()
-     
+     else label130.background != UIColor.whiteColor()
      lose
      }
     */
