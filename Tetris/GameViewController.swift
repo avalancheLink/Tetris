@@ -159,9 +159,6 @@ class GameViewController: UIViewController {
     
     var color = UIColor.blackColor()
     
-    
-    
-    @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var lol: UILabel!
     @IBOutlet weak var Label1: UILabel!
     @IBOutlet weak var Label2: UILabel!
