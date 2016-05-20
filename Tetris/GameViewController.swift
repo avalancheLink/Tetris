@@ -554,6 +554,12 @@ class GameViewController: UIViewController {
      else label130.background != UIColor.blackColor()
      lose
      }
+   score
+     
+     
+     
+     
+     
     */
     func lose()
     {
