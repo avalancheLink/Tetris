@@ -153,6 +153,9 @@ class GameViewController: UIViewController {
     
     var color = UIColor.blackColor()
     
+    
+    
+    @IBOutlet weak var  dkLabel: UILabel!
     @IBOutlet weak var lol: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var Label1: UILabel!
@@ -542,7 +545,17 @@ class GameViewController: UIViewController {
      else label130.background != UIColor.blackColor()
      lose
      }
-    */
+   
+ 
+     
+     if (tylers thing)
+     {
+     scorelabel + 10
+                     }
+     */
+     
+     
+    
     func lose()
     {
         let alert1 = UIAlertController(title: "You Lose", message: "Press OK to continue", preferredStyle: UIAlertControllerStyle.Alert)
