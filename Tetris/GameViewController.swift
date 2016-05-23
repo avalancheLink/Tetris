@@ -163,6 +163,7 @@ class GameViewController: UIViewController {
     
     @IBOutlet weak var  dkLabel: UILabel!
     @IBOutlet weak var lol: UILabel!
+    @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var Label1: UILabel!
     @IBOutlet weak var Label2: UILabel!
     @IBOutlet weak var Label3: UILabel!
