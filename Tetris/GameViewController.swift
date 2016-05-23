@@ -151,12 +151,6 @@ class GameViewController: UIViewController {
     var filled130 = false
     
     
-    
-
-
-
-    
-    
     var color = UIColor.blackColor()
     
     @IBOutlet weak var lol: UILabel!
@@ -293,8 +287,6 @@ class GameViewController: UIViewController {
     var NStimer = NSTimer()
     var labelArray : [UILabel]!
     var filledArray : [Bool]!
-    
-    
     
     
     override func viewDidLoad() {
@@ -508,10 +500,6 @@ class GameViewController: UIViewController {
      label119.background = UIColor.blackColor()
      label120.background = UIColor.blackColor()
      }
-     
-     
-     
-     
      
      
     if label121.background != UIColor.blackColor()
