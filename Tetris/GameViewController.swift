@@ -556,10 +556,14 @@ class GameViewController: UIViewController {
      else label130.background != UIColor.blackColor()
      lose
      }
-   score
+   
+ 
+     
+     if (tylers thing)
+     {
+     scorelabel + 10
+                     }
      */
-     
-     
      
      
     
