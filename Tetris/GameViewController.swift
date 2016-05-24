@@ -306,9 +306,11 @@ class GameViewController: UIViewController {
     func timer()
     {
         NStimer = NSTimer.scheduledTimerWithTimeInterval(0.75, target: self, selector: Selector("tick"), userInfo: nil, repeats: true)
+        
     }
     func tick()
     {
+
         if block1 <= 10 {
             NStimer.invalidate()
             spawnAnotherBlock()
@@ -322,7 +324,7 @@ class GameViewController: UIViewController {
             NStimer.invalidate()
             spawnAnotherBlock()
         }
-        labelArray[block1].backgroundColor = UIColor.blackColor()
+                labelArray[block1].backgroundColor = UIColor.blackColor()
         labelArray[block2].backgroundColor = UIColor.blackColor()
         labelArray[block3].backgroundColor = UIColor.blackColor()
         labelArray[block4].backgroundColor = UIColor.blackColor()
@@ -490,6 +492,18 @@ class GameViewController: UIViewController {
      label108.background = UIColor.blackColor()
      label109.background = UIColor.blackColor()
      label110.background = UIColor.blackColor()
+     
+     label.111 - 10
+     label.112 - 10
+     label.113 - 10
+     label.114 - 10
+     label.115 - 10
+     label.116 - 10
+     label.117 - 10
+     label.118 - 10
+     label.119 - 10
+     label.120 - 10
+     
      }
      else label111.background != UIColor.blackColor() && label112.background != UIColor.blackColor() && label113.background != UIColor.blackColor() && label114.background != UIColor.blackColor() && label115.background != UIColor.blackColor() && label116.background != UIColor.blackColor() && label117.background != UIColor.blackColor() && label118.background != UIColor.blackColor() && label119.background != UIColor.blackColor() && label120.background != UIColor.blackColor()
      {
@@ -504,33 +518,32 @@ class GameViewController: UIViewController {
      label119.background = UIColor.blackColor()
      label120.background = UIColor.blackColor()
      }
-     
-     
-    if label121.background != UIColor.blackColor()
+ 
+     if label121.background != UIColor.blackColor()
      {
      lose
      }
-     else label122.background != UIColor.blackColor()
+     else if label122.background != UIColor.blackColor()
      {
      lose
      }
-     else label123.background != UIColor.blackColor()
+     else if label123.background != UIColor.blackColor()
      {
      lose
      }
-     else label124.background != UIColor.blackColor()
+     else if label124.background != UIColor.blackColor()
      {
      lose
      }
-     else label125.background != UIColor.blackColor()
+     else if label125.background != UIColor.blackColor()
      {
      lose
      }
-     else label126.background != UIColor.blackColor()
+     else if label126.background != UIColor.blackColor()
      {
      lose
      }
-     else label127.background != UIColor.blackColor()
+     else if label127.background != UIColor.blackColor()
      {
      lose
      }
@@ -538,23 +551,22 @@ class GameViewController: UIViewController {
      {
      lose
      }
-     else label129.background != UIColor.blackColor()
+     else if label129.background != UIColor.blackColor()
      {
      lose
      }
-     else label130.background != UIColor.blackColor()
+     else if label130.background != UIColor.blackColor()
      lose
      }
-   
- 
-     
+
+    
      if (tylers thing)
      {
      scorelabel + 10
                      }
      */
-     
-     
+    
+    
     
     func lose()
     {
