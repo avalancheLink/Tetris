@@ -501,6 +501,7 @@ class GameViewController: UIViewController {
      label108.background = UIColor.blackColor()
      label109.background = UIColor.blackColor()
      label110.background = UIColor.blackColor()
+     score + 10
      
      label.111 - 10
      label.112 - 10
@@ -578,6 +579,9 @@ class GameViewController: UIViewController {
      lose
      score = 0
      }
+   
+ 
+     
 
     
      if (tylers thing)
