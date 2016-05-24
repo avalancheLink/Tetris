@@ -1763,6 +1763,9 @@
                                 <state key="normal" title="RESTART">
                                     <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="restart:" destination="jFm-dB-Lgc" eventType="touchUpInside" id="wtt-Tb-3r0"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
