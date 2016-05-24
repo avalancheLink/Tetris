@@ -11,7 +11,7 @@ import UIKit
 
 class GameViewController: UIViewController {
     var randomBlockGen : NSMutableString = ""
-    
+    var score = 0
     var block1 = 0
     var block2 = 0
     var block3 = 0
@@ -155,9 +155,8 @@ class GameViewController: UIViewController {
     
     
     
-    @IBOutlet weak var  dkLabel: UILabel!
-    @IBOutlet weak var lol: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var lol: UILabel!
     @IBOutlet weak var Label1: UILabel!
     @IBOutlet weak var Label2: UILabel!
     @IBOutlet weak var Label3: UILabel!
@@ -350,8 +349,7 @@ class GameViewController: UIViewController {
     return randomString
     }
     /*
-     if label1.background != UIColor.blackColor() && label2.background != UIColor.blackColor() && label3.background != UIColor.blackColor() && label4.background != UIColor.blackColor() && label5.background != UIColor.blackColor() && label6.background != UIColor.blackColor() && label7.background != UIColor.blackColor() && label8.background != UIColor.blackColor() && label9.background != UIColor.blackColor() && label10.background != UIColor.blackColor()
-     {
+     if label1.background != UIColor.blackColor() && label2.background != UIColor.blackColor() && label3.background != UIColor.blackColor() && label4.background != UIColor.blackColor() && label5.background != UIColor.blackColor() && label6.background != UIColor.blackColor() && label7.background != UIColor.blackColor() && label8.background != UIColor.blackColor() && label9.background != UIColor.blackColor() && label10.background != UIColor.blackColor()     {
         label1.background = UIColor.blackColor()
         label2.background = UIColor.blackColor()
         label3.background = UIColor.blackColor()
@@ -362,6 +360,7 @@ class GameViewController: UIViewController {
         label8.background = UIColor.blackColor()
         label9.background = UIColor.blackColor()
         label10.background = UIColor.blackColor()
+        score + 10
      }
      else label11.background != UIColor.blackColor() && label12.background != UIColor.blackColor() && label13.background != UIColor.blackColor() && label14.background != UIColor.blackColor() && label15.background != UIColor.blackColor() && label16.background != UIColor.blackColor() && label17.background != UIColor.blackColor() && label18.background != UIColor.blackColor() && label19.background != UIColor.blackColor() && label20.background != UIColor.blackColor()
      {
@@ -375,6 +374,8 @@ class GameViewController: UIViewController {
      label18.background = UIColor.blackColor()
      label19.background = UIColor.blackColor()
      label20.background = UIColor.blackColor()
+     score + 10
+     
      }
      else label21.background != UIColor.blackColor() && label22.background != UIColor.blackColor() && label23.background != UIColor.blackColor() && label24.background != UIColor.blackColor() && label25.background != UIColor.blackColor() && label26.background != UIColor.blackColor() && label27.background != UIColor.blackColor() && label28.background != UIColor.blackColor() && label29.background != UIColor.blackColor() && label30.background != UIColor.blackColor()
      {
@@ -388,6 +389,7 @@ class GameViewController: UIViewController {
      label28.background = UIColor.blackColor()
      label29.background = UIColor.blackColor()
      label30.background = UIColor.blackColor()
+     score + 10
      }
      else label31.background != UIColor.blackColor() && label32.background != UIColor.blackColor() && label33.background != UIColor.blackColor() && label34.background != UIColor.blackColor() && label35.background != UIColor.blackColor() && label36.background != UIColor.blackColor() && label37.background != UIColor.blackColor() && label38.background != UIColor.blackColor() && label39.background != UIColor.blackColor() && label40.background != UIColor.blackColor()
      {
@@ -401,6 +403,7 @@ class GameViewController: UIViewController {
      label38.background = UIColor.blackColor()
      label39.background = UIColor.blackColor()
      label40.background = UIColor.blackColor()
+     score + 10
      }
      else label41.background != UIColor.blackColor() && label42.background != UIColor.blackColor() && label43.background != UIColor.blackColor() && label44.background != UIColor.blackColor() && label45.background != UIColor.blackColor() && label46.background != UIColor.blackColor() && label47.background != UIColor.blackColor() && label48.background != UIColor.blackColor() && label49.background != UIColor.blackColor() && label50.background != UIColor.blackColor()
      {
@@ -414,6 +417,7 @@ class GameViewController: UIViewController {
      label48.background = UIColor.blackColor()
      label49.background = UIColor.blackColor()
      label50.background = UIColor.blackColor()
+     score + 10
      }
      else label51.background != UIColor.blackColor() && label52.background != UIColor.blackColor() && label53.background != UIColor.blackColor() && label54.background != UIColor.blackColor() && label55.background != UIColor.blackColor() && label56.background != UIColor.blackColor() && label57.background != UIColor.blackColor() && label58.background != UIColor.blackColor() && label59.background != UIColor.blackColor() && label60.background != UIColor.blackColor()
      {
@@ -427,6 +431,7 @@ class GameViewController: UIViewController {
      label58.background = UIColor.blackColor()
      label59.background = UIColor.blackColor()
      label60.background = UIColor.blackColor()
+     score + 10
      }
      else label61.background != UIColor.blackColor() && label62.background != UIColor.blackColor() && label63.background != UIColor.blackColor() && label64.background != UIColor.blackColor() && label65.background != UIColor.blackColor() && label66.background != UIColor.blackColor() && label67.background != UIColor.blackColor() && label68.background != UIColor.blackColor() && label69.background != UIColor.blackColor() && label70.background != UIColor.blackColor()
      {
@@ -440,6 +445,7 @@ class GameViewController: UIViewController {
      label68.background = UIColor.blackColor()
      label69.background = UIColor.blackColor()
      label70.background = UIColor.blackColor()
+     score + 10
      }
      else label71.background != UIColor.blackColor() && label72.background != UIColor.blackColor() && label73.background != UIColor.blackColor() && label74.background != UIColor.blackColor() && label75.background != UIColor.blackColor() && label76.background != UIColor.blackColor() && label77.background != UIColor.blackColor() && label78.background != UIColor.blackColor() && label79.background != UIColor.blackColor() && label80.background != UIColor.blackColor()
      {
@@ -453,6 +459,7 @@ class GameViewController: UIViewController {
      label78.background = UIColor.blackColor()
      label79.background = UIColor.blackColor()
      label80.background = UIColor.blackColor()
+     score + 10
      }
      else label81.background != UIColor.blackColor() && label82.background != UIColor.blackColor() && label83.background != UIColor.blackColor() && label84.background != UIColor.blackColor() && label85.background != UIColor.blackColor() && label86.background != UIColor.blackColor() && label87.background != UIColor.blackColor() && label88.background != UIColor.blackColor() && label89.background != UIColor.blackColor() && label90.background != UIColor.blackColor()
      {
@@ -466,6 +473,7 @@ class GameViewController: UIViewController {
      label88.background = UIColor.blackColor()
      label89.background = UIColor.blackColor()
      label90.background = UIColor.blackColor()
+     score + 10
      }
      else label91.background != UIColor.blackColor() && label92.background != UIColor.blackColor() && label93.background != UIColor.blackColor() && label94.background != UIColor.blackColor() && label95.background != UIColor.blackColor() && label96.background != UIColor.blackColor() && label97.background != UIColor.blackColor() && label98.background != UIColor.blackColor() && label99.background != UIColor.blackColor() && label100.background != UIColor.blackColor()
      {
@@ -479,6 +487,7 @@ class GameViewController: UIViewController {
      label98.background = UIColor.blackColor()
      label99.background = UIColor.blackColor()
      label100.background = UIColor.blackColor()
+     score + 10
      }
      else label101.background != UIColor.blackColor() && label102.background != UIColor.blackColor() && label103.background != UIColor.blackColor() && label104.background != UIColor.blackColor() && label105.background != UIColor.blackColor() && label106.background != UIColor.blackColor() && label107.background != UIColor.blackColor() && label108.background != UIColor.blackColor() && label109.background != UIColor.blackColor() && label110.background != UIColor.blackColor()
      {
@@ -517,46 +526,57 @@ class GameViewController: UIViewController {
      label118.background = UIColor.blackColor()
      label119.background = UIColor.blackColor()
      label120.background = UIColor.blackColor()
+     score + 10
      }
  
      if label121.background != UIColor.blackColor()
      {
      lose
+     score = 0
      }
      else if label122.background != UIColor.blackColor()
      {
      lose
+     score = 0
      }
      else if label123.background != UIColor.blackColor()
      {
      lose
+     score = 0
      }
      else if label124.background != UIColor.blackColor()
      {
      lose
+     score = 0
      }
      else if label125.background != UIColor.blackColor()
      {
      lose
+     score = 0
      }
      else if label126.background != UIColor.blackColor()
      {
      lose
+     score = 0
      }
      else if label127.background != UIColor.blackColor()
      {
      lose
+     score = 0
      }
      else label128.background != UIColor.blackColor()
      {
      lose
+     score = 0
      }
      else if label129.background != UIColor.blackColor()
      {
      lose
+     score = 0
      }
      else if label130.background != UIColor.blackColor()
      lose
+     score = 0
      }
 
     
