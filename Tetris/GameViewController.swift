@@ -532,57 +532,47 @@ class GameViewController: UIViewController {
      if label121.background != UIColor.blackColor()
      {
      lose
-     score = 0
      }
      else if label122.background != UIColor.blackColor()
      {
      lose
-     score = 0
      }
      else if label123.background != UIColor.blackColor()
      {
      lose
-     score = 0
      }
      else if label124.background != UIColor.blackColor()
      {
      lose
-     score = 0
      }
      else if label125.background != UIColor.blackColor()
      {
      lose
-     score = 0
      }
      else if label126.background != UIColor.blackColor()
      {
      lose
-     score = 0
      }
      else if label127.background != UIColor.blackColor()
      {
      lose
-     score = 0
      }
      else label128.background != UIColor.blackColor()
      {
      lose
-     score = 0
      }
      else if label129.background != UIColor.blackColor()
      {
      lose
-     score = 0
+     
      }
      else if label130.background != UIColor.blackColor()
      lose
-     score = 0
+     
      }
 
-    
-     if (tylers thing)
-     {
-     scorelabel + 10
+    score = scoreLabel.text
+ 
                      }
      */
     
