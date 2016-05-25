@@ -304,7 +304,7 @@ class GameViewController: UIViewController {
     } //end of view did load
     func timer()
     {
-        NStimer = NSTimer.scheduledTimerWithTimeInterval(0.75, target: self, selector: Selector("tick"), userInfo: nil, repeats: true)
+        NStimer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: Selector("tick"), userInfo: nil, repeats: true)
         
     }
     func tick()
@@ -533,61 +533,42 @@ class GameViewController: UIViewController {
      if label121.background != UIColor.blackColor()
      {
      lose
-     score = 0
      }
      else if label122.background != UIColor.blackColor()
      {
      lose
-     score = 0
      }
      else if label123.background != UIColor.blackColor()
      {
      lose
-     score = 0
      }
      else if label124.background != UIColor.blackColor()
      {
      lose
-     score = 0
      }
      else if label125.background != UIColor.blackColor()
      {
      lose
-     score = 0
      }
      else if label126.background != UIColor.blackColor()
      {
      lose
-     score = 0
      }
      else if label127.background != UIColor.blackColor()
      {
      lose
-     score = 0
      }
      else label128.background != UIColor.blackColor()
      {
      lose
-     score = 0
      }
      else if label129.background != UIColor.blackColor()
      {
      lose
-     score = 0
      }
      else if label130.background != UIColor.blackColor()
      lose
-     score = 0
      }
-   
- 
-     
-
-    
-     if (tylers thing)
-     {
-     scorelabel + 10
-                     }
      */
     
     
@@ -600,6 +581,7 @@ class GameViewController: UIViewController {
         presentViewController(alert1, animated: true, completion: nil)
         let okAction2 = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Default, handler: nil)
         alert1.addAction(okAction2)
+        
     }
     func clearBlocks(action: UIAlertAction)
     {
@@ -607,6 +589,7 @@ class GameViewController: UIViewController {
         {
             Label.backgroundColor = UIColor.blackColor()
         }
+        score = 0
     }
     
     func spawnAnotherBlock() {
@@ -829,5 +812,12 @@ class GameViewController: UIViewController {
         
     }
     @IBAction func restart(sender: UIButton) {
+        NStimer.invalidate()
+        gameRunning = false
+        score = 0
+        for Label in labelArray
+        {
+            Label.backgroundColor = UIColor.blackColor()
+        }
     }
 }
