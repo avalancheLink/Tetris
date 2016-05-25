@@ -17,13 +17,33 @@
                     <view key="view" contentMode="scaleToFill" id="VDo-i2-KVh">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="TYPE IN YOUR DESCRIPTION #2" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UOo-03-n6y">
+                                <rect key="frame" x="40" y="555" width="673" height="439"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Patrick #2" translatesAutoresizingMaskIntoConstraints="NO" id="FnE-yp-l9Q">
+                                <rect key="frame" x="147" y="20" width="416" height="515"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xn4-Hg-cXa">
+                                <rect key="frame" x="23" y="20" width="40" height="30"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="sOe-dd-k5j" kind="presentation" id="n1P-Kr-NyI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MuI-WJ-0cP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="233" y="-1807"/>
+            <point key="canvasLocation" x="237" y="-1807"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ujZ-oZ-7uH">
@@ -36,13 +56,33 @@
                     <view key="view" contentMode="scaleToFill" id="w4T-ju-zNs">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Patrick #1" translatesAutoresizingMaskIntoConstraints="NO" id="c2Q-iI-wkE">
+                                <rect key="frame" x="186" y="28" width="395" height="492"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Type your description in here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vC8-m4-s6g">
+                                <rect key="frame" x="25" y="557" width="689" height="425"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iG9-aK-jne">
+                                <rect key="frame" x="105" y="20" width="40" height="30"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="sOe-dd-k5j" kind="presentation" id="Dhb-HX-e48"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J2e-k7-20s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-559" y="-1807"/>
+            <point key="canvasLocation" x="-561" y="-1807"/>
         </scene>
         <!--Devs View Controller-->
         <scene sceneID="TQF-gv-rr1">
@@ -78,26 +118,29 @@
                                 <rect key="frame" x="487" y="266" width="63" height="30"/>
                                 <state key="normal" title="Patrick D"/>
                                 <connections>
-                                    <segue destination="NPU-Ta-OMP" kind="show" id="JXs-Fg-D6o"/>
+                                    <segue destination="NPU-Ta-OMP" kind="presentation" id="jGz-rG-ObV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UbX-FJ-jKI">
                                 <rect key="frame" x="223" y="266" width="62" height="30"/>
                                 <state key="normal" title="Patrick A"/>
                                 <connections>
-                                    <segue destination="lxR-JS-rNi" kind="show" id="g1c-M3-oEB"/>
+                                    <segue destination="lxR-JS-rNi" kind="presentation" id="yGe-Ef-Vkq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CbS-0a-o2g">
-                                <rect key="frame" x="231" y="547" width="46" height="30"/>
+                                <rect key="frame" x="231" y="510" width="46" height="30"/>
                                 <state key="normal" title="tyler"/>
                                 <connections>
-                                    <segue destination="mD7-TT-sz4" kind="show" id="mUy-Eu-PIP"/>
+                                    <segue destination="mD7-TT-sz4" kind="presentation" id="VCs-4v-jod"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jz4-gF-dgQ">
-                                <rect key="frame" x="616" y="152" width="38" height="30"/>
+                                <rect key="frame" x="499" y="510" width="38" height="30"/>
                                 <state key="normal" title="Kevin"/>
+                                <connections>
+                                    <segue destination="rj8-fs-5tT" kind="presentation" id="Kds-zm-y3q"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -112,7 +155,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fW5-24-sRr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="334" y="-721"/>
+            <point key="canvasLocation" x="594" y="-670"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="vPL-Mf-8Cq">
@@ -125,13 +168,33 @@
                     <view key="view" contentMode="scaleToFill" id="ZyT-4E-iEk">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Kevin" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ocZ-H2-GxA">
+                                <rect key="frame" x="28" y="555" width="685" height="439"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Kevin" translatesAutoresizingMaskIntoConstraints="NO" id="gCh-kt-gIU">
+                                <rect key="frame" x="141" y="33" width="424" height="437"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bsl-JD-4AL">
+                                <rect key="frame" x="31" y="38" width="40" height="30"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="sOe-dd-k5j" kind="presentation" id="h6C-Cr-Lmk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fs4-FY-uU9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1821" y="-1807"/>
+            <point key="canvasLocation" x="1903" y="-1807"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="fzM-sY-TtG">
@@ -144,13 +207,33 @@
                     <view key="view" contentMode="scaleToFill" id="72j-Cx-aZB">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tyler" translatesAutoresizingMaskIntoConstraints="NO" id="0t0-yf-h0O">
+                                <rect key="frame" x="179" y="44" width="415" height="444"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e99-bi-nEv">
+                                <rect key="frame" x="32" y="28" width="40" height="30"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="sOe-dd-k5j" kind="presentation" id="15Z-3Y-hEG"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="tYLER" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="enG-yc-Oc2">
+                                <rect key="frame" x="20" y="546" width="705" height="438"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xsu-0R-mod" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1029" y="-1807"/>
+            <point key="canvasLocation" x="1031" y="-1799"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -222,7 +305,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="84D-y9-a1J">
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="84D-y9-a1J">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
                                 <items>
                                     <navigationItem title="RULES YOU CAN USE" id="nwh-hh-4Om">
@@ -234,21 +317,18 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TI6-38-ACk">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TI6-38-ACk">
                                 <rect key="frame" x="0.0" y="44" width="768" height="980"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">The objective of the game is to manipulate The  shapes, by moving each one sideways (useing the Right and left arows) and rotating it by 90 degrees , with the aim of creating a horizontal line of ten units without gaps. When such a line is created, it disappears, and any block above the deleted line will fall scoring you points. </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Derrick" translatesAutoresizingMaskIntoConstraints="NO" id="AFc-ar-bSS">
+                                <rect key="frame" x="209" y="322" width="335" height="451"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="TI6-38-ACk" firstAttribute="leading" secondItem="wfA-Ly-qcY" secondAttribute="leadingMargin" constant="-20" id="Fkd-5W-XbD"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="TI6-38-ACk" secondAttribute="trailing" constant="-20" id="Hz5-GS-jHm"/>
-                            <constraint firstItem="edN-Hw-4iK" firstAttribute="top" secondItem="TI6-38-ACk" secondAttribute="bottom" id="kjs-2M-9jv"/>
-                            <constraint firstItem="TI6-38-ACk" firstAttribute="top" secondItem="84D-y9-a1J" secondAttribute="bottom" id="qyo-1u-xBp"/>
-                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                 </viewController>
@@ -1671,6 +1751,22 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SCOREBOARD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XuB-nx-PAo">
+                                <rect key="frame" x="12" y="28" width="161" height="112"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yeg-ae-lr2">
+                                <rect key="frame" x="339" y="492" width="65" height="30"/>
+                                <state key="normal" title="RESTART">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="restart:" destination="jFm-dB-Lgc" eventType="touchUpInside" id="wtt-Tb-3r0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -2343,6 +2439,7 @@
                         <outlet property="Label98" destination="dZj-RT-3Om" id="YI1-6R-RCe"/>
                         <outlet property="Label99" destination="e9l-1X-Ie0" id="wXt-Qm-nxY"/>
                         <outlet property="lol" destination="ZFf-x3-aKT" id="sZB-Sa-Hmm"/>
+                        <outlet property="scoreLabel" destination="XuB-nx-PAo" id="hk9-OB-uyk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P9b-bs-rwe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2352,6 +2449,14 @@
     </scenes>
     <resources>
         <image name="Back" width="1600" height="1000"/>
+        <image name="Derrick" width="2432" height="4320"/>
+        <image name="Kevin" width="2432" height="4320"/>
+        <image name="Patrick #1" width="2432" height="4320"/>
+        <image name="Patrick #2" width="2432" height="4320"/>
+        <image name="Tyler" width="2432" height="4320"/>
         <image name="body_arc" width="620" height="430"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="h6C-Cr-Lmk"/>
+    </inferredMetricsTieBreakers>
 </document>
