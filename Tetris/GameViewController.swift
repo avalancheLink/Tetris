@@ -305,13 +305,13 @@ class GameViewController: UIViewController {
     } //end of view did load
     func timer()
     {
-        NStimer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: Selector("tick"), userInfo: nil, repeats: true)
+        NStimer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: Selector("tick"), userInfo: nil, repeats: true)
         
     }
     func tick()
     {
         if firstblock == false {
-            if filledArray[block1-10] == true {
+            if filledArray[block1-10] == true || block1 < 11 {
                 filledArray[block1] = true
                 filledArray[block2] = true
                 filledArray[block3] = true
@@ -319,7 +319,7 @@ class GameViewController: UIViewController {
                 NStimer.invalidate()
                 spawnAnotherBlock()
             }
-            if filledArray[block2-10] == true {
+            if filledArray[block2-10] == true || block2 < 11 {
                 filledArray[block1] = true
                 filledArray[block2] = true
                 filledArray[block3] = true
@@ -327,7 +327,7 @@ class GameViewController: UIViewController {
                 NStimer.invalidate()
                 spawnAnotherBlock()
             }
-            if filledArray[block3-10] == true {
+            if filledArray[block3-10] == true || block3 < 11 {
                 filledArray[block1] = true
                 filledArray[block2] = true
                 filledArray[block3] = true
@@ -335,7 +335,7 @@ class GameViewController: UIViewController {
                 NStimer.invalidate()
                 spawnAnotherBlock()
             }
-            if filledArray[block4-10] == true {
+            if filledArray[block4-10] == true || block4 < 11 {
                 filledArray[block1] = true
                 filledArray[block2] = true
                 filledArray[block3] = true
@@ -627,6 +627,8 @@ class GameViewController: UIViewController {
      else if label130.background != UIColor.blackColor()
      lose
      }
+     
+     
      */
     
     
