@@ -293,7 +293,6 @@ class GameViewController: UIViewController {
     var labelArray : [UILabel]!
     var filledArray : [Bool]!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -306,7 +305,7 @@ class GameViewController: UIViewController {
     func timer()
     {
         NStimer = NSTimer.scheduledTimerWithTimeInterval(0.75, target: self, selector: Selector("tick"), userInfo: nil, repeats: true)
-        
+    
     }
     func tick()
     {
@@ -380,8 +379,7 @@ class GameViewController: UIViewController {
             spawnAnotherBlock()
             firstblock = false
         }
-        
-        labelArray[block1].backgroundColor = UIColor.blackColor()
+                labelArray[block1].backgroundColor = UIColor.blackColor()
         labelArray[block2].backgroundColor = UIColor.blackColor()
         labelArray[block3].backgroundColor = UIColor.blackColor()
         labelArray[block4].backgroundColor = UIColor.blackColor()
@@ -395,6 +393,7 @@ class GameViewController: UIViewController {
         labelArray[block4].backgroundColor = color
     
     }
+
     func randomStringWithLength (len : Int) -> NSString {
         let letters : NSString = "1234567"
         let randomString : NSMutableString = NSMutableString(capacity: len)
@@ -406,6 +405,7 @@ class GameViewController: UIViewController {
         }
     return randomString
     }
+
     /*
      if label1.background != UIColor.blackColor() && label2.background != UIColor.blackColor() && label3.background != UIColor.blackColor() && label4.background != UIColor.blackColor() && label5.background != UIColor.blackColor() && label6.background != UIColor.blackColor() && label7.background != UIColor.blackColor() && label8.background != UIColor.blackColor() && label9.background != UIColor.blackColor() && label10.background != UIColor.blackColor()     {
         label1.background = UIColor.blackColor()
@@ -848,8 +848,8 @@ class GameViewController: UIViewController {
             }
         }
     }
-    
-    
+
+
     @IBAction func goRightWhenTapped(sender: UIButton) {
         if gameRunning == true {
             if block1 % 10 != 0 {
@@ -872,7 +872,6 @@ class GameViewController: UIViewController {
                 }
             }
         }
-
     }
 }
     @IBAction func onTapRotateRight(sender: UIButton) {
@@ -885,3 +884,5 @@ class GameViewController: UIViewController {
     @IBAction func restart(sender: UIButton) {
     }
 }
+
+
