@@ -629,10 +629,8 @@ class GameViewController: UIViewController {
      lose
      
      }
-
-    score = scoreLabel.text
- 
-                     }
+     
+     
      */
     
     
