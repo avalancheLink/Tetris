@@ -380,6 +380,8 @@ class GameViewController: UIViewController {
             NStimer.invalidate()
             spawnAnotherBlock()
             firstblock = false
+            
+            
         }
         
         labelArray[block1].backgroundColor = UIColor.blackColor()
@@ -588,51 +590,8 @@ class GameViewController: UIViewController {
      label120.background = UIColor.blackColor()
      score + 10
      }
- 
-     if label121.background != UIColor.blackColor()
-     {
-     lose
-     }
-     else if label122.background != UIColor.blackColor()
-     {
-     lose
-     }
-     else if label123.background != UIColor.blackColor()
-     {
-     lose
-     }
-     else if label124.background != UIColor.blackColor()
-     {
-     lose
-     }
-     else if label125.background != UIColor.blackColor()
-     {
-     lose
-     }
-     else if label126.background != UIColor.blackColor()
-     {
-     lose
-     }
-     else if label127.background != UIColor.blackColor()
-     {
-     lose
-     }
-     else label128.background != UIColor.blackColor()
-     {
-     lose
-     }
-     else if label129.background != UIColor.blackColor()
-     {
-     lose
-     
-     }
-     else if label130.background != UIColor.blackColor()
-     lose
-     
-     }
-     
-     
      */
+    
     
     
     
