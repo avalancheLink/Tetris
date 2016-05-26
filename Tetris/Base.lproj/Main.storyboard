@@ -183,10 +183,10 @@
             </objects>
             <point key="canvasLocation" x="594" y="-670"/>
         </scene>
-        <!--View Controller-->
+        <!--Kevins View Controller-->
         <scene sceneID="vPL-Mf-8Cq">
             <objects>
-                <viewController id="rj8-fs-5tT" sceneMemberID="viewController">
+                <viewController id="rj8-fs-5tT" customClass="KevinsViewController" customModule="Tetris" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AeC-MG-4RQ"/>
                         <viewControllerLayoutGuide type="bottom" id="jbJ-IQ-VNn"/>
@@ -201,20 +201,33 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Kevin" translatesAutoresizingMaskIntoConstraints="NO" id="gCh-kt-gIU">
-                                <rect key="frame" x="141" y="33" width="424" height="437"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Kevin" translatesAutoresizingMaskIntoConstraints="NO" id="gCh-kt-gIU">
+                                <rect key="frame" x="140" y="104" width="424" height="437"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="437" id="5Fn-ww-tXa"/>
+                                    <constraint firstAttribute="width" constant="424" id="tGD-y6-1RE"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bsl-JD-4AL">
-                                <rect key="frame" x="31" y="38" width="40" height="30"/>
-                                <state key="normal" title="BACK">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="sOe-dd-k5j" kind="presentation" id="h6C-Cr-Lmk"/>
-                                </connections>
-                            </button>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nC9-Ej-VXL">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                                <items>
+                                    <navigationItem title="Kevin" id="hua-xU-PtE">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="174-LT-J0y">
+                                            <connections>
+                                                <action selector="whenTappedGoBack:" destination="rj8-fs-5tT" id="EyA-xr-O7J"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="gCh-kt-gIU" secondAttribute="trailing" constant="184" id="4aN-oz-Z6B"/>
+                            <constraint firstItem="gCh-kt-gIU" firstAttribute="leading" secondItem="ZyT-4E-iEk" secondAttribute="leadingMargin" constant="120" id="73K-63-W1w"/>
+                            <constraint firstItem="jbJ-IQ-VNn" firstAttribute="top" secondItem="gCh-kt-gIU" secondAttribute="bottom" constant="483" id="Pgi-lX-VJt"/>
+                            <constraint firstItem="gCh-kt-gIU" firstAttribute="top" secondItem="nC9-Ej-VXL" secondAttribute="bottom" constant="60" id="eSu-Z5-Lmq"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                 </viewController>
@@ -240,7 +253,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AQE-lO-fxH">
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AQE-lO-fxH">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
                                 <items>
                                     <navigationItem title="Tyler" id="LTs-Ia-JqK">
@@ -252,11 +265,21 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tyler" translatesAutoresizingMaskIntoConstraints="NO" id="0t0-yf-h0O">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tyler" translatesAutoresizingMaskIntoConstraints="NO" id="0t0-yf-h0O">
                                 <rect key="frame" x="164" y="68" width="416" height="470"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="470" id="c6t-Ud-9vU"/>
+                                    <constraint firstAttribute="width" constant="416" id="m8f-Nn-dv7"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="0t0-yf-h0O" secondAttribute="trailing" constant="168" id="BcD-Xa-nS3"/>
+                            <constraint firstItem="0t0-yf-h0O" firstAttribute="leading" secondItem="72j-Cx-aZB" secondAttribute="leadingMargin" constant="144" id="D4n-rr-vza"/>
+                            <constraint firstItem="0t0-yf-h0O" firstAttribute="top" secondItem="AQE-lO-fxH" secondAttribute="bottom" constant="24" id="IiN-kL-Tog"/>
+                            <constraint firstItem="bz7-ih-x7d" firstAttribute="top" secondItem="0t0-yf-h0O" secondAttribute="bottom" constant="486" id="JgX-it-P3w"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                 </viewController>
@@ -2485,7 +2508,4 @@
         <image name="Tyler" width="2432" height="4320"/>
         <image name="body_arc" width="620" height="430"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="h6C-Cr-Lmk"/>
-    </inferredMetricsTieBreakers>
 </document>
