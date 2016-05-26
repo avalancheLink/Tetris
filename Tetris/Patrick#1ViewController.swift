@@ -18,6 +18,6 @@ class Patrick_1ViewController: UIViewController {
    
     @IBAction func whenTappedGoBack(sender: UIBarButtonItem) {
         self.dismissViewControllerAnimated(true, completion: nil)
-
+        
     }
 }
