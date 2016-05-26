@@ -1,9 +1,11 @@
 //
+//
 //  ViewController.swift
 //  Tetris
-//  tracer is best hero ; NO ONE CARES
+//  tracer is best hero. NO ONE CARES about reaper
 //  Created by student3 on 5/2/16.
 //  Copyright © 2016 JohnHerseyHighSchool. All rights reserved.
+//
 //
 
 import UIKit

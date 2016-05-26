@@ -623,9 +623,11 @@ class GameViewController: UIViewController {
      else if label129.background != UIColor.blackColor()
      {
      lose
+     
      }
      else if label130.background != UIColor.blackColor()
      lose
+     
      }
      
      
