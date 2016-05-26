@@ -381,7 +381,6 @@ class GameViewController: UIViewController {
             spawnAnotherBlock()
             firstblock = false
             
-            
         }
         
         labelArray[block1].backgroundColor = UIColor.blackColor()
