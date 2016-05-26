@@ -222,10 +222,10 @@
             </objects>
             <point key="canvasLocation" x="1903" y="-1807"/>
         </scene>
-        <!--View Controller-->
+        <!--Tylers View Controller-->
         <scene sceneID="fzM-sY-TtG">
             <objects>
-                <viewController id="mD7-TT-sz4" sceneMemberID="viewController">
+                <viewController id="mD7-TT-sz4" customClass="TylersViewController" customModule="Tetris" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Y2A-7w-r1D"/>
                         <viewControllerLayoutGuide type="bottom" id="bz7-ih-x7d"/>
@@ -234,24 +234,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tyler" translatesAutoresizingMaskIntoConstraints="NO" id="0t0-yf-h0O">
-                                <rect key="frame" x="179" y="44" width="415" height="444"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e99-bi-nEv">
-                                <rect key="frame" x="32" y="28" width="40" height="30"/>
-                                <state key="normal" title="BACK">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="sOe-dd-k5j" kind="presentation" id="15Z-3Y-hEG"/>
-                                </connections>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="tYLER" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="enG-yc-Oc2">
                                 <rect key="frame" x="20" y="546" width="705" height="438"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AQE-lO-fxH">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                                <items>
+                                    <navigationItem title="Tyler" id="LTs-Ia-JqK">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="Ee4-3m-ULb">
+                                            <connections>
+                                                <action selector="whenTappedGoBack:" destination="mD7-TT-sz4" id="ZZq-uM-Jb5"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tyler" translatesAutoresizingMaskIntoConstraints="NO" id="0t0-yf-h0O">
+                                <rect key="frame" x="164" y="68" width="416" height="470"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
