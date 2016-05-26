@@ -10,6 +10,7 @@
 		D7009CDF1CEA567C00D8B5DA /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7009CDE1CEA567C00D8B5DA /* File.swift */; };
 		D70A30311CDD23F900FC8DF7 /* DevsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70A30301CDD23F900FC8DF7 /* DevsViewController.swift */; };
 		D70A30331CDD241E00FC8DF7 /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70A30321CDD241E00FC8DF7 /* RulesViewController.swift */; };
+		D752BF6B1CF78540008C9ED7 /* Patrick#2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D752BF6A1CF78540008C9ED7 /* Patrick#2ViewController.swift */; };
 		D76139CB1CF637CF003C9E83 /* Patrick#1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76139CA1CF637CF003C9E83 /* Patrick#1ViewController.swift */; };
 		D77E623C1CDBD4BC0013AEE4 /* Tetris.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D77E623B1CDBD4BC0013AEE4 /* Tetris.mp3 */; };
 		D791ECC71CD7E06E00C9F4A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D791ECC61CD7E06E00C9F4A3 /* AppDelegate.swift */; };
@@ -44,6 +45,7 @@
 		D7009CDE1CEA567C00D8B5DA /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		D70A30301CDD23F900FC8DF7 /* DevsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DevsViewController.swift; path = ../DevsViewController.swift; sourceTree = "<group>"; };
 		D70A30321CDD241E00FC8DF7 /* RulesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
+		D752BF6A1CF78540008C9ED7 /* Patrick#2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Patrick#2ViewController.swift"; sourceTree = "<group>"; };
 		D76139CA1CF637CF003C9E83 /* Patrick#1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Patrick#1ViewController.swift"; sourceTree = "<group>"; };
 		D77E623B1CDBD4BC0013AEE4 /* Tetris.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Tetris.mp3; path = ../../../Downloads/Tetris.mp3; sourceTree = "<group>"; };
 		D791ECC31CD7E06E00C9F4A3 /* Tetris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tetris.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +132,7 @@
 				D70A30301CDD23F900FC8DF7 /* DevsViewController.swift */,
 				D70A30321CDD241E00FC8DF7 /* RulesViewController.swift */,
 				D791ECCA1CD7E06E00C9F4A3 /* Main.storyboard */,
+				D752BF6A1CF78540008C9ED7 /* Patrick#2ViewController.swift */,
 				D791ECCD1CD7E06E00C9F4A3 /* Assets.xcassets */,
 				D791ECCF1CD7E06E00C9F4A3 /* LaunchScreen.storyboard */,
 				D791ECD21CD7E06E00C9F4A3 /* Info.plist */,
@@ -290,6 +293,7 @@
 			files = (
 				D70A30331CDD241E00FC8DF7 /* RulesViewController.swift in Sources */,
 				D76139CB1CF637CF003C9E83 /* Patrick#1ViewController.swift in Sources */,
+				D752BF6B1CF78540008C9ED7 /* Patrick#2ViewController.swift in Sources */,
 				D7009CDF1CEA567C00D8B5DA /* File.swift in Sources */,
 				D70A30311CDD23F900FC8DF7 /* DevsViewController.swift in Sources */,
 				D791ECC91CD7E06E00C9F4A3 /* ViewController.swift in Sources */,

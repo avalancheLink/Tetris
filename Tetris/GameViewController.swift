@@ -293,9 +293,10 @@ class GameViewController: UIViewController {
     var labelArray : [UILabel]!
     var filledArray : [Bool]!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         
     labelArray = [lol,Label1,Label2,Label3,Label4,Label5,Label6,Label7,Label8,Label9,Label10,Label11,Label12,Label13,Label14,Label15,Label16,Label17,Label18,Label19,Label20,Label21,Label22,Label23,Label24,Label25,Label26,Label27,Label28,Label29,Label30,Label31,Label32,Label33,Label34,Label35,Label36,Label37,Label38,Label39,Label40,Label41,Label42,Label43,Label44,Label45,Label46,Label47,Label48,Label49,Label50,Label51,Label52,Label53,Label54,Label55,Label56,Label57,Label58,Label59,Label60,Label61,Label62,Label63,Label64,Label65,Label66,Label67,Label68,Label69,Label70,Label71,Label72,Label73,Label74,Label75,Label76,Label77,Label78,Label79,Label80,Label81,Label82,Label83,Label84,Label85,Label86,Label87,Label88,Label89,Label90,Label91,Label92,Label93,Label94,Label95,Label96,Label97,Label98,Label99,Label100,Label101,Label102,Label103,Label104,Label105,Label106,Label107,Label108,Label109,Label110,Label111,Label112,Label113,Label114,Label115,Label116,Label117,Label118,Label119,Label120,Label121,Label122,Label123,Label124,Label125,Label126,Label127,Label128,Label129,Label130]
         
@@ -310,40 +311,6 @@ class GameViewController: UIViewController {
     }
     func tick()
     {
-        if firstblock == false {
-            if filledArray[block1-10] == true || block1 < 11 {
-                filledArray[block1] = true
-                filledArray[block2] = true
-                filledArray[block3] = true
-                filledArray[block4] = true
-                NStimer.invalidate()
-                spawnAnotherBlock()
-            }
-            if filledArray[block2-10] == true || block2 < 11 {
-                filledArray[block1] = true
-                filledArray[block2] = true
-                filledArray[block3] = true
-                filledArray[block4] = true
-                NStimer.invalidate()
-                spawnAnotherBlock()
-            }
-            if filledArray[block3-10] == true || block3 < 11 {
-                filledArray[block1] = true
-                filledArray[block2] = true
-                filledArray[block3] = true
-                filledArray[block4] = true
-                NStimer.invalidate()
-                spawnAnotherBlock()
-            }
-            if filledArray[block4-10] == true || block4 < 11 {
-                filledArray[block1] = true
-                filledArray[block2] = true
-                filledArray[block3] = true
-                filledArray[block4] = true
-                NStimer.invalidate()
-                spawnAnotherBlock()
-            }
-        }
         if block1 < 11 {
             filledArray[block1] = true
             filledArray[block2] = true
@@ -352,7 +319,14 @@ class GameViewController: UIViewController {
             NStimer.invalidate()
             spawnAnotherBlock()
             firstblock = false
-        }
+        } else if filledArray[block1-10] == true  {
+                filledArray[block1] = true
+                filledArray[block2] = true
+                filledArray[block3] = true
+                filledArray[block4] = true
+                NStimer.invalidate()
+                spawnAnotherBlock()
+            }
         if block2 < 11 {
             filledArray[block1] = true
             filledArray[block2] = true
@@ -361,7 +335,14 @@ class GameViewController: UIViewController {
             NStimer.invalidate()
             spawnAnotherBlock()
             firstblock = false
-        }
+        } else if filledArray[block2-10] == true {
+                filledArray[block1] = true
+                filledArray[block2] = true
+                filledArray[block3] = true
+                filledArray[block4] = true
+                NStimer.invalidate()
+                spawnAnotherBlock()
+            }
         if block3 < 11 {
             filledArray[block1] = true
             filledArray[block2] = true
@@ -370,7 +351,14 @@ class GameViewController: UIViewController {
             NStimer.invalidate()
             spawnAnotherBlock()
             firstblock = false
-        }
+        } else if filledArray[block3-10] == true {
+                filledArray[block1] = true
+                filledArray[block2] = true
+                filledArray[block3] = true
+                filledArray[block4] = true
+                NStimer.invalidate()
+                spawnAnotherBlock()
+            }
         if block4 < 11 {
             filledArray[block1] = true
             filledArray[block2] = true
@@ -379,9 +367,20 @@ class GameViewController: UIViewController {
             NStimer.invalidate()
             spawnAnotherBlock()
             firstblock = false
-        }
+        } else if filledArray[block4-10] == true {
+                filledArray[block1] = true
+                filledArray[block2] = true
+                filledArray[block3] = true
+                filledArray[block4] = true
+                NStimer.invalidate()
+                spawnAnotherBlock()
+            }
         
-        labelArray[block1].backgroundColor = UIColor.blackColor()
+        
+        
+        
+        
+                labelArray[block1].backgroundColor = UIColor.blackColor()
         labelArray[block2].backgroundColor = UIColor.blackColor()
         labelArray[block3].backgroundColor = UIColor.blackColor()
         labelArray[block4].backgroundColor = UIColor.blackColor()
@@ -395,6 +394,7 @@ class GameViewController: UIViewController {
         labelArray[block4].backgroundColor = color
     
     }
+
     func randomStringWithLength (len : Int) -> NSString {
         let letters : NSString = "1234567"
         let randomString : NSMutableString = NSMutableString(capacity: len)
@@ -406,6 +406,7 @@ class GameViewController: UIViewController {
         }
     return randomString
     }
+
     /*
      if label1.background != UIColor.blackColor() && label2.background != UIColor.blackColor() && label3.background != UIColor.blackColor() && label4.background != UIColor.blackColor() && label5.background != UIColor.blackColor() && label6.background != UIColor.blackColor() && label7.background != UIColor.blackColor() && label8.background != UIColor.blackColor() && label9.background != UIColor.blackColor() && label10.background != UIColor.blackColor()     {
         label1.background = UIColor.blackColor()
@@ -818,53 +819,68 @@ class GameViewController: UIViewController {
     @IBAction func goLeftWhenTapped(sender: UIButton) {
         if gameRunning == true {
             if block1 % 10 != 1 {
-                if block2 % 10 != 1 {
-                    if block3 % 10 != 1 {
-                        if block4 % 10 != 1 {
-                            labelArray[block1].backgroundColor = UIColor.blackColor()
-                            labelArray[block2].backgroundColor = UIColor.blackColor()
-                            labelArray[block3].backgroundColor = UIColor.blackColor()
-                            labelArray[block4].backgroundColor = UIColor.blackColor()
-                            block1 = block1-1
-                            block2 = block2-1
-                            block3 = block3-1
-                            block4 = block4-1
-                            labelArray[block1].backgroundColor = color
-                            labelArray[block2].backgroundColor = color
-                            labelArray[block3].backgroundColor = color
-                            labelArray[block4].backgroundColor = color
+                if filledArray[block1-1] == false {
+                    if block2 % 10 != 1 {
+                        if filledArray[block2-1] == false {
+                            if block3 % 10 != 1 {
+                                if filledArray[block3-1] == false {
+                                    if block4 % 10 != 1 {
+                                        if filledArray[block4-1] == false {
+                                                labelArray[block1].backgroundColor = UIColor.blackColor()
+                                                labelArray[block2].backgroundColor = UIColor.blackColor()
+                                                labelArray[block3].backgroundColor = UIColor.blackColor()
+                                                labelArray[block4].backgroundColor = UIColor.blackColor()
+                                                block1 = block1-1
+                                                block2 = block2-1
+                                                block3 = block3-1
+                                                block4 = block4-1
+                                                labelArray[block1].backgroundColor = color
+                                                labelArray[block2].backgroundColor = color
+                                                labelArray[block3].backgroundColor = color
+                                                labelArray[block4].backgroundColor = color
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }
             }
         }
     }
-    
-    
+
+
     @IBAction func goRightWhenTapped(sender: UIButton) {
         if gameRunning == true {
             if block1 % 10 != 0 {
-                if block2 % 10 != 0 {
-                    if block3 % 10 != 0 {
-                        if block4 % 10 != 0 {
-                labelArray[block1].backgroundColor = UIColor.blackColor()
-                labelArray[block2].backgroundColor = UIColor.blackColor()
-                labelArray[block3].backgroundColor = UIColor.blackColor()
-                labelArray[block4].backgroundColor = UIColor.blackColor()
-                block1 = block1+1
-                block2 = block2+1
-                block3 = block3+1
-                block4 = block4+1
-                labelArray[block1].backgroundColor = color
-                labelArray[block2].backgroundColor = color
-                labelArray[block3].backgroundColor = color
-                labelArray[block4].backgroundColor = color
+                if filledArray[block1+1] == false {
+                    if block2 % 10 != 0 {
+                        if filledArray[block2+1] == false {
+                            if block3 % 10 != 0 {
+                                if filledArray[block3+1] == false {
+                                    if block4 % 10 != 0 {
+                                        if filledArray[block4+1] == false {
+                                            labelArray[block1].backgroundColor = UIColor.blackColor()
+                                            labelArray[block2].backgroundColor = UIColor.blackColor()
+                                            labelArray[block3].backgroundColor = UIColor.blackColor()
+                                            labelArray[block4].backgroundColor = UIColor.blackColor()
+                                            block1 = block1+1
+                                            block2 = block2+1
+                                            block3 = block3+1
+                                            block4 = block4+1
+                                            labelArray[block1].backgroundColor = color
+                                            labelArray[block2].backgroundColor = color
+                                            labelArray[block3].backgroundColor = color
+                                            labelArray[block4].backgroundColor = color
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
         }
-
-    }
 }
     @IBAction func onTapRotateRight(sender: UIButton) {
         
@@ -883,3 +899,5 @@ class GameViewController: UIViewController {
         }
     }
 }
+
+
