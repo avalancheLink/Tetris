@@ -45,10 +45,10 @@
             </objects>
             <point key="canvasLocation" x="237" y="-1807"/>
         </scene>
-        <!--View Controller-->
+        <!--Patrick1 View Controller-->
         <scene sceneID="ujZ-oZ-7uH">
             <objects>
-                <viewController id="lxR-JS-rNi" sceneMemberID="viewController">
+                <viewController id="lxR-JS-rNi" customClass="Patrick_1ViewController" customModule="Tetris" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="I2P-sW-bad"/>
                         <viewControllerLayoutGuide type="bottom" id="kt7-CT-p5J"/>
@@ -57,24 +57,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Patrick #1" translatesAutoresizingMaskIntoConstraints="NO" id="c2Q-iI-wkE">
-                                <rect key="frame" x="186" y="28" width="395" height="492"/>
-                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Type your description in here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vC8-m4-s6g">
                                 <rect key="frame" x="25" y="557" width="689" height="425"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iG9-aK-jne">
-                                <rect key="frame" x="105" y="20" width="40" height="30"/>
-                                <state key="normal" title="BACK">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="sOe-dd-k5j" kind="presentation" id="Dhb-HX-e48"/>
-                                </connections>
-                            </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jEu-h3-NPF">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                                <items>
+                                    <navigationItem title="Patrick #1" id="dq4-2W-uyu">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="AcX-8k-jxY">
+                                            <connections>
+                                                <action selector="whenTappedGoBack:" destination="lxR-JS-rNi" id="nVi-zX-ZsD"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Patrick #1" translatesAutoresizingMaskIntoConstraints="NO" id="c2Q-iI-wkE">
+                                <rect key="frame" x="187" y="57" width="395" height="492"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
