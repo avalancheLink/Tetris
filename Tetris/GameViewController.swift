@@ -303,6 +303,7 @@ class GameViewController: UIViewController {
 
         
     } //end of view did load
+    
     func timer()
     {
         NStimer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: Selector("tick"), userInfo: nil, repeats: true)
