@@ -18,9 +18,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="TYPE IN YOUR DESCRIPTION #2" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UOo-03-n6y">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="TYPE IN YOUR DESCRIPTION #2" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UOo-03-n6y">
                                 <rect key="frame" x="42" y="577" width="673" height="439"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="439" id="NxI-X7-cKQ"/>
+                                    <constraint firstAttribute="width" constant="673" id="e4s-Tw-l5Q"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -46,10 +50,14 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="GuR-UU-arq" firstAttribute="top" secondItem="UOo-03-n6y" secondAttribute="bottom" constant="8" id="2mO-yJ-ovM"/>
                             <constraint firstAttribute="trailingMargin" secondItem="c2Q-iI-wkE" secondAttribute="trailing" constant="172" id="FjD-JN-Zpa"/>
                             <constraint firstItem="GuR-UU-arq" firstAttribute="top" secondItem="c2Q-iI-wkE" secondAttribute="bottom" constant="460" id="GRE-0H-tOL"/>
                             <constraint firstItem="c2Q-iI-wkE" firstAttribute="leading" secondItem="VDo-i2-KVh" secondAttribute="leadingMargin" constant="161" id="NeV-g6-1do"/>
+                            <constraint firstItem="UOo-03-n6y" firstAttribute="top" secondItem="5sX-42-hb9" secondAttribute="bottom" constant="533" id="UaK-MA-OkM"/>
                             <constraint firstItem="c2Q-iI-wkE" firstAttribute="top" secondItem="5sX-42-hb9" secondAttribute="bottom" constant="28" id="XH5-oF-6PR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UOo-03-n6y" secondAttribute="trailing" constant="33" id="kXT-WI-EgB"/>
+                            <constraint firstItem="UOo-03-n6y" firstAttribute="leading" secondItem="VDo-i2-KVh" secondAttribute="leadingMargin" constant="22" id="m9i-vV-q6B"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
@@ -89,9 +97,13 @@
                                     <constraint firstAttribute="height" constant="515" id="KmV-XZ-rLI"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Type your description in here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vC8-m4-s6g">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Type your description in here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vC8-m4-s6g">
                                 <rect key="frame" x="33" y="579" width="689" height="425"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="689" id="7ed-sh-Mn2"/>
+                                    <constraint firstAttribute="height" constant="425" id="CxR-qs-4G1"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -100,8 +112,12 @@
                         <constraints>
                             <constraint firstItem="FnE-yp-l9Q" firstAttribute="top" secondItem="jEu-h3-NPF" secondAttribute="bottom" id="9v5-dQ-JQy"/>
                             <constraint firstItem="kt7-CT-p5J" firstAttribute="top" secondItem="FnE-yp-l9Q" secondAttribute="bottom" constant="465" id="EDD-he-4KW"/>
+                            <constraint firstItem="vC8-m4-s6g" firstAttribute="top" secondItem="jEu-h3-NPF" secondAttribute="bottom" constant="535" id="Lsx-Vi-UyZ"/>
+                            <constraint firstItem="vC8-m4-s6g" firstAttribute="leading" secondItem="w4T-ju-zNs" secondAttribute="leadingMargin" constant="13" id="SDj-Af-GUX"/>
                             <constraint firstItem="FnE-yp-l9Q" firstAttribute="leading" secondItem="w4T-ju-zNs" secondAttribute="leadingMargin" constant="141" id="TBU-j8-9cJ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="FnE-yp-l9Q" secondAttribute="trailing" constant="171" id="XZw-ar-NnH"/>
+                            <constraint firstItem="kt7-CT-p5J" firstAttribute="top" secondItem="vC8-m4-s6g" secondAttribute="bottom" constant="20" id="Yt5-u5-oQ9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vC8-m4-s6g" secondAttribute="trailing" constant="26" id="yWf-bd-28i"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
@@ -195,9 +211,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Kevin" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ocZ-H2-GxA">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Kevin" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ocZ-H2-GxA">
                                 <rect key="frame" x="28" y="555" width="685" height="439"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="439" id="K5I-vP-FeE"/>
+                                    <constraint firstAttribute="width" constant="685" id="Pgh-zs-1Ne"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -225,8 +245,12 @@
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="gCh-kt-gIU" secondAttribute="trailing" constant="184" id="4aN-oz-Z6B"/>
                             <constraint firstItem="gCh-kt-gIU" firstAttribute="leading" secondItem="ZyT-4E-iEk" secondAttribute="leadingMargin" constant="120" id="73K-63-W1w"/>
+                            <constraint firstItem="ocZ-H2-GxA" firstAttribute="leading" secondItem="ZyT-4E-iEk" secondAttribute="leadingMargin" constant="8" id="PEt-w1-UmM"/>
                             <constraint firstItem="jbJ-IQ-VNn" firstAttribute="top" secondItem="gCh-kt-gIU" secondAttribute="bottom" constant="483" id="Pgi-lX-VJt"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="ocZ-H2-GxA" secondAttribute="bottom" constant="30" id="e7T-YF-lCl"/>
                             <constraint firstItem="gCh-kt-gIU" firstAttribute="top" secondItem="nC9-Ej-VXL" secondAttribute="bottom" constant="60" id="eSu-Z5-Lmq"/>
+                            <constraint firstItem="ocZ-H2-GxA" firstAttribute="top" secondItem="nC9-Ej-VXL" secondAttribute="bottom" constant="511" id="efZ-yr-Ngu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ocZ-H2-GxA" secondAttribute="trailing" constant="35" id="pSs-pY-OyF"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
@@ -247,9 +271,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="tYLER" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="enG-yc-Oc2">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="enG-yc-Oc2">
                                 <rect key="frame" x="20" y="546" width="705" height="438"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="438" id="2Qh-EU-ca7"/>
+                                    <constraint firstAttribute="width" constant="705" id="QlU-7W-5iG"/>
+                                </constraints>
+                                <string key="text">Tyler likes overwatch....he also likes dog. No one really likes overwatch...but its ok. We still accept tyler as one of our own.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -275,10 +304,14 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="bz7-ih-x7d" firstAttribute="top" secondItem="enG-yc-Oc2" secondAttribute="bottom" constant="40" id="8w5-W2-5oZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0t0-yf-h0O" secondAttribute="trailing" constant="168" id="BcD-Xa-nS3"/>
                             <constraint firstItem="0t0-yf-h0O" firstAttribute="leading" secondItem="72j-Cx-aZB" secondAttribute="leadingMargin" constant="144" id="D4n-rr-vza"/>
                             <constraint firstItem="0t0-yf-h0O" firstAttribute="top" secondItem="AQE-lO-fxH" secondAttribute="bottom" constant="24" id="IiN-kL-Tog"/>
                             <constraint firstItem="bz7-ih-x7d" firstAttribute="top" secondItem="0t0-yf-h0O" secondAttribute="bottom" constant="486" id="JgX-it-P3w"/>
+                            <constraint firstItem="enG-yc-Oc2" firstAttribute="top" secondItem="AQE-lO-fxH" secondAttribute="bottom" constant="502" id="ko4-lJ-lT5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="enG-yc-Oc2" secondAttribute="trailing" constant="23" id="n5E-sV-jsp"/>
+                            <constraint firstItem="enG-yc-Oc2" firstAttribute="leading" secondItem="72j-Cx-aZB" secondAttribute="leadingMargin" id="tPm-6x-k5u"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
@@ -302,13 +335,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Back" translatesAutoresizingMaskIntoConstraints="NO" id="poU-8f-IUc">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYM-1M-8Tt">
-                                <rect key="frame" x="466" y="113" width="110" height="30"/>
-                                <state key="normal" title="About The Devs"/>
-                                <connections>
-                                    <segue destination="sOe-dd-k5j" kind="presentation" id="vXm-ds-R5y"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Wp-ip-0kz">
                                 <rect key="frame" x="43" y="195" width="184" height="141"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
@@ -328,6 +354,13 @@
                                 <connections>
                                     <action selector="whenTappedGoToTetrisGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bXr-Lb-GWr"/>
                                     <segue destination="jFm-dB-Lgc" kind="presentation" id="EoB-jx-bDw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYM-1M-8Tt">
+                                <rect key="frame" x="80" y="178" width="110" height="30"/>
+                                <state key="normal" title="About The Devs"/>
+                                <connections>
+                                    <segue destination="sOe-dd-k5j" kind="presentation" id="vXm-ds-R5y"/>
                                 </connections>
                             </button>
                         </subviews>
