@@ -1,10 +1,9 @@
-//
-//AppDelegate.swift
-//Tetris is da bomb diggity
-//
-//  Created by student3 on 5/2/16.
-//  Copyright © 2016 JohnHerseyHighSchool. All rights reserved.
-//
+//////////////////////////////////////////////////////////
+///AppDelegate.swift                                                                                    ///
+///Tetris is da bomb diggity                                                                          ///
+///  Created by student3 on 5/2/16.                                                        ///
+///  Copyright © 2016 JohnHerseyHighSchoolAll rights reserved///
+////////////////////////////////////////////////////////
 
 import UIKit
 
