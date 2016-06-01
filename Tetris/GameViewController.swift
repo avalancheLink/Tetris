@@ -1,7 +1,7 @@
 //
 //  GameViewController.swift
 //  Tetris
-//
+// j////////////
 //  Created by student3 on 5/3/16.
 //  Copyright © 2016 JohnHerseyHighSchool. All rights reserved.
 //
@@ -99,7 +99,7 @@ class GameViewController: UIViewController {
     var filled76 = false
     var filled77 = false
     var filled78 = false
-    var filled79 = false
+    var filled79 = false  
     var filled80 = false
     var filled81 = false
     var filled82 = false
@@ -631,7 +631,7 @@ class GameViewController: UIViewController {
      lose
      
      }
-     
+     score = scoreLabel.text
      
      */
     
