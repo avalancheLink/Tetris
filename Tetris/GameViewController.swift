@@ -408,7 +408,7 @@ class GameViewController: UIViewController {
     return randomString
     }
 
-    /*
+     /*
      if label1.background != UIColor.blackColor() && label2.background != UIColor.blackColor() && label3.background != UIColor.blackColor() && label4.background != UIColor.blackColor() && label5.background != UIColor.blackColor() && label6.background != UIColor.blackColor() && label7.background != UIColor.blackColor() && label8.background != UIColor.blackColor() && label9.background != UIColor.blackColor() && label10.background != UIColor.blackColor()     {
         label1.background = UIColor.blackColor()
         label2.background = UIColor.blackColor()
@@ -631,11 +631,9 @@ class GameViewController: UIViewController {
      lose
      
      }
-     score = scoreLabel.text
-     
+       var score = scoreLabel
+
      */
-    
-    
     
     func lose()
     {
