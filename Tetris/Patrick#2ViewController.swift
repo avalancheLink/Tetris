@@ -4,7 +4,7 @@
 //
 //  Created by student3 on 5/26/16.
 //  Copyright © 2016 JohnHerseyHighSchool. All rights reserved.
-//
+//patrick A is #2
 
 import UIKit
 
