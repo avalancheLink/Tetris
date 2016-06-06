@@ -6,14 +6,6 @@
 //  Copyright © 2016 JohnHerseyHighSchool. All rights reserved.
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
 
 import UIKit
 
@@ -26,6 +18,15 @@ class DevsViewController: UIViewController {
 
     @IBAction func onTapGoBackDev(sender: UIBarButtonItem) {
         self.dismissViewControllerAnimated(true, completion: nil)
+        func shouldAutorotate() -> Bool {
+            return false
+        }
+        
+        func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+            return UIInterfaceOrientationMask.Portrait
+        }
+        
+    
     }
     
 

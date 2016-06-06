@@ -1,7 +1,7 @@
 //
 //  GameViewController.swift
 //  Tetris
-//
+// ////////////
 //  Created by student3 on 5/3/16.
 //  Copyright © 2016 JohnHerseyHighSchool. All rights reserved.
 //
@@ -18,6 +18,7 @@ class GameViewController: UIViewController {
     var block4 = 0
     var gameRunning = false
     var firstblock = true
+    var isLUpOrDown = true
     
     var filled0 = false
     var filled1 = false
@@ -98,7 +99,7 @@ class GameViewController: UIViewController {
     var filled76 = false
     var filled77 = false
     var filled78 = false
-    var filled79 = false
+    var filled79 = false  
     var filled80 = false
     var filled81 = false
     var filled82 = false
@@ -898,11 +899,95 @@ class GameViewController: UIViewController {
         }
 }
     @IBAction func onTapRotateRight(sender: UIButton) {
-        
+        if randomBlockGen == "1" {
+        }
+        if randomBlockGen == "2" {
+            if isLUpOrDown == true {
+                labelArray[block1].backgroundColor = UIColor.blackColor()
+                labelArray[block2].backgroundColor = UIColor.blackColor()
+                labelArray[block3].backgroundColor = UIColor.blackColor()
+                labelArray[block4].backgroundColor = UIColor.blackColor()
+                block1 = block1 - 22
+                block2 = block2 - 11
+                block3 = block3 - 0
+                block4 = block4 + 11
+                labelArray[block1].backgroundColor = color
+                labelArray[block2].backgroundColor = color
+                labelArray[block3].backgroundColor = color
+                labelArray[block4].backgroundColor = color
+                isLUpOrDown = false
+            } else {
+                labelArray[block1].backgroundColor = UIColor.blackColor()
+                labelArray[block2].backgroundColor = UIColor.blackColor()
+                labelArray[block3].backgroundColor = UIColor.blackColor()
+                labelArray[block4].backgroundColor = UIColor.blackColor()
+                block1 = block1 + 22
+                block2 = block2 + 11
+                block3 = block3 + 0
+                block4 = block4 - 11
+                labelArray[block1].backgroundColor = color
+                labelArray[block2].backgroundColor = color
+                labelArray[block3].backgroundColor = color
+                labelArray[block4].backgroundColor = color
+                isLUpOrDown = true
+            }
+        }
+        if randomBlockGen == "3" {
+        }
+        if randomBlockGen == "4" {
+        }
+        if randomBlockGen == "5" {
+        }
+        if randomBlockGen == "6" {
+        }
+        if randomBlockGen == "7" {
+        }
     }
 
     @IBAction func onTapRotateLeft(sender: UIButton) {
-        
+        if randomBlockGen == "1" {
+        }
+        if randomBlockGen == "2" {
+            if isLUpOrDown == true {
+                labelArray[block1].backgroundColor = UIColor.blackColor()
+                labelArray[block2].backgroundColor = UIColor.blackColor()
+                labelArray[block3].backgroundColor = UIColor.blackColor()
+                labelArray[block4].backgroundColor = UIColor.blackColor()
+                block1 = block1 - 22
+                block2 = block2 - 11
+                block3 = block3 - 0
+                block4 = block4 + 11
+                labelArray[block1].backgroundColor = color
+                labelArray[block2].backgroundColor = color
+                labelArray[block3].backgroundColor = color
+                labelArray[block4].backgroundColor = color
+                isLUpOrDown = false
+            } else {
+                labelArray[block1].backgroundColor = UIColor.blackColor()
+                labelArray[block2].backgroundColor = UIColor.blackColor()
+                labelArray[block3].backgroundColor = UIColor.blackColor()
+                labelArray[block4].backgroundColor = UIColor.blackColor()
+                block1 = block1 + 22
+                block2 = block2 + 11
+                block3 = block3 + 0
+                block4 = block4 - 11
+                labelArray[block1].backgroundColor = color
+                labelArray[block2].backgroundColor = color
+                labelArray[block3].backgroundColor = color
+                labelArray[block4].backgroundColor = color
+                isLUpOrDown = true
+            }
+        }
+        if randomBlockGen == "3" {
+        }
+        if randomBlockGen == "4" {
+        }
+        if randomBlockGen == "5" {
+        }
+        if randomBlockGen == "6" {
+        }
+        if randomBlockGen == "7" {
+        }
     }
     @IBAction func restart(sender: UIButton) {
         lose()
