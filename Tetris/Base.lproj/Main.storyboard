@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Patrick # 1 plays games. ranked third in LOTR triva in the state wears lots of flannels." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UOo-03-n6y">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Patrick # 2 plays games. ranked third in LOTR triva in the state wears lots of flannels." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UOo-03-n6y">
                                 <rect key="frame" x="42" y="577" width="673" height="439"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -97,13 +97,14 @@
                                     <constraint firstAttribute="height" constant="515" id="KmV-XZ-rLI"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Patrick is Really good at making errors the game then fixing them. He is patrick #2 ranked 2 in patricks" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vC8-m4-s6g">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vC8-m4-s6g">
                                 <rect key="frame" x="33" y="579" width="689" height="425"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="689" id="7ed-sh-Mn2"/>
                                     <constraint firstAttribute="height" constant="425" id="CxR-qs-4G1"/>
                                 </constraints>
+                                <string key="text">Patrick plays league sice 2010. Excellent Blitzcrank player. He also travels a lot. He has been to all of the following countries: Egypt, Poland, Slovakia, Germany, U.S., Austria, Italy, Greece, Bulgaria, Canada, and Turkey</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
