@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Patrick # 2 plays games. ranked third in LOTR triva in the state wears lots of flannels." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UOo-03-n6y">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Patrick # 1 plays games. ranked third in LOTR triva in the state wears lots of flannels." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UOo-03-n6y">
                                 <rect key="frame" x="42" y="577" width="673" height="439"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -408,12 +408,15 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TI6-38-ACk">
                                 <rect key="frame" x="6" y="44" width="768" height="980"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">The objective of the game is to manipulate The  shapes, by moving each one sideways (useing the Right and left arows) and rotating it by 90 degrees , with the aim of creating a horizontal line of ten units without gaps. When such a line is created, it disappears, and any block above the deleted line will fall scoring you points. cha-ching </string>
+                                <string key="text">The objective of the game is to manipulate The  shapes, by moving each one sideways (useing the Right and left arows)  with the aim of creating a horizontal line of ten units without gaps. When such a line is created, it disappears, and any block above the deleted line will fall scoring you points. cha-ching </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bub" translatesAutoresizingMaskIntoConstraints="NO" id="T2L-Lb-wMi">
+                                <rect key="frame" x="20" y="232" width="713" height="36"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Derrick" translatesAutoresizingMaskIntoConstraints="NO" id="ap0-6l-K1O">
-                                <rect key="frame" x="229" y="339" width="310" height="390"/>
+                                <rect key="frame" x="63" y="276" width="231" height="390"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1747,25 +1750,6 @@
                                     <action selector="goRightWhenTapped:" destination="jFm-dB-Lgc" eventType="touchUpInside" id="oZW-Ka-NIW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ti6-Wg-sgX">
-                                <rect key="frame" x="0.0" y="726" width="200" height="140"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                <state key="normal" title="Rotate left"/>
-                                <connections>
-                                    <action selector="onTapRotateLeft:" destination="jFm-dB-Lgc" eventType="touchUpInside" id="3cH-g5-r8f"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sND-cs-QV0">
-                                <rect key="frame" x="568" y="727" width="200" height="139"/>
-                                <state key="normal" title="rotate right"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djg-Of-LaL">
-                                <rect key="frame" x="568" y="727" width="200" height="139"/>
-                                <state key="normal" title="rotate right"/>
-                                <connections>
-                                    <action selector="onTapRotateRight:" destination="jFm-dB-Lgc" eventType="touchUpInside" id="Oc6-lW-kbB"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ys-gs-JIn">
                                 <rect key="frame" x="194" y="36" width="28" height="396"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2539,5 +2523,6 @@
         <image name="Patrick #1" width="2432" height="4320"/>
         <image name="Patrick #2" width="2432" height="4320"/>
         <image name="Tyler" width="2432" height="4320"/>
+        <image name="bub" width="424" height="31"/>
     </resources>
 </document>
