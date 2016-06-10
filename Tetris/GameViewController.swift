@@ -684,6 +684,8 @@ class GameViewController: UIViewController {
         presentViewController(alert1, animated: true, completion: nil)
         let okAction2 = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Default, handler: nil)
         alert1.addAction(okAction2)
+        
+    
     }
     func clearBlocks(action: UIAlertAction)
     {
@@ -931,8 +933,8 @@ class GameViewController: UIViewController {
     
     @IBAction func restart(sender: UIButton) {
         NStimer.invalidate()
-        lose()
         self.dismissViewControllerAnimated(true, completion: nil)
+        
         
  
     }
