@@ -691,7 +691,7 @@ class GameViewController: UIViewController {
             Label120.backgroundColor = UIColor.blackColor()
         }
     }
-    */
+    
     func callLose()
     {
         if Label121.backgroundColor != UIColor.blackColor()
