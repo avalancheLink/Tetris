@@ -925,7 +925,10 @@ class GameViewController: UIViewController {
         }
         if randomBlockGen == "7" {
         }
+        
+        
     }
+    
 
     @IBAction func onTapRotateLeft(sender: UIButton) {
         if randomBlockGen == "1" {
