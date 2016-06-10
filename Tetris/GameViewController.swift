@@ -319,7 +319,6 @@ class GameViewController: UIViewController {
             filledArray[block3] = true
             filledArray[block4] = true
             NStimer.invalidate()
-            //callLose()
             clearRow()
             spawnAnotherBlock()
             firstblock = false
@@ -329,7 +328,6 @@ class GameViewController: UIViewController {
                 filledArray[block3] = true
                 filledArray[block4] = true
                 NStimer.invalidate()
-                //callLose()
                 clearRow()
                 spawnAnotherBlock()
             
@@ -339,7 +337,6 @@ class GameViewController: UIViewController {
             filledArray[block3] = true
             filledArray[block4] = true
             NStimer.invalidate()
-            //callLose()
             clearRow()
             spawnAnotherBlock()
             firstblock = false
@@ -349,7 +346,6 @@ class GameViewController: UIViewController {
                 filledArray[block3] = true
                 filledArray[block4] = true
                 NStimer.invalidate()
-                //callLose()
                 clearRow()
                 spawnAnotherBlock()
             
@@ -359,7 +355,6 @@ class GameViewController: UIViewController {
             filledArray[block3] = true
             filledArray[block4] = true
             NStimer.invalidate()
-            //callLose()
             clearRow()
             spawnAnotherBlock()
             firstblock = false
@@ -369,7 +364,6 @@ class GameViewController: UIViewController {
                 filledArray[block3] = true
                 filledArray[block4] = true
                 NStimer.invalidate()
-                //callLose()
                 clearRow()
                 spawnAnotherBlock()
             } else if block4 < 11 {
@@ -378,7 +372,6 @@ class GameViewController: UIViewController {
             filledArray[block3] = true
             filledArray[block4] = true
             NStimer.invalidate()
-            //callLose()
             clearRow()
             spawnAnotherBlock()
             firstblock = false
@@ -388,7 +381,6 @@ class GameViewController: UIViewController {
                 filledArray[block3] = true
                 filledArray[block4] = true
                 NStimer.invalidate()
-                //callLose()
                 clearRow()
                 spawnAnotherBlock()
             
@@ -476,9 +468,7 @@ class GameViewController: UIViewController {
             filledArray[19] = false
             filledArray[20] = false
         }
-}
-    /*
-        else if Label21.backgroundColor != UIColor.blackColor() && Label22.backgroundColor != UIColor.blackColor() && Label23.backgroundColor != UIColor.blackColor() && Label24.backgroundColor != UIColor.blackColor() && Label25.backgroundColor != UIColor.blackColor() && Label26.backgroundColor != UIColor.blackColor() && Label27.backgroundColor != UIColor.blackColor() && Label28.backgroundColor != UIColor.blackColor() && Label29.backgroundColor != UIColor.blackColor() && Label30.backgroundColor != UIColor.blackColor()
+        else if filledArray[21] == true && filledArray[22] == true && filledArray[23] == true && filledArray[24] == true && filledArray[25] == true && filledArray[26] == true && filledArray[27] == true && filledArray[28] == true && filledArray[29] == true && filledArray[30] == true
         {
             Label21.backgroundColor = UIColor.blackColor()
             Label22.backgroundColor = UIColor.blackColor()
@@ -490,9 +480,18 @@ class GameViewController: UIViewController {
             Label28.backgroundColor = UIColor.blackColor()
             Label29.backgroundColor = UIColor.blackColor()
             Label30.backgroundColor = UIColor.blackColor()
-            score + 10
+            filledArray[21] = false
+            filledArray[22] = false
+            filledArray[23] = false
+            filledArray[24] = false
+            filledArray[25] = false
+            filledArray[26] = false
+            filledArray[27] = false
+            filledArray[28] = false
+            filledArray[29] = false
+            filledArray[30] = false
         }
-        else if Label31.backgroundColor != UIColor.blackColor() && Label32.backgroundColor != UIColor.blackColor() && Label33.backgroundColor != UIColor.blackColor() && Label34.backgroundColor != UIColor.blackColor() && Label35.backgroundColor != UIColor.blackColor() && Label36.backgroundColor != UIColor.blackColor() && Label37.backgroundColor != UIColor.blackColor() && Label38.backgroundColor != UIColor.blackColor() && Label39.backgroundColor != UIColor.blackColor() && Label40.backgroundColor != UIColor.blackColor()
+        else if filledArray[31] == true && filledArray[32] == true && filledArray[33] == true && filledArray[34] == true && filledArray[35] == true && filledArray[36] == true && filledArray[37] == true && filledArray[38] == true && filledArray[39] == true && filledArray[40] == true
         {
             Label31.backgroundColor = UIColor.blackColor()
             Label32.backgroundColor = UIColor.blackColor()
@@ -504,9 +503,18 @@ class GameViewController: UIViewController {
             Label38.backgroundColor = UIColor.blackColor()
             Label39.backgroundColor = UIColor.blackColor()
             Label40.backgroundColor = UIColor.blackColor()
-            score + 10
+            filledArray[31] = false
+            filledArray[32] = false
+            filledArray[33] = false
+            filledArray[34] = false
+            filledArray[35] = false
+            filledArray[36] = false
+            filledArray[37] = false
+            filledArray[38] = false
+            filledArray[39] = false
+            filledArray[40] = false
         }
-        else if Label41.backgroundColor != UIColor.blackColor() && Label42.backgroundColor != UIColor.blackColor() && Label43.backgroundColor != UIColor.blackColor() && Label44.backgroundColor != UIColor.blackColor() && Label45.backgroundColor != UIColor.blackColor() && Label46.backgroundColor != UIColor.blackColor() && Label47.backgroundColor != UIColor.blackColor() && Label48.backgroundColor != UIColor.blackColor() && Label49.backgroundColor != UIColor.blackColor() && Label50.backgroundColor != UIColor.blackColor()
+        else if filledArray[41] == true && filledArray[42] == true && filledArray[43] == true && filledArray[44] == true && filledArray[45] == true && filledArray[46] == true && filledArray[47] == true && filledArray[48] == true && filledArray[49] == true && filledArray[50] == true
         {
             Label41.backgroundColor = UIColor.blackColor()
             Label42.backgroundColor = UIColor.blackColor()
@@ -518,9 +526,18 @@ class GameViewController: UIViewController {
             Label48.backgroundColor = UIColor.blackColor()
             Label49.backgroundColor = UIColor.blackColor()
             Label50.backgroundColor = UIColor.blackColor()
-            score + 10
+            filledArray[41] = false
+            filledArray[42] = false
+            filledArray[43] = false
+            filledArray[44] = false
+            filledArray[45] = false
+            filledArray[46] = false
+            filledArray[47] = false
+            filledArray[48] = false
+            filledArray[49] = false
+            filledArray[50] = false
         }
-        else if Label51.backgroundColor != UIColor.blackColor() && Label52.backgroundColor != UIColor.blackColor() && Label53.backgroundColor != UIColor.blackColor() && Label54.backgroundColor != UIColor.blackColor() && Label55.backgroundColor != UIColor.blackColor() && Label56.backgroundColor != UIColor.blackColor() && Label57.backgroundColor != UIColor.blackColor() && Label58.backgroundColor != UIColor.blackColor() && Label59.backgroundColor != UIColor.blackColor() && Label60.backgroundColor != UIColor.blackColor()
+        else if filledArray[51] == true && filledArray[52] == true && filledArray[53] == true && filledArray[54] == true && filledArray[55] == true && filledArray[56] == true && filledArray[57] == true && filledArray[58] == true && filledArray[59] == true && filledArray[60] == true
         {
             Label51.backgroundColor = UIColor.blackColor()
             Label52.backgroundColor = UIColor.blackColor()
@@ -532,9 +549,18 @@ class GameViewController: UIViewController {
             Label58.backgroundColor = UIColor.blackColor()
             Label59.backgroundColor = UIColor.blackColor()
             Label60.backgroundColor = UIColor.blackColor()
-            score + 10
+            filledArray[51] = false
+            filledArray[52] = false
+            filledArray[53] = false
+            filledArray[54] = false
+            filledArray[55] = false
+            filledArray[56] = false
+            filledArray[57] = false
+            filledArray[58] = false
+            filledArray[59] = false
+            filledArray[60] = false
         }
-        else if Label61.backgroundColor != UIColor.blackColor() && Label62.backgroundColor != UIColor.blackColor() && Label63.backgroundColor != UIColor.blackColor() && Label64.backgroundColor != UIColor.blackColor() && Label65.backgroundColor != UIColor.blackColor() && Label66.backgroundColor != UIColor.blackColor() && Label67.backgroundColor != UIColor.blackColor() && Label68.backgroundColor != UIColor.blackColor() && Label69.backgroundColor != UIColor.blackColor() && Label70.backgroundColor != UIColor.blackColor()
+        else if filledArray[61] == true && filledArray[62] == true && filledArray[63] == true && filledArray[64] == true && filledArray[65] == true && filledArray[66] == true && filledArray[67] == true && filledArray[68] == true && filledArray[69] == true && filledArray[70] == true
         {
             Label61.backgroundColor = UIColor.blackColor()
             Label62.backgroundColor = UIColor.blackColor()
@@ -546,9 +572,18 @@ class GameViewController: UIViewController {
             Label68.backgroundColor = UIColor.blackColor()
             Label69.backgroundColor = UIColor.blackColor()
             Label70.backgroundColor = UIColor.blackColor()
-            score + 10
+            filledArray[61] = false
+            filledArray[62] = false
+            filledArray[63] = false
+            filledArray[64] = false
+            filledArray[65] = false
+            filledArray[66] = false
+            filledArray[67] = false
+            filledArray[68] = false
+            filledArray[69] = false
+            filledArray[70] = false
         }
-        else if Label71.backgroundColor != UIColor.blackColor() && Label72.backgroundColor != UIColor.blackColor() && Label73.backgroundColor != UIColor.blackColor() && Label74.backgroundColor != UIColor.blackColor() && Label75.backgroundColor != UIColor.blackColor() && Label76.backgroundColor != UIColor.blackColor() && Label77.backgroundColor != UIColor.blackColor() && Label78.backgroundColor != UIColor.blackColor() && Label79.backgroundColor != UIColor.blackColor() && Label80.backgroundColor != UIColor.blackColor()
+        else if filledArray[71] == true && filledArray[72] == true && filledArray[73] == true && filledArray[74] == true && filledArray[75] == true && filledArray[76] == true && filledArray[77] == true && filledArray[78] == true && filledArray[79] == true && filledArray[80] == true
         {
             Label71.backgroundColor = UIColor.blackColor()
             Label72.backgroundColor = UIColor.blackColor()
@@ -560,9 +595,19 @@ class GameViewController: UIViewController {
             Label78.backgroundColor = UIColor.blackColor()
             Label79.backgroundColor = UIColor.blackColor()
             Label80.backgroundColor = UIColor.blackColor()
-            score + 10
+            filledArray[71] = false
+            filledArray[72] = false
+            filledArray[73] = false
+            filledArray[74] = false
+            filledArray[75] = false
+            filledArray[76] = false
+            filledArray[77] = false
+            filledArray[78] = false
+            filledArray[79] = false
+            filledArray[80] = false
+            
         }
-        else if Label81.backgroundColor != UIColor.blackColor() && Label82.backgroundColor != UIColor.blackColor() && Label83.backgroundColor != UIColor.blackColor() && Label84.backgroundColor != UIColor.blackColor() && Label85.backgroundColor != UIColor.blackColor() && Label86.backgroundColor != UIColor.blackColor() && Label87.backgroundColor != UIColor.blackColor() && Label88.backgroundColor != UIColor.blackColor() && Label89.backgroundColor != UIColor.blackColor() && Label90.backgroundColor != UIColor.blackColor()
+        else if filledArray[81] == true && filledArray[82] == true && filledArray[83] == true && filledArray[84] == true && filledArray[85] == true && filledArray[86] == true && filledArray[87] == true && filledArray[88] == true && filledArray[89] == true && filledArray[90] == true
         {
             Label81.backgroundColor = UIColor.blackColor()
             Label82.backgroundColor = UIColor.blackColor()
@@ -574,9 +619,18 @@ class GameViewController: UIViewController {
             Label88.backgroundColor = UIColor.blackColor()
             Label89.backgroundColor = UIColor.blackColor()
             Label90.backgroundColor = UIColor.blackColor()
-            score + 10
+            filledArray[81] = false
+            filledArray[82] = false
+            filledArray[83] = false
+            filledArray[84] = false
+            filledArray[85] = false
+            filledArray[86] = false
+            filledArray[87] = false
+            filledArray[88] = false
+            filledArray[89] = false
+            filledArray[90] = false
         }
-        else if Label91.backgroundColor != UIColor.blackColor() && Label92.backgroundColor != UIColor.blackColor() && Label93.backgroundColor != UIColor.blackColor() && Label94.backgroundColor != UIColor.blackColor() && Label95.backgroundColor != UIColor.blackColor() && Label96.backgroundColor != UIColor.blackColor() && Label97.backgroundColor != UIColor.blackColor() && Label98.backgroundColor != UIColor.blackColor() && Label99.backgroundColor != UIColor.blackColor() && Label100.backgroundColor != UIColor.blackColor()
+        else if filledArray[91] == true && filledArray[92] == true && filledArray[93] == true && filledArray[94] == true && filledArray[95] == true && filledArray[96] == true && filledArray[97] == true && filledArray[98] == true && filledArray[99] == true && filledArray[100] == true
         {
             Label91.backgroundColor = UIColor.blackColor()
             Label92.backgroundColor = UIColor.blackColor()
@@ -588,9 +642,18 @@ class GameViewController: UIViewController {
             Label98.backgroundColor = UIColor.blackColor()
             Label99.backgroundColor = UIColor.blackColor()
             Label100.backgroundColor = UIColor.blackColor()
-            score + 10
+            filledArray[91] = false
+            filledArray[92] = false
+            filledArray[93] = false
+            filledArray[94] = false
+            filledArray[95] = false
+            filledArray[96] = false
+            filledArray[97] = false
+            filledArray[98] = false
+            filledArray[99] = false
+            filledArray[100] = false
         }
-        else if Label101.backgroundColor != UIColor.blackColor() && Label102.backgroundColor != UIColor.blackColor() && Label103.backgroundColor != UIColor.blackColor() && Label104.backgroundColor != UIColor.blackColor() && Label105.backgroundColor != UIColor.blackColor() && Label106.backgroundColor != UIColor.blackColor() && Label107.backgroundColor != UIColor.blackColor() && Label108.backgroundColor != UIColor.blackColor() && Label109.backgroundColor != UIColor.blackColor() && Label110.backgroundColor != UIColor.blackColor()
+        else if filledArray[101] == true && filledArray[102] == true && filledArray[103] == true && filledArray[104] == true && filledArray[105] == true && filledArray[106] == true && filledArray[107] == true && filledArray[108] == true && filledArray[109] == true && filledArray[110] == true
         {
             Label101.backgroundColor = UIColor.blackColor()
             Label102.backgroundColor = UIColor.blackColor()
@@ -602,7 +665,16 @@ class GameViewController: UIViewController {
             Label108.backgroundColor = UIColor.blackColor()
             Label109.backgroundColor = UIColor.blackColor()
             Label110.backgroundColor = UIColor.blackColor()
-            score + 10
+            filledArray[101] = false
+            filledArray[102] = false
+            filledArray[103] = false
+            filledArray[104] = false
+            filledArray[105] = false
+            filledArray[106] = false
+            filledArray[107] = false
+            filledArray[108] = false
+            filledArray[109] = false
+            filledArray[110] = false
             
         }
         else if Label111.backgroundColor != UIColor.blackColor() && Label112.backgroundColor != UIColor.blackColor() && Label113.backgroundColor != UIColor.blackColor() && Label114.backgroundColor != UIColor.blackColor() && Label115.backgroundColor != UIColor.blackColor() && Label116.backgroundColor != UIColor.blackColor() && Label117.backgroundColor != UIColor.blackColor() && Label118.backgroundColor != UIColor.blackColor() && Label119.backgroundColor != UIColor.blackColor() && Label120.backgroundColor != UIColor.blackColor()
@@ -617,7 +689,6 @@ class GameViewController: UIViewController {
             Label118.backgroundColor = UIColor.blackColor()
             Label119.backgroundColor = UIColor.blackColor()
             Label120.backgroundColor = UIColor.blackColor()
-            score + 10
         }
     }
     */
