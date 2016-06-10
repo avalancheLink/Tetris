@@ -38,7 +38,7 @@
                             <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5sX-42-hb9">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
                                 <items>
-                                    <navigationItem title="Patrick #2" id="0Tb-SE-vhv">
+                                    <navigationItem title="Patrick #1" id="0Tb-SE-vhv">
                                         <barButtonItem key="leftBarButtonItem" systemItem="reply" id="v3F-PG-ul6">
                                             <connections>
                                                 <action selector="whenTappedGoBack:" destination="NPU-Ta-OMP" id="k3e-ak-KYj"/>
@@ -104,7 +104,7 @@
                                     <constraint firstAttribute="width" constant="689" id="7ed-sh-Mn2"/>
                                     <constraint firstAttribute="height" constant="425" id="CxR-qs-4G1"/>
                                 </constraints>
-                                <string key="text">Patrick plays league sice 2010. Excellent Blitzcrank player. He also travels a lot. He has been to all of the following countries: Egypt, Poland, Slovakia, Germany, U.S., Austria, Italy, Greece, Bulgaria, Canada, and Turkey</string>
+                                <string key="text">Patrick #1 plays league sice 2010. Excellent Blitzcrank player. He also travels a lot. He has been to all of the following countries: Egypt, Poland, Slovakia, Germany, U.S., Austria, Italy, Greece, Bulgaria, Canada, and Turkey</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -412,12 +412,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bub" translatesAutoresizingMaskIntoConstraints="NO" id="T2L-Lb-wMi">
-                                <rect key="frame" x="20" y="232" width="713" height="36"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Derrick" translatesAutoresizingMaskIntoConstraints="NO" id="ap0-6l-K1O">
-                                <rect key="frame" x="63" y="276" width="231" height="390"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1730,15 +1724,21 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ndj-gM-9ja">
-                                <rect key="frame" x="74" y="467" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="79" y="467" width="77" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="PLAY">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="startGame:" destination="jFm-dB-Lgc" eventType="touchUpInside" id="wME-WM-yb8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfz-n3-Cgd">
                                 <rect key="frame" x="568" y="874" width="200" height="150"/>
-                                <state key="normal" title="Right"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="RIGHT">
+                                    <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="goRightWhenTapped:" destination="jFm-dB-Lgc" eventType="touchUpInside" id="oZW-Ka-NIW"/>
                                 </connections>
@@ -1811,7 +1811,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yeg-ae-lr2">
-                                <rect key="frame" x="339" y="492" width="65" height="30"/>
+                                <rect key="frame" x="339" y="492" width="126" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="RESTART">
                                     <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -1831,7 +1832,10 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7MJ-xL-8mh">
                                 <rect key="frame" x="0.0" y="874" width="200" height="150"/>
-                                <state key="normal" title="left"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="LEFT">
+                                    <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="goLeftWhenTapped:" destination="jFm-dB-Lgc" eventType="touchUpInside" id="m8v-OK-7Jj"/>
                                 </connections>
@@ -2523,6 +2527,5 @@
         <image name="Patrick #1" width="2432" height="4320"/>
         <image name="Patrick #2" width="2432" height="4320"/>
         <image name="Tyler" width="2432" height="4320"/>
-        <image name="bub" width="424" height="31"/>
     </resources>
 </document>
