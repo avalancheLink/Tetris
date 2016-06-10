@@ -926,10 +926,7 @@ class GameViewController: UIViewController {
             }
         }
     }
-    @IBAction func onTapRotateRight(sender: UIButton) {
-    }
-    @IBAction func onTapRotateLeft(sender: UIButton) {
-            }
+    
     
     @IBAction func restart(sender: UIButton) {
         NStimer.invalidate()
