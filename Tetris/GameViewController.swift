@@ -319,8 +319,8 @@ class GameViewController: UIViewController {
             filledArray[block3] = true
             filledArray[block4] = true
             NStimer.invalidate()
-            callLose()
-            //clearRow()
+            //callLose()
+            clearRow()
             spawnAnotherBlock()
             firstblock = false
         } else if filledArray[block1-10] == true  {
@@ -329,8 +329,8 @@ class GameViewController: UIViewController {
                 filledArray[block3] = true
                 filledArray[block4] = true
                 NStimer.invalidate()
-                callLose()
-                //clearRow()
+                //callLose()
+                clearRow()
                 spawnAnotherBlock()
             
             } else if block2 < 11 {
@@ -339,8 +339,8 @@ class GameViewController: UIViewController {
             filledArray[block3] = true
             filledArray[block4] = true
             NStimer.invalidate()
-            callLose()
-            //clearRow()
+            //callLose()
+            clearRow()
             spawnAnotherBlock()
             firstblock = false
         } else if filledArray[block2-10] == true {
@@ -349,8 +349,8 @@ class GameViewController: UIViewController {
                 filledArray[block3] = true
                 filledArray[block4] = true
                 NStimer.invalidate()
-                callLose()
-                //clearRow()
+                //callLose()
+                clearRow()
                 spawnAnotherBlock()
             
             } else if block3 < 11 {
@@ -359,8 +359,8 @@ class GameViewController: UIViewController {
             filledArray[block3] = true
             filledArray[block4] = true
             NStimer.invalidate()
-            callLose()
-            //clearRow()
+            //callLose()
+            clearRow()
             spawnAnotherBlock()
             firstblock = false
         } else if filledArray[block3-10] == true {
@@ -369,8 +369,8 @@ class GameViewController: UIViewController {
                 filledArray[block3] = true
                 filledArray[block4] = true
                 NStimer.invalidate()
-                callLose()
-                //clearRow()
+                //callLose()
+                clearRow()
                 spawnAnotherBlock()
             } else if block4 < 11 {
             filledArray[block1] = true
@@ -378,8 +378,8 @@ class GameViewController: UIViewController {
             filledArray[block3] = true
             filledArray[block4] = true
             NStimer.invalidate()
-            callLose()
-            //clearRow()
+            //callLose()
+            clearRow()
             spawnAnotherBlock()
             firstblock = false
         } else if filledArray[block4-10] == true {
@@ -388,8 +388,8 @@ class GameViewController: UIViewController {
                 filledArray[block3] = true
                 filledArray[block4] = true
                 NStimer.invalidate()
-                callLose()
-                //clearRow()
+                //callLose()
+                clearRow()
                 spawnAnotherBlock()
             
             }
@@ -425,7 +425,7 @@ class GameViewController: UIViewController {
         }
     return randomString
     }
-    /*
+    
     func clearRow()
     {
         if filledArray[1] == true && filledArray[2] == true && filledArray[3] == true && filledArray[4] == true && filledArray[5] == true && filledArray[6] == true && filledArray[7] == true && filledArray[8] == true && filledArray[9] == true && filledArray[10] == true
@@ -440,9 +440,20 @@ class GameViewController: UIViewController {
             Label8.backgroundColor = UIColor.blackColor()
             Label9.backgroundColor = UIColor.blackColor()
             Label10.backgroundColor = UIColor.blackColor()
-            score + 10
+            filledArray[1] = false
+            filledArray[2] = false
+            filledArray[3] = false
+            filledArray[4] = false
+            filledArray[5] = false
+            filledArray[6] = false
+            filledArray[7] = false
+            filledArray[8] = false
+            filledArray[9] = false
+            filledArray[10] = false
+            
+     
         }
-        else if Label11.backgroundColor != UIColor.blackColor() && Label12.backgroundColor != UIColor.blackColor() && Label13.backgroundColor != UIColor.blackColor() && Label14.backgroundColor != UIColor.blackColor() && Label15.backgroundColor != UIColor.blackColor() && Label16.backgroundColor != UIColor.blackColor() && Label17.backgroundColor != UIColor.blackColor() && Label18.backgroundColor != UIColor.blackColor() && Label19.backgroundColor != UIColor.blackColor() && Label20.backgroundColor != UIColor.blackColor()
+        else if filledArray[11] == true && filledArray[12] == true && filledArray[13] == true && filledArray[14] == true && filledArray[15] == true && filledArray[16] == true && filledArray[17] == true && filledArray[18] == true && filledArray[19] == true && filledArray[20] == true
         {
             Label11.backgroundColor = UIColor.blackColor()
             Label12.backgroundColor = UIColor.blackColor()
@@ -454,9 +465,19 @@ class GameViewController: UIViewController {
             Label18.backgroundColor = UIColor.blackColor()
             Label19.backgroundColor = UIColor.blackColor()
             Label20.backgroundColor = UIColor.blackColor()
-            score + 10
-            
+            filledArray[11] = false
+            filledArray[12] = false
+            filledArray[13] = false
+            filledArray[14] = false
+            filledArray[15] = false
+            filledArray[16] = false
+            filledArray[17] = false
+            filledArray[18] = false
+            filledArray[19] = false
+            filledArray[20] = false
         }
+}
+    /*
         else if Label21.backgroundColor != UIColor.blackColor() && Label22.backgroundColor != UIColor.blackColor() && Label23.backgroundColor != UIColor.blackColor() && Label24.backgroundColor != UIColor.blackColor() && Label25.backgroundColor != UIColor.blackColor() && Label26.backgroundColor != UIColor.blackColor() && Label27.backgroundColor != UIColor.blackColor() && Label28.backgroundColor != UIColor.blackColor() && Label29.backgroundColor != UIColor.blackColor() && Label30.backgroundColor != UIColor.blackColor()
         {
             Label21.backgroundColor = UIColor.blackColor()
@@ -909,6 +930,7 @@ class GameViewController: UIViewController {
             }
     
     @IBAction func restart(sender: UIButton) {
+        NStimer.invalidate()
         lose()
         self.dismissViewControllerAnimated(true, completion: nil)
         
